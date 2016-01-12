@@ -47,10 +47,10 @@
                                 
                                 <%
 									 Class.forName("com.mysql.jdbc.Driver");
-									 Connection con = DriverManager.getConnection("jdbc:mysql://localhost/user_data","root", "kaidara");
+									 Connection con = DriverManager.getConnection("jdbc:mysql://127.7.201.130:3306/huntzdown","admin1ucVL7Z", "xRWsL2hKVAXT");
 									Statement st = con.createStatement();
 									
-									ResultSet i = st.executeQuery("select * from user_data.blog");
+									ResultSet i = st.executeQuery("select * from huntzdown.blog");
 									Blob image = null;  
 									byte[] imgData = null; 
 									BufferedImage img= null;
