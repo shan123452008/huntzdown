@@ -139,7 +139,7 @@ public class HomeController {
 	         String dbPass= bundle.getString("jdbc.password");
 
 			 Class.forName("com.mysql.jdbc.Driver");
-			 Connection con = DriverManager.getConnection(dbURL,dbUser, dbPass);
+			 Connection con = DriverManager.getConnection(dbURL,dbUser,dbPass);
 			Statement st = con.createStatement();
 			String filename= null;
 			ResultSet i = st.executeQuery("select * from huntzdown.blog");
