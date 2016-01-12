@@ -309,7 +309,7 @@ public class HomeController {
 	         String dbUser= bundle.getString("jdbc.username");
 	         String dbPass= bundle.getString("jdbc.password");
 
-			 Class.forName(driverClassName);
+			 Class.forName("com.mysql.jdbc.Driver");
 			 Connection con = DriverManager.getConnection(dbURL,dbUser, dbPass);
 			Statement st = con.createStatement();
 			String filename= null;
