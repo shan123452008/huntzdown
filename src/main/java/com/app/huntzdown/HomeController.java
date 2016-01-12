@@ -154,9 +154,9 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = System.getProperty("user.dir");
+				  String useSession = System.getProperty("catalina.base");
 
-				  System.out.println("path openshift**"+useSession);
+				  System.out.println("path openshift**"+System.getProperty("catalina.base"));
 	              FileOutputStream fos = new FileOutputStream(useSession +"\\" + filename+".jpg");
 	 
 					int b = 0;
@@ -326,6 +326,7 @@ public class HomeController {
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
 				  String useSession = req.getSession().getServletContext().getRealPath("/resources/imagesPic");
+				  
 				  System.out.println("useSession"+useSession);
 	              FileOutputStream fos = new FileOutputStream(useSession +"\\" + filename+".jpg");
 	              int b = 0;
