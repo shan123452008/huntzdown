@@ -214,7 +214,6 @@ public class HomeController {
 	        }
 
 	       
-	        System.out.println("addBlog>>>>->..." + addBlog.getComment());
 
 
 	        if (result.hasErrors()) {

@@ -433,7 +433,7 @@ System.out.println("inside product list..");
 	         
 	        try {
 	            // connects to the database
-	        	Class.forName(driverClassName);  
+	        	Class.forName("com.mysql.jdbc.Driver");  
 	            conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
 	 
 	            // constructs SQL statement
