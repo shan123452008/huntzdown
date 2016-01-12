@@ -342,12 +342,10 @@ System.out.println("inside product list..");
 	
 	@Override
 	public List<Map<String, Object>> getBlogComments(String id) throws DataAccessException {
-		System.out.println("inside getDetailsPic list.."+id);
 		
 		String query = "select * from huntzdown.blogComment where itemId='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
-		System.out.println("getDetailsComments listsssssss.>>?????.."+getProductList);
 		return getProductList;
 	}
 	

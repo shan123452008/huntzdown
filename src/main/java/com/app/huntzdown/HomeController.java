@@ -302,7 +302,6 @@ public class HomeController {
 	        Map<String, Object> aeDataMap = null;
 	        Map<String, Object> dataMap = null;
 	        List<Map<String, Object>> getProductList = userdao.getBlogPic(picId);
-	        List<Map<String, Object>> getCommentList = userdao.getBlogComments(picId);
 	        
 	        ResourceBundle bundle = ResourceBundle.getBundle("jdbc"); 
 	         String driverClassName=bundle.getString("jdbc.driverClassName");
@@ -336,13 +335,7 @@ public class HomeController {
 					
 			 	}
 	       
-	        Iterator<Map<String, Object>> itrt = getCommentList.iterator();
-	        while (itrt.hasNext()) {
-	            dataMap = itrt.next();
-	            comment.append("<li class='comment even thread-even depth-1' id='li-comment-4'><div id='comment-5' class='comment-body cf'><img alt='' src='http://0.gravatar.com/avatar/4f64c9f81bb0d4ee969aaf7b4a5a6f40?s=35&amp;d=&amp;r=G' class='avatar avatar-35 photo' height='35' width='35' /><div class='comment-author vcard'>" + dataMap.get("name") + "</div><div class='comment-meta commentmetadata'><span class='comment-date'><b>Date*</b>" + dataMap.get("date") + "</span></div><div class='comment-inner'><p>" + dataMap.get("comments") + "</p></div></div></li>");
-
-	        }
-
+	       
 
 	        Iterator<Map<String, Object>> itr = getProductList.iterator();
 	        while (itr.hasNext()) {
