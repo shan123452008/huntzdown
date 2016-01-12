@@ -142,7 +142,7 @@ public class HomeController {
 			 Connection con = DriverManager.getConnection(dbURL,dbUser, dbPass);
 			Statement st = con.createStatement();
 			String filename= null;
-			ResultSet i = st.executeQuery("select * from user_data.blog");
+			ResultSet i = st.executeQuery("select * from huntzdown.blog");
 			Blob image = null;  
 			byte[] imgData = null; 
 			BufferedImage img= null;
@@ -314,7 +314,7 @@ public class HomeController {
 			 Connection con = DriverManager.getConnection(dbURL,dbUser, dbPass);
 			Statement st = con.createStatement();
 			String filename= null;
-			ResultSet i = st.executeQuery("select * from user_data.blog");
+			ResultSet i = st.executeQuery("select * from huntzdown.blog");
 			Blob image = null;  
 			byte[] imgData = null; 
 			BufferedImage img= null;
