@@ -24,7 +24,7 @@
 					<li class="current-menu-item"><a href="blog.html">BLOG</a>
                                          <ul>
 							<li><a href="blog.do">Read Blog</a></li>
-                                                        <li><a href="/huntzdown/writeBlog">Write Blog</a></li>
+                                                        <li><a href="/writeBlog">Write Blog</a></li>
 							
                                          </ul></li>
                                          
