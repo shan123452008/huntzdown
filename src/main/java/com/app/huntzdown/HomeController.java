@@ -51,7 +51,6 @@ import com.app.user.AddBlog;
 @Controller
 public class HomeController {
 	
-		
 	 @Autowired
 	    UserDao userdao;
 	    HttpServletRequest request;
@@ -76,8 +75,7 @@ public class HomeController {
 	  @RequestMapping(value = "/homePage", method = RequestMethod.GET)
 	  public ModelAndView homePage(HttpServletRequest req,
 	          HttpServletResponse response, ModelMap model) throws IOException, SQLException, ClassNotFoundException {
-	     
-
+		  
 	      response.setHeader("Cache-Control", "no-cache");
 	      response.setContentType("text/plain");
 	      response.setCharacterEncoding("utf-8");
@@ -155,7 +153,8 @@ public class HomeController {
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
 				  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
-				  FileOutputStream fos = new FileOutputStream(useSession +"\\" + filename+".jpg");
+				  String STORAGE_PATH = System.getenv("OPENSHIFT_DATA_DIR") == null ? "/home/shan/tmp/" : System.getenv("OPENSHIFT_DATA_DIR");
+				  FileOutputStream fos = new FileOutputStream(STORAGE_PATH +"\\" + filename+".jpg");
 	 
 					int b = 0;
 					while ((b = is.read()) != -1)
@@ -287,10 +286,6 @@ public class HomeController {
 	        StringBuilder comment = new StringBuilder();
 	        StringBuilder ratingDiv = new StringBuilder();
 	        
-	   	 
-
-
-
 	        if (picId == null) {
 	            System.out.println("andar gaya null me....<>>>>" + req.getSession().getAttribute("userBlogId").toString());
 	            picId = req.getSession().getAttribute("userBlogId").toString();
@@ -323,7 +318,7 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
+				  String useSession = System.getenv("OPENSHIFT_DATA_DIR") == null ? "/home/shan/tmp/" : System.getenv("OPENSHIFT_DATA_DIR");
 	              FileOutputStream fos = new FileOutputStream(useSession +"\\" + filename+".jpg");
 	              int b = 0;
 					while ((b = is.read()) != -1)
