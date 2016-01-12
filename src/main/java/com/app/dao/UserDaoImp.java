@@ -54,7 +54,7 @@ public class UserDaoImp implements UserDao {
 	}
 
 	public List<User> userList() {
-		String query = "select * from user.login";
+		String query = "select * from huntzdown.login";
 		// List<?> list = jdbcTemplate.queryForList(query);
 
 		List<User> userList = jdbcTemplate.query(query, new RowMapper() {
@@ -84,7 +84,7 @@ public class UserDaoImp implements UserDao {
 		 
 		
 		
-		String sql = "INSERT INTO user_data.userdata(user_name,password,name,mob_number,email,pic_path,comments,date) VALUES(?,?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO huntzdown.userdata(user_name,password,name,mob_number,email,pic_path,comments,date) VALUES(?,?,?,?,?,?,?,?)";
 		jdbcTemplate.update(sql, new Object[] { user.getUserName(),user.getPassWord(), user.getName(),user.getMobNumber(),user.getEmail(),path,user.getComment(),dateFormat.format(cal.getTime())});
 		
 		System.out.println("Done entries.>>>"+sql);
@@ -104,7 +104,7 @@ public class UserDaoImp implements UserDao {
 		 
 		
 		
-		String sql = "INSERT INTO user_data.commentdata(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
+		String sql = "INSERT INTO huntzdown.commentdata(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
 		jdbcTemplate.update(sql, new Object[] { addComment.getComment_post_ID(),addComment.getAuthor(), addComment.getEmail(),addComment.getComment(),dateFormat.format(cal.getTime()),addComment.getRatings()});
 		
 		System.out.println("Done entries.addComment>>>"+sql);
@@ -123,7 +123,7 @@ public class UserDaoImp implements UserDao {
 		 
 		
 		
-		String sql = "INSERT INTO user_data.carcomment(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
+		String sql = "INSERT INTO huntzdown.carcomment(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
 		jdbcTemplate.update(sql, new Object[] { addComment.getComment_post_ID(),addComment.getAuthor(), addComment.getEmail(),addComment.getComment(),dateFormat.format(cal.getTime()),addComment.getRatings()});
 		
 		System.out.println("Done entries.addComment>>>"+sql);
@@ -142,7 +142,7 @@ public class UserDaoImp implements UserDao {
 		 
 		
 		
-		String sql = "INSERT INTO user_data.restrocomment(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
+		String sql = "INSERT INTO huntzdown.restrocomment(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
 		jdbcTemplate.update(sql, new Object[] { addComment.getComment_post_ID(),addComment.getAuthor(), addComment.getEmail(),addComment.getComment(),dateFormat.format(cal.getTime()),addComment.getRatings()});
 		
 		System.out.println("Done entries.addComment>>>"+sql);
@@ -218,7 +218,7 @@ public class UserDaoImp implements UserDao {
 	public List<Map<String, Object>> getDetailsList() throws DataAccessException {
 		System.out.println("inside product list..");
 		
-		String query = "select * from user_data.userdata";
+		String query = "select * from huntzdown.userdata";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -234,7 +234,7 @@ public class UserDaoImp implements UserDao {
 	public List<Map<String, Object>> getDetailsList(String userName) {
 System.out.println("inside product list..");
 		
-		String query = "select * from user_data.userdata where user_name='"+userName+"'";
+		String query = "select * from huntzdown.userdata where user_name='"+userName+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -245,7 +245,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getDetailsPic(String id) throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from user_data.userdata where id='"+id+"'";
+		String query = "select * from huntzdown.userdata where id='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList.>>?????.."+getProductList);
@@ -256,7 +256,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getMobilePic(String id) throws DataAccessException {
         System.out.println("inside getMobilePic list..");
 
-        String query = "select * from user_data.mobiles where id='" + id + "'";
+        String query = "select * from huntzdown.mobiles where id='" + id + "'";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("getProductList.>>?????.." + getProductList);
@@ -267,7 +267,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getCarsDetails(String id) throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from user_data.cars where id='"+id+"'";
+		String query = "select * from huntzdown.cars where id='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList.>>?????.."+getProductList);
@@ -278,7 +278,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getRestroDetails(String id) throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from user_data.restro where id='"+id+"'";
+		String query = "select * from huntzdown.restro where id='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList.>>?????.."+getProductList);
@@ -289,7 +289,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getBlogPic(String id) throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from user_data.blog where id='"+id+"'";
+		String query = "select * from huntzdown.blog where id='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList.>>?????.."+getProductList);
@@ -300,7 +300,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getDetailsComments(String id) throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from user_data.commentdata where itemId='"+id+"'";
+		String query = "select * from huntzdown.commentdata where itemId='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getDetailsComments listsssssss.>>?????.."+getProductList);
@@ -311,7 +311,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getMobilesComments(String id) throws DataAccessException {
         System.out.println("inside getDetailsPic list..");
 
-        String query = "select * from user_data.mobilecomment where itemId='" + id + "'";
+        String query = "select * from huntzdown.mobilecomment where itemId='" + id + "'";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("getDetailsComments listsssssss.>>?????.." + getProductList);
@@ -322,7 +322,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getCarsComments(String id) throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from user_data.carcomment where itemId='"+id+"'";
+		String query = "select * from huntzdown.carcomment where itemId='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getDetailsComments listsssssss.>>?????.."+getProductList);
@@ -333,7 +333,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getRestroComments(String id) throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from user_data.restrocomment where itemId='"+id+"'";
+		String query = "select * from huntzdown.restrocomment where itemId='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getDetailsComments listsssssss.>>?????.."+getProductList);
@@ -344,7 +344,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getBlogComments(String id) throws DataAccessException {
 		System.out.println("inside getDetailsPic list.."+id);
 		
-		String query = "select * from user_data.blogComment where itemId='"+id+"'";
+		String query = "select * from huntzdown.blogComment where itemId='"+id+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getDetailsComments listsssssss.>>?????.."+getProductList);
@@ -355,7 +355,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getDetailsBlogs() throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from user_data.blog";
+		String query = "select * from huntzdown.blog";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getDetailsComments listsssssss.>>?????.."+getProductList);
@@ -373,7 +373,7 @@ System.out.println("inside product list..");
 	 
 	
 	
-	String sql = "INSERT INTO user_data.movie(movie_name,actor_name,pic_path,comments,date,upcoming_movie) VALUES(?,?,?,?,?,?)";
+	String sql = "INSERT INTO huntzdown.movie(movie_name,actor_name,pic_path,comments,date,upcoming_movie) VALUES(?,?,?,?,?,?)";
 	jdbcTemplate.update(sql, new Object[] { addMovie.getMoviename(),addMovie.getActName(),path,addMovie.getComment(),dateFormat.format(cal.getTime()),addMovie.getUpcomingProduct()});
 	
 	System.out.println("Done entries.>>>"+sql);
@@ -393,7 +393,7 @@ System.out.println("inside product list..");
 	 
 	
 	
-	String sql = "INSERT INTO user_data.cars(car_name,model,price,path1,path2,path3,path4,path5,path6,comments,upcoming_car) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
+	String sql = "INSERT INTO huntzdown.cars(car_name,model,price,path1,path2,path3,path4,path5,path6,comments,upcoming_car) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
 	jdbcTemplate.update(sql, new Object[] { addCar.getCarName(),addCar.getModel(),addCar.getPrice(),path1,path2,path3,path4,path5,path6,addCar.getComment(),addCar.getUpcomingProduct()});
 	
 	System.out.println("Done entries.>>>"+sql);
@@ -412,7 +412,7 @@ System.out.println("inside product list..");
 	 
 	
 	
-	String sql = "INSERT INTO user_data.restro(restro_name,location,timing,food,price,phone,path1,path2,path3,path4,path5,path6,comments,rating,totalComment) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	String sql = "INSERT INTO huntzdown.restro(restro_name,location,timing,food,price,phone,path1,path2,path3,path4,path5,path6,comments,rating,totalComment) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 	jdbcTemplate.update(sql, new Object[] { addRestro.getRestroName(),addRestro.getLocation(),addRestro.getTiming(),addRestro.getFoodtype(),addRestro.getPrice(),addRestro.getPhone(),path1,path2,path3,path4,path5,path6,addRestro.getComment(),0,0});
 	
 	System.out.println("Done entries.>>>"+sql);		
@@ -439,7 +439,7 @@ System.out.println("inside product list..");
 	            conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
 	 
 	            // constructs SQL statement
-	            String sql = "INSERT INTO user_data.blog(blog_name,path,comments,date) VALUES(?,?,?,?)";
+	            String sql = "INSERT INTO huntzdown.blog(blog_name,path,comments,date) VALUES(?,?,?,?)";
 	            PreparedStatement statement = conn.prepareStatement(sql);
 	            statement.setString(1, addBlog.getBlogname());
 	            if (inputStream != null) {
@@ -481,7 +481,7 @@ System.out.println("inside product list..");
 	 
 	
 	
-	String sql = "INSERT INTO user_data.blogcomment(itemId,name,email,comments,date) VALUES(?,?,?,?,?)";
+	String sql = "INSERT INTO huntzdown.blogcomment(itemId,name,email,comments,date) VALUES(?,?,?,?,?)";
 	jdbcTemplate.update(sql, new Object[] { addBlog.getComment_post_ID(),addBlog.getAuthor(), addBlog.getEmail(),addBlog.getComment(),dateFormat.format(cal.getTime())});
 	
 	System.out.println("Done entries.addComment>>>"+sql);		
@@ -491,7 +491,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getCarsList() {
 System.out.println("inside product list..");
 		
-		String query = "select * from user_data.cars";
+		String query = "select * from huntzdown.cars";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -503,7 +503,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getRestroList() {
 System.out.println("inside product list..");
 		
-		String query = "select *from user_data.restro order by id desc LIMIT 3";
+		String query = "select *from huntzdown.restro order by id desc LIMIT 3";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -514,7 +514,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getBikeListing() {
 System.out.println("inside product list..");
 		
-		String query = "select *from user_data.bike WHERE upcoming_bike IS NULL order by id desc LIMIT 3";
+		String query = "select *from huntzdown.bike WHERE upcoming_bike IS NULL order by id desc LIMIT 3";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -525,7 +525,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getCarListing() {
 System.out.println("inside product list..");
 		
-		String query = "select *from user_data.cars WHERE upcoming_car IS NULL order by id desc LIMIT 3";
+		String query = "select *from huntzdown.cars WHERE upcoming_car IS NULL order by id desc LIMIT 3";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -536,7 +536,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getmobileListing() {
 System.out.println("inside product list..");
 		
-		String query = "select *from user_data.mobiles WHERE upcoming_mobile IS NULL order by id desc LIMIT 3";
+		String query = "select *from huntzdown.mobiles WHERE upcoming_mobile IS NULL order by id desc LIMIT 3";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -548,7 +548,7 @@ System.out.println("inside product list..");
     @Override
     public void updateRestroComment(int value,int tcomment,int id) {
                 System.out.println(id+"updateRestroComment999.........."+value+"...................."+tcomment);
-        String query = "update user_data.restro set rating ='"+value+"',totalComment='"+tcomment+"' where id='"+id+"'" ;
+        String query = "update huntzdown.restro set rating ='"+value+"',totalComment='"+tcomment+"' where id='"+id+"'" ;
         jdbcTemplate.execute(query);
         System.out.println("update successfully");
     }
@@ -556,7 +556,7 @@ System.out.println("inside product list..");
     @Override
     public List<Map<String, Object>> getTreandRestro() {
         System.out.println("updateRestroComment..............................");
-        String query = "select * from user_data.restro where rating>=4";
+        String query = "select * from huntzdown.restro where rating>=4";
         List<Map<String, Object>> getTreandRestro = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getTreandRestro);
 		return getTreandRestro;
@@ -568,10 +568,10 @@ System.out.println("inside product list..");
         String query="";
         if(rSearch.getCity().equals("select")){
             System.out.println("name is select");
-              query = "select * from user_data.restro";
+              query = "select * from huntzdown.restro";
         }
         else{
-         query = "select * from user_data.restro where location="+"'"+rSearch.getCity()+"'"+" && restro_name="+"'"+rSearch.getName()+"'";
+         query = "select * from huntzdown.restro where location="+"'"+rSearch.getCity()+"'"+" && restro_name="+"'"+rSearch.getName()+"'";
             System.out.println(query);
         }
         List<Map<String, Object>> searchResult = jdbcTemplate.queryForList(query);	
@@ -582,7 +582,7 @@ System.out.println("inside product list..");
     @Override
     public List<Map<String, Object>> dropDownValueForRestro(String city) {
        System.out.println(city+"searchRestro..............................");
-        String query = "select restro_name from user_data.restro where location='"+city+"'";
+        String query = "select restro_name from huntzdown.restro where location='"+city+"'";
         List<Map<String, Object>> restroName = jdbcTemplate.queryForList(query);	
 		System.out.println("restroName..."+restroName);
 		return restroName;
@@ -598,7 +598,7 @@ System.out.println("inside product list..");
         Calendar cal = Calendar.getInstance();
         System.out.println(dateFormat.format(cal.getTime()));
 
-        String sql = "INSERT INTO user_data.mobiles(mobile,companyName,operatingSystem,price,path1,path2,path3,path4,path5,path6,comments,upcoming_mobile) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO huntzdown.mobiles(mobile,companyName,operatingSystem,price,path1,path2,path3,path4,path5,path6,comments,upcoming_mobile) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)";
         jdbcTemplate.update(sql, new Object[]{addMobiles.getMobileName(), addMobiles.getCompanyName(), addMobiles.getModel(), addMobiles.getPrice(), path1, path2, path3, path4, path5, path6, addMobiles.getComment(),addMobiles.getUpcomingProduct()});
 
         System.out.println("Done entries.>>>" + sql);
@@ -609,7 +609,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getMobileList() {
         System.out.println("inside product list..");
 
-        String query = "select * from user_data.mobiles";
+        String query = "select * from huntzdown.mobiles";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("getProductList..." + getProductList);
@@ -620,7 +620,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getMobileList(String brandName) {
         System.out.println("inside product list..");
 
-        String query = "select * from user_data.mobiles where companyName='" + brandName + "'";
+        String query = "select * from huntzdown.mobiles where companyName='" + brandName + "'";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("andar ja kr laya hai mobile list.>>>..." + getProductList);
@@ -635,7 +635,7 @@ System.out.println("inside product list..");
         Calendar cal = Calendar.getInstance();
         System.out.println(dateFormat.format(cal.getTime()));
 
-        String sql = "INSERT INTO user_data.mobilecomment(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
+        String sql = "INSERT INTO huntzdown.mobilecomment(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
         jdbcTemplate.update(sql, new Object[]{addMobileComment.getComment_post_ID(), addMobileComment.getAuthor(), addMobileComment.getEmail(), addMobileComment.getComment(), dateFormat.format(cal.getTime()), addMobileComment.getRatings()});
 
         System.out.println("Done entries.addComment>>>" + sql);
@@ -645,7 +645,7 @@ System.out.println("inside product list..");
     @Override
     public void addMobileRating(int comment_post_ID, int userRating) {
 
-        String sql = "UPDATE user_data.mobiles SET rating='" + userRating + "' WHERE id='" + comment_post_ID + "'";
+        String sql = "UPDATE huntzdown.mobiles SET rating='" + userRating + "' WHERE id='" + comment_post_ID + "'";
         jdbcTemplate.execute(sql);
         System.out.println("Done entries.addComment>>>" + sql);
     }
@@ -653,7 +653,7 @@ System.out.println("inside product list..");
     @Override
     public List<Map<String, Object>> getTrendMobile() {
         System.out.println("updateRestroComment..............................");
-        String query = "select * from user_data.mobiles where rating>=4";
+        String query = "select * from huntzdown.mobiles where rating>=4";
         List<Map<String, Object>> getTreandMobile = jdbcTemplate.queryForList(query);
         System.out.println("getProductList..." + getTreandMobile);
         return getTreandMobile;
@@ -667,7 +667,7 @@ System.out.println("inside product list..");
         Calendar cal = Calendar.getInstance();
         System.out.println(dateFormat.format(cal.getTime()));
 
-        String sql = "INSERT INTO user_data.bike(bike_name,company,model,price,path1,path2,path3,path4,path5,path6,comments,date,upcoming_bike) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO huntzdown.bike(bike_name,company,model,price,path1,path2,path3,path4,path5,path6,comments,date,upcoming_bike) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
         jdbcTemplate.update(sql, new Object[]{addBikes.getBikeName(), addBikes.getCompanyName(), addBikes.getModel(), addBikes.getPrice(), path1, path2, path3, path4, path5, path6, addBikes.getComment(),dateFormat.format(cal.getTime()),addBikes.getUpcomingProduct()});
 
         System.out.println("Done entries.>>>" + sql);    }
@@ -676,7 +676,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getBikesList() {
  System.out.println("inside product list..");
 
-        String query = "select * from user_data.bike";
+        String query = "select * from huntzdown.bike";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("getProductList..." + getProductList);
@@ -685,7 +685,7 @@ System.out.println("inside product list..");
     @Override
     public List<Map<String, Object>> getTrendBike() {
         System.out.println("updateRestroComment..............................");
-        String query = "select * from user_data.bike where rating>=4";
+        String query = "select * from huntzdown.bike where rating>=4";
         List<Map<String, Object>> getTreandMobile = jdbcTemplate.queryForList(query);
         System.out.println("getProductList..." + getTreandMobile);
         return getTreandMobile;    }
@@ -694,7 +694,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getBikePic(String id) {
         System.out.println("inside getMobilePic list..");
 
-        String query = "select * from user_data.bike where id='" + id + "'";
+        String query = "select * from huntzdown.bike where id='" + id + "'";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("getProductList.>>?????.." + getProductList);
@@ -704,7 +704,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getBikeComments(String id) {
         System.out.println("inside getDetailsPic list..");
 
-        String query = "select * from user_data.bikecomment where itemId='" + id + "'";
+        String query = "select * from huntzdown.bikecomment where itemId='" + id + "'";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("getDetailsComments listsssssss.>>?????.." + getProductList);
@@ -719,21 +719,21 @@ System.out.println("inside product list..");
         Calendar cal = Calendar.getInstance();
         System.out.println(dateFormat.format(cal.getTime()));
 
-        String sql = "INSERT INTO user_data.bikecomment(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
+        String sql = "INSERT INTO huntzdown.bikecomment(itemId,name,email,comments,date,ratings) VALUES(?,?,?,?,?,?)";
         jdbcTemplate.update(sql, new Object[]{addBikeComment.getComment_post_ID(), addBikeComment.getAuthor(), addBikeComment.getEmail(), addBikeComment.getComment(), dateFormat.format(cal.getTime()), addBikeComment.getRatings()});
 
         System.out.println("Done entries.addComment>>>" + sql);    }
 
     @Override
     public void addBikeRating(int comment_post_ID, int userRating) {
-        String sql = "UPDATE user_data.bike SET rating='" + userRating + "' WHERE id='" + comment_post_ID + "'";
+        String sql = "UPDATE huntzdown.bike SET rating='" + userRating + "' WHERE id='" + comment_post_ID + "'";
         jdbcTemplate.execute(sql);
         System.out.println("Done entries.addComment>>>" + sql);    }
 
     @Override
     public List<Map<String, Object>> getSearchBikesList(String bikeBrand) {
         System.out.println("inside product list..");
-        String query = "select * from user_data.bike where company='" + bikeBrand + "'";
+        String query = "select * from huntzdown.bike where company='" + bikeBrand + "'";
         System.out.println("queryyyyy+++++++++++++"+query);
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("andar ja kr laya hai bike list.>>>..." + getProductList);
@@ -747,7 +747,7 @@ System.out.println("inside product list..");
         Calendar cal = Calendar.getInstance();
         System.out.println(dateFormat.format(cal.getTime()));
 
-        String sql = "INSERT INTO user_data.userdetails(name,pic_path,email,password,gender,city,country,date) VALUES(?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO huntzdown.userdetails(name,pic_path,email,password,gender,city,country,date) VALUES(?,?,?,?,?,?,?,?)";
         jdbcTemplate.update(sql, new Object[]{addBlog.getName(), path, addBlog.getEmail(), addBlog.getPassword(), addBlog.getGender(), addBlog.getCity(), addBlog.getCountry(), dateFormat.format(cal.getTime())});
 
         System.out.println("Done entries.>>>" + sql);    
@@ -757,7 +757,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getSearchList(String uName) {
         System.out.println("inside product list..");
 
-        String query = "select password from user_data.userdetails where email='" + uName + "'";
+        String query = "select password from huntzdown.userdetails where email='" + uName + "'";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         System.out.println("getProductList..." + getProductList);
@@ -766,14 +766,14 @@ System.out.println("inside product list..");
 
     @Override
     public List<Map<String, Object>> getTrendingBlog() {
-        String query = "select * from user_data.blog where stars>=3 order by id DESC";
+        String query = "select * from huntzdown.blog where stars>=3 order by id DESC";
         List<Map<String, Object>> getTreandBlog = jdbcTemplate.queryForList(query);	
 	return getTreandBlog;    
     }
 
     @Override
     public List<Map<String, Object>> getTreandBike() {
-        String query = "select * from user_data.bike where rating>=3";
+        String query = "select * from huntzdown.bike where rating>=3";
         List<Map<String, Object>> getTreandBike = jdbcTemplate.queryForList(query);	
         System.out.println("getProductList..."+getTreandBike);
 	return getTreandBike;
@@ -781,7 +781,7 @@ System.out.println("inside product list..");
 
     @Override
     public List<Map<String, Object>> getTreandCar() {
-        String query = "select * from user_data.cars where rating>=3";
+        String query = "select * from huntzdown.cars where rating>=3";
         List<Map<String, Object>> getTreandCars = jdbcTemplate.queryForList(query);	
         System.out.println("getProductList..."+getTreandCars);
 	return getTreandCars;
@@ -789,7 +789,7 @@ System.out.println("inside product list..");
     
     @Override
     public List<Map<String, Object>> getLatestBlog() {
-        String query = "SELECT * FROM user_data.blog order by id desc";
+        String query = "SELECT * FROM huntzdown.blog order by id desc";
         List<Map<String, Object>> getblogs = jdbcTemplate.queryForList(query);	
         System.out.println("getProductList..."+getblogs);
 	return getblogs;
@@ -797,7 +797,7 @@ System.out.println("inside product list..");
 
 	@Override
 	public List<Map<String, Object>> getUpcomingCar() {
-		String query = "select *from user_data.cars WHERE upcoming_car IS NOT NULL order by id desc LIMIT 4";
+		String query = "select *from huntzdown.cars WHERE upcoming_car IS NOT NULL order by id desc LIMIT 4";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -806,7 +806,7 @@ System.out.println("inside product list..");
 
 	@Override
 	public List<Map<String, Object>> getUpcomingBike() {
-		String query = "select *from user_data.bike WHERE upcoming_bike IS NOT NULL order by id desc LIMIT 4";
+		String query = "select *from huntzdown.bike WHERE upcoming_bike IS NOT NULL order by id desc LIMIT 4";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
@@ -815,7 +815,7 @@ System.out.println("inside product list..");
 
 	@Override
 	public List<Map<String, Object>> getUpcomingMobile() {
-		String query = "select *from user_data.mobiles WHERE upcoming_mobile IS NOT NULL order by id desc LIMIT 4";
+		String query = "select *from huntzdown.mobiles WHERE upcoming_mobile IS NOT NULL order by id desc LIMIT 4";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList..."+getProductList);
