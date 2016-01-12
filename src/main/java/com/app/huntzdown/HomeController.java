@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.Writer;
+import java.net.URL;
 import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -154,7 +155,8 @@ public class HomeController {
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
 				  String useSession = req.getSession().getServletContext().getRealPath("/resources/imagesPic");
-				  System.out.println("useSession"+useSession);
+
+				  System.out.println("path openshift**"+System.getProperty("catalina.base"));
 	              FileOutputStream fos = new FileOutputStream(useSession +"\\" + filename+".jpg");
 	 
 					int b = 0;
