@@ -64,7 +64,7 @@
 										 imgData = image.getBytes(1, (int) image.length());	
 										 InputStream is = blob.getBinaryStream();
 										 String filename = i.getString(1);		
-										 String useSession = System.getenv("OPENSHIFT_REPO_DIR") + "/src/main/webapp/imagesPic/";
+										 String useSession = System.getenv("OPENSHIFT_REPO_DIR") + "/src/main/webapp/imagesPic";
 
 
 									   %>
