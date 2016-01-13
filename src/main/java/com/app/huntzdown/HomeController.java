@@ -24,7 +24,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -153,12 +152,16 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = System.getProperty("user.dir");
-				  FileOutputStream fos = new FileOutputStream(useSession + "/" +filename+".jpg");
+				  String useSession = System.getenv("OPENSHIFT_DATA_DIR")+"/images/";
+				  System.out.println("going to make folder *******************"+useSession);
+
+				  FileOutputStream fos = new FileOutputStream(useSession  +filename+".jpg");
+	 
 					int b = 0;
 					while ((b = is.read()) != -1)
 					{
 					    fos.write(b); 
+					    System.out.println("Write successfully in server......"+fos.getChannel());
 					}
 					
 					fos.close();
