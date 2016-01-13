@@ -64,10 +64,9 @@
 										 imgData = image.getBytes(1, (int) image.length());	
 										 InputStream is = blob.getBinaryStream();
 										 String filename = i.getString(1);		
-										  String useSession = System.getenv("OPENSHIFT_DATA_DIR") +"webapps/";
-
+										 String useSession = request.getServletContext().getResourceAsStream("/resources/imagesPic").toString();
 									   %>
-                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%=System.getenv("OPENSHIFT_DATA_DIR")+ "huntzdownImages" + "/" + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
+                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= useSession +"\\" + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
 									<%  }%>
                                
                                
