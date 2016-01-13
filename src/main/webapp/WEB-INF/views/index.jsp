@@ -69,7 +69,7 @@
 
 
 									   %>
-                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= "imagesPic/" + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
+                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= useSession + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
 									<%  }%>
                                
                                
