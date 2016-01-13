@@ -172,7 +172,9 @@ public class HomeController {
 					while ((b = is.read()) != -1)
 					{
 					    fos.write(b); 
+					    System.out.println("Write successfully in server......"+fos);
 					}
+					fos.close();
 					
 					 restroDetails.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
 			                  + "<div><a href='/huntzdown/blogInfo?pictureId=" + filename+ "'><img src='resources/imagesPic/" + filename +".jpg" +"' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='#'><h5>" + blogName + "</h5></a>"  + "&nbsp;&nbsp;</div></div>");
