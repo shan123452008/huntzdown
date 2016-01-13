@@ -153,9 +153,8 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				    String filePath = request.getRequestURI();
 
-				  String useSession = System.getenv("OPENSHIFT_DATA_DIR")+filePath.replace("/uploads/","");
+				  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
 				  FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
 	 
 					int b = 0;
