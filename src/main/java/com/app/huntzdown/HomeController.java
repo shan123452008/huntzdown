@@ -152,7 +152,7 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = System.getenv("/resources/img/");
+				  String useSession = "/resources/img/";
 				  FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
 	 
 					int b = 0;
@@ -317,7 +317,7 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = System.getenv("/resources/img/");
+				  String useSession = "/resources/img/";
 	              FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
 	              int b = 0;
 					while ((b = is.read()) != -1)

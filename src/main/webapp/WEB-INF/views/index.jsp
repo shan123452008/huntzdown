@@ -64,7 +64,7 @@
 										 imgData = image.getBytes(1, (int) image.length());	
 										 InputStream is = blob.getBinaryStream();
 										 String filename = i.getString(1);		
-										  String useSession = System.getenv("/resources/img/");
+										  String useSession = "/resources/img/";
 
 									   %>
                                 <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= useSession + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
