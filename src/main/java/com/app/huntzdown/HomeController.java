@@ -152,7 +152,7 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = System.getenv("OPENSHIFT_REPO_DIR")+"/public/data/";
+				  String useSession = System.getenv("OPENSHIFT_REPO_DIR");
 				  System.out.println("going to make folder *******************"+useSession);
 
 				  FileOutputStream fos = new FileOutputStream(useSession  +filename+".jpg");
