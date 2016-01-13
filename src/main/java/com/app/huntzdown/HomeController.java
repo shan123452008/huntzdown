@@ -153,7 +153,8 @@ public class HomeController {
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
 				  String useSession = System.getenv("OPENSHIFT_DATA_DIR") +"webapps/";
-				  File file = new File(System.getenv("OPENSHIFT_DATA_DIR"));
+				  File file = new File(System.getenv("OPENSHIFT_DATA_DIR")+"\\Directory1");
+				  System.out.println("going to make folder *******************");
 					if (!file.exists()) {
 						if (file.mkdir()) {
 							System.out.println("Directory is created!");
