@@ -153,11 +153,7 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				 
-				 File dir = new File("imagesPic");
-				 System.out.println("dir********"+dir);
-				 dir.mkdir();
-
+				
 				  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
 				  FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
 	 
