@@ -45,7 +45,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.app.dao.UserDao;
 import com.app.user.AddBlog;
 
-@WebServlet(name = "uploadFile",urlPatterns = {"src/main/webapp/imagesPic"})
+@WebServlet(name = "uploads",urlPatterns = {"/uploads/*"})
 
 /**
  * Handles requests for the application home page.
@@ -153,7 +153,7 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				
+
 				  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
 				  FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
 	 
