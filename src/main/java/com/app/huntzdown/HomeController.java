@@ -152,8 +152,9 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = "/resources/img/";
-				  FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
+				  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
+				  String STORAGE_PATH = System.getenv("OPENSHIFT_DATA_DIR") == null ? "/home/shan/tmp/" : System.getenv("OPENSHIFT_DATA_DIR");
+				  FileOutputStream fos = new FileOutputStream(STORAGE_PATH +"\\" + filename+".jpg");
 	 
 					int b = 0;
 					while ((b = is.read()) != -1)
@@ -317,8 +318,8 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = "/resources/img/";
-	              FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
+				  String useSession = System.getenv("OPENSHIFT_DATA_DIR") == null ? "/home/shan/tmp/" : System.getenv("OPENSHIFT_DATA_DIR");
+	              FileOutputStream fos = new FileOutputStream(useSession +"\\" + filename+".jpg");
 	              int b = 0;
 					while ((b = is.read()) != -1)
 					{
