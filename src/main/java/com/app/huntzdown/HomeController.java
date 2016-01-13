@@ -166,7 +166,7 @@ public class HomeController {
 							System.out.println("Failed to create directory!");
 						}
 					}
-				  FileOutputStream fos = new FileOutputStream(System.getenv("OPENSHIFT_DATA_DIR")+ "huntzdownImages" + "\\" +filename+".jpg");
+				  FileOutputStream fos = new FileOutputStream(System.getenv("OPENSHIFT_DATA_DIR")+ "huntzdownImages" + "/" +filename+".jpg");
 	 
 					int b = 0;
 					while ((b = is.read()) != -1)
