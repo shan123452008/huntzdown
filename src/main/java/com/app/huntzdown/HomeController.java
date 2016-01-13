@@ -152,7 +152,8 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = "/var/lib/openshift/56950ffc2d527199990000c0/app-root/runtime/repo/src/main/webapp/resources/imagesPic";
+				  String useSession = req.getRealPath("/resources/imagesPic")
+;
 				  
 				  FileOutputStream fos = new FileOutputStream(useSession + "/" +filename+".jpg");
 	 
@@ -160,7 +161,6 @@ public class HomeController {
 					while ((b = is.read()) != -1)
 					{
 					    fos.write(b); 
-					    System.out.println("Write successfully in server......"+fos.getChannel());
 					}
 					
 					fos.close();
