@@ -64,7 +64,7 @@
 										 imgData = image.getBytes(1, (int) image.length());	
 										 InputStream is = blob.getBinaryStream();
 										 String filename = i.getString(1);		
-										 String useSession = System.getenv("OPENSHIFT_DATA_DIR") == null ? "/home/shan/tmp/" : System.getenv("OPENSHIFT_DATA_DIR");
+										  String useSession = "/var/lib/openshift/56950ffc2d527199990000c0/app-root/runtime/repo/src/main/webapp/resources/imagesPic";
 
 									   %>
                                 <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= useSession +"\\" + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>

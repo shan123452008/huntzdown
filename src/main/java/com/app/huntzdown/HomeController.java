@@ -152,20 +152,9 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = System.getenv("OPENSHIFT_DATA_DIR") +"webapps/";
-				  File file = new File(System.getenv("OPENSHIFT_DATA_DIR")+"huntzdownImages");
-			
-				  System.out.println("going to make folder *******************"+file);
-
-
-					if (!file.exists()) {
-						if (file.mkdir()) {
-							System.out.println("Directory is created!");
-						} else {
-							System.out.println("Failed to create directory!");
-						}
-					}
-				  FileOutputStream fos = new FileOutputStream(System.getenv("OPENSHIFT_DATA_DIR")+ "huntzdownImages" + "/" +filename+".jpg");
+				  String useSession = "/var/lib/openshift/56950ffc2d527199990000c0/app-root/runtime/repo/src/main/webapp/resources/imagesPic";
+				  
+				  FileOutputStream fos = new FileOutputStream(useSession + "/" +filename+".jpg");
 	 
 					int b = 0;
 					while ((b = is.read()) != -1)
