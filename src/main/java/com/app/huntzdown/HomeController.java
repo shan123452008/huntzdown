@@ -153,7 +153,15 @@ public class HomeController {
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
 				  String useSession = System.getenv("OPENSHIFT_DATA_DIR") +"webapps/";
-				  FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
+				  File file = new File(System.getenv("OPENSHIFT_DATA_DIR"));
+					if (!file.exists()) {
+						if (file.mkdir()) {
+							System.out.println("Directory is created!");
+						} else {
+							System.out.println("Failed to create directory!");
+						}
+					}
+				  FileOutputStream fos = new FileOutputStream( filename+".jpg");
 	 
 					int b = 0;
 					while ((b = is.read()) != -1)
@@ -319,7 +327,7 @@ public class HomeController {
 				 String blogName= i.getString(2);
 				 System.out.println("check_**"+System.getenv("OPENSHIFT_DATA_DIR"));
 				  String useSession = System.getenv("OPENSHIFT_DATA_DIR") +"webapps/";
-	              FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
+	              FileOutputStream fos = new FileOutputStream(filename+".jpg");
 	              int b = 0;
 					while ((b = is.read()) != -1)
 					{
