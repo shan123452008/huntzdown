@@ -91,7 +91,7 @@
                             <li class="comment even thread-even depth-1" id="li-comment-1">
 
                                 <div id="comment-1" class="comment-body cf">
-
+									$CATALINA_HOME
                                     ${restroDetails}            
 
                                 </div>
