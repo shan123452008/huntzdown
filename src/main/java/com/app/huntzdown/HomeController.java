@@ -317,6 +317,7 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
+				 System.out.println("check_**"+System.getenv("OPENSHIFT_DATA_DIR"));
 				  String useSession = "/var/lib/openshift/56950ffc2d527199990000c0/app-root/runtime/dependencies/jbossews/webapps/";
 	              FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
 	              int b = 0;
