@@ -152,9 +152,8 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = req.getRealPath("/resources/imagesPic")
-;
-				  
+				  String useSession = req.getRealPath("/resources/imagesPic");
+				  System.out.println("check this path***********************"+useSession);
 				  FileOutputStream fos = new FileOutputStream(useSession + "/" +filename+".jpg");
 	 
 					int b = 0;
