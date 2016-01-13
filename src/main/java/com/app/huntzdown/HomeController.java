@@ -24,6 +24,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -152,8 +153,18 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = req.getRealPath("webapp");
+				  String useSession = req.getSession().getServletContext().getRealPath("/resources/imagesPic");
 				  System.out.println("check this path***********************"+useSession);
+				  System.out.println("check this path for project path***********************"+System.getProperty("user.dir"));
+				  System.out.println("check this path for JBOSS path***********************"+System.getProperty("$JBOSS_HOME"));
+				  
+				  ServletContext servletContext = req.getServletContext();
+				  String contextPath = servletContext.getRealPath(File.separator);
+				  
+				  System.out.println("check this path for JBOSS contextPath***********************"+contextPath);
+
+
+
 				  FileOutputStream fos = new FileOutputStream(useSession + "/" +filename+".jpg");
 	 
 					int b = 0;
