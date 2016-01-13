@@ -30,6 +30,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import javax.servlet.annotation.WebServlet;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -44,13 +45,13 @@ import org.springframework.web.servlet.ModelAndView;
 import com.app.dao.UserDao;
 import com.app.user.AddBlog;
 
+@WebServlet(name = "uploads",urlPatterns = {"/uploads/*"})
 
 /**
  * Handles requests for the application home page.
  */
 @Controller
 public class HomeController {
-	
 	 @Autowired
 	    UserDao userdao;
 	    HttpServletRequest request;
@@ -152,9 +153,10 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
-				  String STORAGE_PATH ="src/main/webapp/imagesPic";
-				  FileOutputStream fos = new FileOutputStream(STORAGE_PATH +"\\" + filename+".jpg");
+				    String filePath = request.getRequestURI();
+
+				  String useSession = System.getenv("OPENSHIFT_DATA_DIR")+filePath.replace("/uploads/","");
+				  FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
 	 
 					int b = 0;
 					while ((b = is.read()) != -1)
@@ -318,7 +320,8 @@ public class HomeController {
 				 InputStream is = blob.getBinaryStream();
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
-				  String useSession = "src/main/webapp/imagesPic";
+				  String useSession = System.getenv("OPENSHIFT_REPO_DIR") + "src/main/webapp/imagesPic";
+				  
 	              FileOutputStream fos = new FileOutputStream(useSession +"\\" + filename+".jpg");
 	              int b = 0;
 					while ((b = is.read()) != -1)
