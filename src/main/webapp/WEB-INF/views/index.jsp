@@ -64,10 +64,10 @@
 										 imgData = image.getBytes(1, (int) image.length());	
 										 InputStream is = blob.getBinaryStream();
 										 String filename = i.getString(1);		
-										 String useSession = System.getenv("OPENSHIFT_DATA_DIR") == null ? "/home/shan/tmp/" : System.getenv("OPENSHIFT_DATA_DIR");
+										  String useSession = System.getenv("/resources/img/");
 
 									   %>
-                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= useSession +"\\" + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
+                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= useSession + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
 									<%  }%>
                                
                                
@@ -91,7 +91,7 @@
                             <li class="comment even thread-even depth-1" id="li-comment-1">
 
                                 <div id="comment-1" class="comment-body cf">
-									$CATALINA_HOME
+
                                     ${restroDetails}            
 
                                 </div>
