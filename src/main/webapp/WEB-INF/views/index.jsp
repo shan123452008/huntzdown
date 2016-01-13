@@ -67,7 +67,7 @@
 										  String useSession = System.getenv("OPENSHIFT_DATA_DIR") +"webapps/";
 
 									   %>
-                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%=  filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
+                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%=System.getenv("OPENSHIFT_DATA_DIR")+"\\"+ "huntzdownImages" + "\\" + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
 									<%  }%>
                                
                                
