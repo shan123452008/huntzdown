@@ -154,7 +154,7 @@ public class HomeController {
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
 
-				  String useSession = "/WEB-INF/imagesPic/";
+				  String useSession = "WEB-INF/imagesPic/";
 				  FileOutputStream fos = new FileOutputStream(useSession + filename+".jpg");
 	 
 					int b = 0;
