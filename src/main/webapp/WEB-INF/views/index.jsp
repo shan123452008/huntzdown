@@ -73,7 +73,6 @@
 
 									                try {
 									                	imgApp = ImageIO.read(f);
-
 									                    // you probably want something more involved here
 									                    // to display in your UI
 									                    nameFile= f.getName();
