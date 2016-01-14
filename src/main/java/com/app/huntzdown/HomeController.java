@@ -142,20 +142,16 @@ public class HomeController {
 			Statement st = con.createStatement();
 			String filename= null;
 			ResultSet i = st.executeQuery("select * from huntzdown.blog");
-			Blob image = null;  
-			byte[] imgData = null; 
-			BufferedImage img= null;
 			 while(i.next()){
 				 String path =  i.getString(3);
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
 					 restroDetails.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
-			                  + "<div><a href='/huntzdown/blogInfo?pictureId=" + filename+ "'><img src='"+path+"' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='#'><h5>" + blogName + "</h5></a>"  + "&nbsp;&nbsp;</div></div>");
+			                  + "<div><a href='/blogInfo?pictureId=" + filename+ "'><img src='"+path+"' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='#'><h5>" + blogName + "</h5></a>"  + "&nbsp;&nbsp;</div></div>");
 			      
 
 			 	}
 	    
-
 	      mv.addObject("restroDetails", restroDetails.toString());
 	      mv.addObject("getLatestBlog",getLatestBlog);
 	      mv.addObject("getTrendingBlog",trendingBlog);
@@ -284,45 +280,11 @@ public class HomeController {
 	        Map<String, Object> dataMap = null;
 	        List<Map<String, Object>> getProductList = userdao.getBlogPic(picId);
 	        
-	        ResourceBundle bundle = ResourceBundle.getBundle("jdbc"); 
-	         String driverClassName=bundle.getString("jdbc.driverClassName");
-	         String dbURL=bundle.getString("jdbc.databaseurl");
-	         String dbUser= bundle.getString("jdbc.username");
-	         String dbPass= bundle.getString("jdbc.password");
-
-			 Class.forName("com.mysql.jdbc.Driver");
-			 Connection con = DriverManager.getConnection(dbURL,dbUser, dbPass);
-			Statement st = con.createStatement();
-			String filename= null;
-			ResultSet i = st.executeQuery("select * from huntzdown.blog");
-			Blob image = null;  
-			byte[] imgData = null; 
-			BufferedImage img= null;
-			 while(i.next()){
-				 image = i.getBlob(3);  
-				 Blob blob =  i.getBlob(3);
-				 imgData = image.getBytes(1, (int) image.length());	
-				 InputStream is = blob.getBinaryStream();
-				 filename = i.getString(1);
-				 String blogName= i.getString(2);
-				 System.out.println("check_**"+System.getenv("OPENSHIFT_DATA_DIR"));
-				  String useSession = System.getenv("OPENSHIFT_DATA_DIR") +"webapps/";
-	              FileOutputStream fos = new FileOutputStream(filename+".jpg");
-	              int b = 0;
-					while ((b = is.read()) != -1)
-					{
-					    fos.write(b); 
-					}
-					
-			 	}
 	       
-	       
-
 	        Iterator<Map<String, Object>> itr = getProductList.iterator();
 	        while (itr.hasNext()) {
 	            aeDataMap = itr.next();
-	            System.out.println("iamge path before setting>>>>" + aeDataMap.get("path"));
-	            details.append("<img src='resources/imagesPic/" + aeDataMap.get("id") + ".jpg" + "' alt='Alt text' height='945' width='945'/>");
+	            details.append("<img src='"+aeDataMap.get("path")+"' alt='Alt text' height='945' width='945'/>");
 	            detailsDiv.append("<p><strong>Client </strong>" + aeDataMap.get("blog_name") + "</p><p><strong>Date </strong>" + aeDataMap.get("date") + "</p><p><a href='#' class='launch'>Launch Project</a></p>");
 	            detailsDivText.append("<p>" + aeDataMap.get("comments") + "</p>");
 	            System.out.println("check this"+aeDataMap.get("comments"));
