@@ -51,23 +51,16 @@
 									Statement st = con.createStatement();
 									
 									ResultSet i = st.executeQuery("select * from huntzdown.blog");
-									Blob image = null;  
-									byte[] imgData = null; 
-									BufferedImage img= null;
-									
+								
 									%>
 									
 									 <%
 									 while(i.next()){
-										 image = i.getBlob(3);  
-										 Blob blob =  i.getBlob(3);
-										 imgData = image.getBytes(1, (int) image.length());	
-										 InputStream is = blob.getBinaryStream();
+										 String path =  i.getString(3);
 										 String filename = i.getString(1);		
-										  String useSession = System.getenv("OPENSHIFT_REPO_DIR");
 
 									   %>
-                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="https://farm2.staticflickr.com/1609/24353806486_4976b08b71_b.jpg" style=" width: 639px; height: 400px; "/></a></li>
+                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%=path%>" style=" width: 639px; height: 400px; "/></a></li>
 									<%  }%>
                                
                                
