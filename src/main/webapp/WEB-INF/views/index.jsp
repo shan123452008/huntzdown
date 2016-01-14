@@ -67,6 +67,7 @@
 										 String nameFile=null;
 										  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
 										  File dir = new File(useSession);
+						                    System.out.println("Goinf to display Image**********************");
 										  if (dir.isDirectory()) { // make sure it's a directory
 									            for (final File f : dir.listFiles()) {
 									                BufferedImage imgApp = null;
@@ -76,7 +77,7 @@
 									                    // you probably want something more involved here
 									                    // to display in your UI
 									                    nameFile= f.getName();
-									                    System.out.println("s: " + f.getName());
+									                    System.out.println("s:**********************" + f.getName());
 									                   
 									                } catch (final IOException e) {
 									                    // handle errors here

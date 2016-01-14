@@ -194,7 +194,7 @@ public class HomeController {
 		        if (fileEntry.isDirectory()) {
 		            listFilesForFolder(fileEntry);
 		        } else {
-		            System.out.println("Check this is the file in that folder"+fileEntry.getName());
+		            //System.out.println("Check this is the file in that folder"+fileEntry.getName());
 		        }
 		    }
 		}
