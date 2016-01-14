@@ -76,7 +76,7 @@
 									                	imgApp = ImageIO.read(f);
 									                    // you probably want something more involved here
 									                    // to display in your UI
-									                    nameFile= f.getName()+".jpg";
+									                    nameFile= f.getName();
 									                    System.out.println("s:**********************" + f.getName());
 									                } catch (final IOException e) {
 									                    // handle errors here
