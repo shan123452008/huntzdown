@@ -153,7 +153,7 @@ public class HomeController {
 				 filename = i.getString(1);
 				 String blogName= i.getString(2);
 				  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
-				  System.out.println("going to make folder *******************"+useSession);
+				 // System.out.println("going to make folder *******************"+useSession);
 
 				  FileOutputStream fos = new FileOutputStream(useSession  +filename+".jpg");
 	 
@@ -161,10 +161,13 @@ public class HomeController {
 					while ((b = is.read()) != -1)
 					{
 					    fos.write(b); 
-					    System.out.println("Write successfully in server......"+fos.getChannel());
 					}
 					
 					fos.close();
+					
+
+					final File folder = new File(useSession);
+					listFilesForFolder(folder);					
 					
 					 restroDetails.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
 			                  + "<div><a href='/huntzdown/blogInfo?pictureId=" + filename+ "'><img src='resources/imagesPic/" + filename +".jpg" +"' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='#'><h5>" + blogName + "</h5></a>"  + "&nbsp;&nbsp;</div></div>");
@@ -187,6 +190,16 @@ public class HomeController {
 	     
 	      //  return "index";
 	  } // ends : agencyDash() 
+	  
+	  public void listFilesForFolder(final File folder) {
+		    for (final File fileEntry : folder.listFiles()) {
+		        if (fileEntry.isDirectory()) {
+		            listFilesForFolder(fileEntry);
+		        } else {
+		            System.out.println("Check this is the file in that folder"+fileEntry.getName());
+		        }
+		    }
+		}
 	  
 	  
 	  @RequestMapping(value = "/blog", method = RequestMethod.POST)
