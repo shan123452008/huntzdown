@@ -63,19 +63,10 @@
 										 Blob blob =  i.getBlob(3);
 										 imgData = image.getBytes(1, (int) image.length());	
 										 InputStream is = blob.getBinaryStream();
-										 String filename = i.getString(1);		
-										  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
-
-									   %>
-                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= useSession + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
-									<%  }%>
-									
-										
-									 <%
-										
-										  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
-									 	  String nameFile=null;
-										  File dir = new File(useSession);
+										 String filename = i.getString(1);	
+										 String nameFile = null;
+										 String useSession = System.getenv("OPENSHIFT_DATA_DIR");
+										 File dir = new File(useSession);
 						                    System.out.println("Goinf to display Image**********************");
 										  if (dir.isDirectory()) { // make sure it's a directory
 									            for (final File f : dir.listFiles()) {
@@ -93,15 +84,11 @@
 									                
 									            }
 									        }
-										  
+
 									   %>
-                                                               <li><a href="blogInfo?pictureId=<%=nameFile%>"><img id="fixed" src="<%= nameFile + ".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
-                               
-                               
-  
-                                
-
-
+                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= nameFile %>" style=" width: 639px; height: 400px; "/></a></li>
+									<%  }%>
+									
                             </ul>
                         </div>
                     </div>
