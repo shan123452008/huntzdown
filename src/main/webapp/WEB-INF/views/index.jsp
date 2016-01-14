@@ -77,9 +77,7 @@
 									                    // to display in your UI
 									                    nameFile= f.getName();
 									                    System.out.println("s: " + f.getName());
-									                    System.out.println(" width : " + img.getWidth());
-									                    System.out.println(" height: " + img.getHeight());
-									                    System.out.println(" size  : " + f.length());
+									                   
 									                } catch (final IOException e) {
 									                    // handle errors here
 									                }
