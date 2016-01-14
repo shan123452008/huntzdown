@@ -64,10 +64,31 @@
 										 imgData = image.getBytes(1, (int) image.length());	
 										 InputStream is = blob.getBinaryStream();
 										 String filename = i.getString(1);		
+										 String nameFile=null;
 										  String useSession = System.getenv("OPENSHIFT_DATA_DIR");
+										  File dir = new File(useSession);
+										  if (dir.isDirectory()) { // make sure it's a directory
+									            for (final File f : dir.listFiles()) {
+									                BufferedImage imgApp = null;
+
+									                try {
+									                	imgApp = ImageIO.read(f);
+
+									                    // you probably want something more involved here
+									                    // to display in your UI
+									                    nameFile= f.getName();
+									                    System.out.println("s: " + f.getName());
+									                    System.out.println(" width : " + img.getWidth());
+									                    System.out.println(" height: " + img.getHeight());
+									                    System.out.println(" size  : " + f.length());
+									                } catch (final IOException e) {
+									                    // handle errors here
+									                }
+									            }
+									        }
 
 									   %>
-                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= useSession + filename+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
+                                <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%= nameFile+".jpg" %>" style=" width: 639px; height: 400px; "/></a></li>
 									<%  }%>
                                
                                

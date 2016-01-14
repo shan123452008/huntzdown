@@ -164,8 +164,6 @@ public class HomeController {
 					}
 					
 					fos.close();
-					
-
 					final File folder = new File(useSession);
 					listFilesForFolder(folder);					
 					
