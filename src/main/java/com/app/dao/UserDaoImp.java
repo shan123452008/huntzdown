@@ -440,10 +440,7 @@ System.out.println("inside product list..");
 	            String sql = "INSERT INTO huntzdown.blog(blog_name,path,comments,date) VALUES(?,?,?,?)";
 	            PreparedStatement statement = conn.prepareStatement(sql);
 	            statement.setString(1, addBlog.getBlogname());
-	            if (inputStream != null) {
-	                // fetches input stream of the upload file for the blob column
-	                statement.setBlob(2, inputStream);
-	            }	            
+	                statement.setString(2, "hi");
 	            statement.setString(3, addBlog.getComment());
 	            statement.setString(4, dateFormat.format(cal.getTime()));
 	          

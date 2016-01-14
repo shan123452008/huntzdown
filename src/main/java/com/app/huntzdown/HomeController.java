@@ -174,34 +174,11 @@ public class HomeController {
 
 	        String path;
 	        InputStream inputStream = null;
-	        OutputStream outputStream = null;
-	        InputStream inputStream1 = null;
-
-
-
-	        MultipartFile file = addBlog.getUploadImage();
-	        String fileName = file.getOriginalFilename();
-	        // File newFile = new File("D:/INDIA_ONLINE_PROJECT_PICTUES/" + fileName);
-	        path = file.getOriginalFilename().toString();
-	        // obtains the upload file part in this multipart request
-	        inputStream = file.getInputStream();
-	        if (file != null) {
-	            // prints out some information for debugging
-	            System.out.println("name**"+file.getName());
-	            System.out.println("size**"+file.getSize());
-	            System.out.println("type**"+file.getContentType());
-	             
-	            // obtains input stream of the upload file
-	            inputStream1 = file.getInputStream();
-	        }
-
-	       
-
-
+	      
 	        if (result.hasErrors()) {
 	            return "login";
 	        } else {
-	            userdao.addBlog(addBlog, path,inputStream1);
+	            userdao.addBlog(addBlog, "dfgdf",inputStream);
 	        }
 
 
