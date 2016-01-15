@@ -208,7 +208,7 @@
              
              
              
-                 <h4  style="width: 239px;">Hot Mobiles in Market</h4>
+                 <h4  style="width: 239px;">Trending Topics</h4>
  					<ul style="list-style: none;"> 
 
                         <li class="block" style="overflow-y: scroll;overflow-x: auto;width:239px;height:272px;">
