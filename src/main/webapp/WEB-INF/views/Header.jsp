@@ -1,7 +1,7 @@
 <%-- 
     Document   : Header
     Created on : Apr 10, 2014, 11:57:37 AM
-    Author     : Prashant
+    Author     : Shantanu
 --%>
 
 
@@ -11,8 +11,9 @@
 <header>
 <div class="wrapper cf" style="width: 1059px;">
        
-        <a href="homePage.do?help=index"><img alt="Simpler" src="/huntzdown/resources/img/logo.png" style="height: 80px;width: 193px;margin-top: 8px; margin-bottom: -20px;margin-left: 101px;">
-            <img alt="Simpler" src="/huntzdown/resources/img/logoMain.png" style="height: 80px;width: 465px;margin-top: 8px; margin-bottom: -20px;margin-left: -77px;">
+        <a href="homePage.do?help=index">
+            <img alt="Simpler" src="<%=request.getContextPath()%>/huntzdown/resources/img/logo.png" style="height: 80px;width: 193px;margin-top: 8px; margin-bottom: -20px;margin-left: 101px;">
+            <img alt="Simpler" src="<%=request.getContextPath()%>/huntzdown/resources/img/logoMain.png" style="height: 80px;width: 465px;margin-top: 8px; margin-bottom: -20px;margin-left: -77px;">
         </a>
       
         <!-- nav -->
