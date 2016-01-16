@@ -10,7 +10,7 @@
         <meta charset="utf-8"/>
         <meta name="og:type" content="website" />
 		<meta name="og:title" content="Huntzdown" />
-		<meta name="og:url" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"/>
+		<meta name="og:url" content="http://www.huntzdown.com/"/>
 		<meta name="og:image" content="${imagePath}" />
         <title>Huntzdown.com</title>
 
