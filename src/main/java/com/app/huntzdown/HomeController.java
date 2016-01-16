@@ -185,42 +185,7 @@ public class HomeController {
 	        return "home";
 	    }
 	  
-	  //strt test
-	    @RequestMapping(value = "/blog", method = RequestMethod.GET)
-	    public String getUserBlog(HttpServletRequest req, HttpServletResponse response, ModelMap model) throws IOException, SQLException {
-	        HttpSession session = req.getSession();
-	        session.removeAttribute("blogDetails");
-
-	        StringBuilder detailsDiv = new StringBuilder();
-
-
-
-	        Map<String, Object> aeDataMap = null;
-	        Map<String, Object> dataMap = null;
-	        List<Map<String, Object>> getCommentList = userdao.getDetailsBlogs();
-
-	        System.out.println("get getCommentList lists>>>>>" + getCommentList);
-
-
-	        Iterator<Map<String, Object>> itrt = getCommentList.iterator();
-	        while (itrt.hasNext()) {
-	            dataMap = itrt.next();
-	            detailsDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?pictureId=" + dataMap.get("id") + "'><img src='imagesPic/pictures/" + dataMap.get("path") + "' alt='Alt text'/></a></div><div class='box cf'><div class='entry-date'><div class='number'>" + dataMap.get("date") + "</div></div><div class='excerpt'><a href='single.html' class='post-heading'>" + dataMap.get("blog_name") + "</a><p></p></div><div class='meta'><span class='format'>Post</span><span class='user'><a href='#''>By </span><span class='comments'>16 comments</span></div></div></article>");
-
-	        }
-
-
-
-	        session.setAttribute("blogDetails", detailsDiv.toString());
-
-
-
-	        return "userBlog";
-
-	    }
-
-	
-	    
+	 
 	    @RequestMapping(value = "/blogInfo", method = RequestMethod.GET)
 	    public String blogInfo(HttpServletRequest req, HttpServletResponse response, ModelMap model) throws IOException, SQLException, ClassNotFoundException {
 	        System.out.println("picId>> dekh");
@@ -351,5 +316,54 @@ public class HomeController {
 	        ModelAndView about = new ModelAndView("about");
 	        return about;
 	    }
+	    
+	  //strt test
+	    @RequestMapping(value = "/blog", method = RequestMethod.GET)
+	    public ModelAndView getUserBlog(HttpServletRequest req, HttpServletResponse response, ModelMap model) throws IOException, SQLException {
+	        HttpSession session = req.getSession();
+	        session.removeAttribute("blogDetails");
+
+	        StringBuilder detailsDiv = new StringBuilder();
+	        StringBuilder asideDiv = new StringBuilder();
+
+	        Map<String, Object> aeDataMap = null;
+	        Map<String, Object> dataMap = null;
+	        List<Map<String, Object>> getCommentList = userdao.getDetailsBlogs();
+
+	        ModelAndView mv = new ModelAndView();
+
+	        int i=0;
+	        
+	        Iterator<Map<String, Object>> itrt = getCommentList.iterator();
+	        while (itrt.hasNext()) {
+	            dataMap = itrt.next();
+	            if(i % 2 == 0){
+	            	
+	            	 detailsDiv.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?pictureId=" + dataMap.get("id") + "'>"
+	 	            		+ "<img src=' "+ dataMap.get("path") + "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
+
+	 	            				+ "<div class='box cf'><div class='excerpt'><a href='single.html' class='post-heading'>" + dataMap.get("blog_name") + "</a><p></p></div>"
+	 	            						+ "</div></article>");
+	            	 i=i+1;
+	            }else{
+	               	asideDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?pictureId=" + dataMap.get("id") + "'>"
+	 	            		+ "<img src='"+ dataMap.get("path")+ "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
+	 	            				+ "<div class='box cf'><div class='excerpt'><a href='single.html' class='post-heading'>" + dataMap.get("blog_name") + "</a><p></p></div>"
+	 	            						+ "</div></article>");
+	            	 i=i+1;
+	            }
+	           
+
+	        }
+
+
+	        mv.addObject("blogDetails", detailsDiv.toString());
+	        mv.addObject("asideDiv", asideDiv.toString());
+
+	        mv.setViewName("userBlog");
+	        return mv;
+
+	    }
+
 
 }

@@ -20,7 +20,9 @@
       		 <ul id="nav" class="sf-menu" style="margin-top: 13px;">
 					<li><a href="homePage.do?help=index"><img src="<%=request.getContextPath()%>/resources/imagesPic/pictures/Home_icon.png" style=" width: 40px; height: 40px; padding-top: 14px;"></a></li>
 					<li class="current-menu-item"><a href="blog.html">BLOG</a>
-                                        </li>
+                                         <ul style="display: none; visibility: hidden;">
+														<li><a href="/blog">Read Blog</a></li>
+                                         </ul></li>
                                          
                                          <li class="current-menu-item"><a href="signInUser.do">REVIEWS</a>
                                             
