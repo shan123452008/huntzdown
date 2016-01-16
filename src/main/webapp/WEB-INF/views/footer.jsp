@@ -62,7 +62,7 @@
                 <ul id="social-bar" class="cf sb">
                     <li><a href="https://www.facebook.com/huntzdown"  title="Become a fan" class="facebook">Facebbok</a></li>
                     <li><a href="https://twitter.com/huntzzdown?ref_src=twsrc%5Etfw" title="Follow my tweets" class="twitter"></a></li>
-                    <li><a href="http://plus.google.com" title="Enter my circles" class="plus"></a></li>
+                    <li><a href="https://plus.google.com/109675515064224468340" title="Enter my circles" class="plus"></a></li>
                 </ul>
             </div>	
             <!-- ENDS bottom -->
