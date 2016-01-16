@@ -10,16 +10,13 @@
 <!-- HEADER -->
 <header>
 <div class="wrapper cf" style="width: 1059px;">
-        <div id="logo">
-            <a href="homePage.do?help=index"><img alt="Simpler" src="<%=request.getContextPath()%>/resources/img/logo.png" style="height: 47px;width: 407px;margin-top: 8px; margin-bottom: -20px;"></a>
-        </div>
-        
-    <div> 
-	<input type="text" id="searchTab" style="margin: 28px 0px 0px; padding: 4px 16px; font-family: Arial,Helvetica,sans-serif; font-size: 14px; border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(0, 118, 163) -moz-use-text-color rgb(0, 118, 163) rgb(0, 118, 163); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: 168px;border-bottom-right-radius: 5px;border-top-right-radius: 5px;" maxlength="120" size="29" name="q" class="tftextinput" onkeydown="searchVal();">
-	</div>
+       
+        <a href="homePage.do?help=index"><img alt="Simpler" src="/huntzdown/resources/img/logo.png" style="height: 80px;width: 193px;margin-top: 8px; margin-bottom: -20px;margin-left: 101px;">
+            <img alt="Simpler" src="/huntzdown/resources/img/logoMain.png" style="height: 80px;width: 465px;margin-top: 8px; margin-bottom: -20px;margin-left: -77px;">
+        </a>
+      
         <!-- nav -->
-        
-      <ul id="nav" class="sf-menu" style="margin-top: -59px;">
+      		 <ul id="nav" class="sf-menu" style="margin-top: 13px;">
 					<li><a href="homePage.do?help=index"><img src="<%=request.getContextPath()%>/resources/imagesPic/pictures/Home_icon.png" style=" width: 40px; height: 40px; padding-top: 14px;"></a></li>
 					<li class="current-menu-item"><a href="blog.html">BLOG</a>
                                         </li>
