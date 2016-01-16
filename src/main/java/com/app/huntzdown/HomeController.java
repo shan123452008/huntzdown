@@ -344,5 +344,12 @@ public class HomeController {
 
                 return null;
              }
-	         
+	    
+	    
+	    @RequestMapping(value = "/about")
+	    public ModelAndView about() {
+	        ModelAndView about = new ModelAndView("about");
+	        return about;
+	    }
+
 }

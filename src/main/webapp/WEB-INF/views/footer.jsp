@@ -14,7 +14,7 @@
                 <li class="second-col">
 
                     <div class="widget-block">
-                        <h5><a href="homePage.do?help=index">ABOUT</a></h5>
+                        <h5><a href="/about">ABOUT</a></h5>
                     </div>
 
                 </li>
@@ -23,7 +23,7 @@
 
                     <div class="widget-block">
                         <div id="tweets" class="footer-col tweet">
-                            <h5><a href="contact.do">Contact</a></h5>
+                            <h5><a href="#">Contact</a></h5>
                         </div>
                     </div>
 
@@ -32,7 +32,7 @@
                 <li class="fourth-col">
 
                     <div class="widget-block">
-                        <h5><a href="privacy.do">Privacy</a></h5>
+                        <h5><a href="#">Privacy</a></h5>
                        
                     </div>
 
@@ -44,7 +44,7 @@
 
             <!-- bottom -->
             <div class="footer-bottom">
-                <div class="left">
+               <!--  <div class="left">
 
                   <form class="validate clearfix">
                     
@@ -58,10 +58,10 @@
                   </form>
                 
 
-                </div>
+                </div> -->
                 <ul id="social-bar" class="cf sb">
-                    <li><a href="http://www.facebook.com"  title="Become a fan" class="facebook">Facebbok</a></li>
-                    <li><a href="http://www.twitter.com" title="Follow my tweets" class="twitter"></a></li>
+                    <li><a href="https://www.facebook.com/huntzdown"  title="Become a fan" class="facebook">Facebbok</a></li>
+                    <li><a href="https://twitter.com/huntzzdown?ref_src=twsrc%5Etfw" title="Follow my tweets" class="twitter"></a></li>
                     <li><a href="http://plus.google.com" title="Enter my circles" class="plus"></a></li>
                 </ul>
             </div>	

@@ -26,7 +26,7 @@
                                             
                                             </li>
                                          
-					<li><a href="about.do">ABOUT</a></li>
+					<li><a href="/about">ABOUT</a></li>
 					<li><a href="portfolio.html">WORK</a></li>
 					<li><a href="contact.do">CONTACT</a></li>
 				</ul>

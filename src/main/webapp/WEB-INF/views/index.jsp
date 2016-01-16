@@ -9,7 +9,7 @@
 
     <head>
         <meta charset="utf-8"/>
-        <title>huntzdown.com</title>
+        <title>HuntzDown</title>
         <%@include file="includeCssJs.jsp" %> 
         <script type="text/javascript">
         function searchVal(){
