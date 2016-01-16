@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <title>huntzdown.com</title>
-<link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/resources/img/iconLogo.png">
+<link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/resources/img/iconSiteLogo.png">
 		 
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
