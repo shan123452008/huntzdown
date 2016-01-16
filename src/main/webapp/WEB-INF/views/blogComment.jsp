@@ -8,6 +8,10 @@
 
 	<head>
         <meta charset="utf-8"/>
+        <meta name="og:type" content="website" />
+		<meta name="og:title" content="Huntzdown" />
+		<meta name="og:url" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"/>
+		<meta name="og:image" content="${imagePath}" />
         <title>Huntzdown.com</title>
 
 
@@ -111,42 +115,7 @@
 										
 				
     		</div>
-    		<!-- ENDS posts list -->
-			
-			<!-- sidebar -->
-        	<!-- <aside id="sidebar">
-        		
-        		<ul>
-	        		<li class="block">
-		        		<h4>Text Widget</h4>
-						Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. 
-	        		</li>
-	        		
-	        		<li class="block">
-		        		<h4>Categories</h4>
-						<ul>
-							<li class="cat-item"><a href="#" title="title">Film and video<span class="post-counter"> (2)</span></a></li>
-							<li class="cat-item"><a href="#" title="title">Print<span class="post-counter"> (2)</span></a></li>
-							<li class="cat-item"><a href="#" title="title">Photo and lomo<span class="post-counter"> (2)</span></a></li>
-							<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
-							<li class="cat-item"><a href="#" title="title">Film and video<span class="post-counter"> (2)</span></a></li>
-							<li class="cat-item"><a href="#" title="title">Print<span class="post-counter"> (2)</span></a></li>
-							<li class="cat-item"><a href="#" title="title">Photo and lomo<span class="post-counter"> (2)</span></a></li>
-							<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
-						</ul>
-	        		</li>
-	        		
-	        		
-		        		
-						    <iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-142029940719273661' frameborder=1 height=613 width=200 scrolling="no"></iframe>	
-
-	        		
-        		
-        		</ul>
-        		
-        	</aside> -->
-			<!-- ENDS sidebar -->
-			
+    	
 			
 			</div><!-- ENDS WRAPPER -->
 		</div>

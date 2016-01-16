@@ -233,8 +233,10 @@ public class HomeController {
 		List<Map<String, Object>> getProductList = userdao.getBlogPic(picId);
 
 		Iterator<Map<String, Object>> itr = getProductList.iterator();
+		String imagePath= null;
 		while (itr.hasNext()) {
 			aeDataMap = itr.next();
+			imagePath=aeDataMap.get("path").toString();
 			details.append("<img src='" + aeDataMap.get("path")
 					+ "' alt='Alt text' height='945' width='945'/>");
 			detailsDiv
@@ -256,6 +258,8 @@ public class HomeController {
 		session.setAttribute("userIdBlog", userId.toString());
 		session.setAttribute("detailsBlog", details.toString());
 		session.setAttribute("detailsDivTextBlog", detailsDivText.toString());
+		session.setAttribute("imagePath", imagePath);
+
 
 		return "blogComment";
 
