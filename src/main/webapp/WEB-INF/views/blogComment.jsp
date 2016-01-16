@@ -12,6 +12,7 @@
 		<meta name="og:title" content="Huntzdown" />
 		<meta name="og:url" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"/>
 		<meta name="og:image" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}/${imagePath}" />
+		<meta property="fb:app_id" content="1698006363811207" /> 
 		
         <title>Huntzdown.com</title>
 
