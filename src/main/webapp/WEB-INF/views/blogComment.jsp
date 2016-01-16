@@ -105,7 +105,7 @@
 				<div id="fb-root"></div>
 				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 				<div class="fb-like" data-share="true" data-width="450"	data-show-faces="true"></div>
-				<div class="fb-share-button" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}" data-layout="button"></div>
+				<div class="fb-send" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"></div>
 				<!-- ENDS Respond -->
 					
 										
