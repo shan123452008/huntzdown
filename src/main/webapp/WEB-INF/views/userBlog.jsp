@@ -39,8 +39,7 @@
         		
         		<div id="posts-list" class="cf" style="width:400px;">        	
 												${asideDiv}
-					
-        		</div>
+]        		</div>
         		
         	</aside>
 			<!-- ENDS sidebar -->

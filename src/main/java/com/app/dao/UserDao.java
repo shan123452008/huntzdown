@@ -82,7 +82,7 @@ public interface UserDao {
 
     public List<Map<String, Object>> getDetailsList(String userName);
 
-    List<Map<String, Object>> getDetailsBlogs() throws DataAccessException;
+    List<Map<String, Object>> getDetailsBlogs(String category) throws DataAccessException;
 
     List<Map<String, Object>> getBlogPic(String id) throws DataAccessException;
 

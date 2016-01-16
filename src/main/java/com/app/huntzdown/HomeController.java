@@ -44,326 +44,355 @@ import org.springframework.web.servlet.ModelAndView;
 import com.app.dao.UserDao;
 import com.app.user.AddBlog;
 
-
 /**
  * Handles requests for the application home page.
  */
 @Controller
 public class HomeController {
-	
-	 @Autowired
-	    UserDao userdao;
-	    HttpServletRequest request;
-	    HttpServletResponse response;
+
+	@Autowired
+	UserDao userdao;
+	HttpServletRequest request;
+	HttpServletResponse response;
+
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		
+
 		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG,
+				DateFormat.LONG, locale);
+
 		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
+
+		model.addAttribute("serverTime", formattedDate);
+
 		return "home";
 	}
-	
-	//start
-	  @RequestMapping(value = "/homePage", method = RequestMethod.GET)
-	  public ModelAndView homePage(HttpServletRequest req,
-	          HttpServletResponse response, ModelMap model) throws IOException, SQLException, ClassNotFoundException {
-		  
-	      response.setHeader("Cache-Control", "no-cache");
-	      response.setContentType("text/plain");
-	      response.setCharacterEncoding("utf-8");
-	      Writer out;
-	      out = response.getWriter();
-	    
-	      StringBuilder restroDetails = new StringBuilder();
-	      StringBuilder topNews = new StringBuilder();
-	      StringBuilder latestBlog = new StringBuilder();
-	      StringBuilder trendingBlog = new StringBuilder();
 
+	// start
+	@RequestMapping(value = "/homePage", method = RequestMethod.GET)
+	public ModelAndView homePage(HttpServletRequest req,
+			HttpServletResponse response, ModelMap model) throws IOException,
+			SQLException, ClassNotFoundException {
 
+		response.setHeader("Cache-Control", "no-cache");
+		response.setContentType("text/plain");
+		response.setCharacterEncoding("utf-8");
+		Writer out;
+		out = response.getWriter();
 
-	      Map<String, Object> aeTopNewsMapRestro = null;
-	     
-	      Map<String, Object> aeLatestBlog = null;
-	      Map<String, Object> aeTrendingBlog = null;
+		StringBuilder restroDetails = new StringBuilder();
+		StringBuilder topNews = new StringBuilder();
+		StringBuilder latestBlog = new StringBuilder();
+		StringBuilder trendingBlog = new StringBuilder();
 
+		Map<String, Object> aeTopNewsMapRestro = null;
 
+		Map<String, Object> aeLatestBlog = null;
+		Map<String, Object> aeTrendingBlog = null;
 
+		List<Map<String, Object>> getHighRatingRestro = userdao.getLatestBlog();
 
-	      List<Map<String, Object>> getHighRatingRestro  = userdao.getLatestBlog();
-	    
-	      List<Map<String, Object>> getLatestBlog  = userdao.getLatestBlog();
-	      List<Map<String, Object>> getTrendingBlog  = userdao.getTrendingBlog ();
+		List<Map<String, Object>> getLatestBlog = userdao.getLatestBlog();
+		List<Map<String, Object>> getTrendingBlog = userdao.getTrendingBlog();
 
-	      
-	     
+		Iterator<Map<String, Object>> itrTopNews = getHighRatingRestro
+				.iterator();
+		while (itrTopNews.hasNext()) {
+			aeTopNewsMapRestro = itrTopNews.next();
+			topNews.append("<li>" + aeTopNewsMapRestro.get("restro_name")
+					+ "</li>");
+		}
 
-	      Iterator<Map<String, Object>> itrTopNews = getHighRatingRestro.iterator();
-	      while (itrTopNews.hasNext()) {
-	          aeTopNewsMapRestro = itrTopNews.next();
-	          topNews.append("<li>"+aeTopNewsMapRestro.get("restro_name")+"</li>");
-	      }
-	    
-	      
-	      Iterator<Map<String, Object>> itrLatestBlog  = getLatestBlog.iterator();
-	      while (itrLatestBlog.hasNext()) {
-	          aeLatestBlog   = itrLatestBlog.next();
-	          latestBlog.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?pictureId="+aeLatestBlog.get("id")+"'>"+aeLatestBlog.get("blog_name")+"</a></font></li>");
-	      }
-	      
-	      Iterator<Map<String, Object>> itrTrendingBlog  = getTrendingBlog.iterator();
-	      while (itrTrendingBlog.hasNext()) {
-	    	  aeTrendingBlog   = itrTrendingBlog.next();
-	    	  trendingBlog.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?pictureId="+aeTrendingBlog.get("id")+"'>"+aeTrendingBlog.get("blog_name")+"</a></font></li>");
-	      }
-	      
-	      model.addAttribute("latestBlog",latestBlog.toString());
-	    
-	      model.addAttribute("restroDetails", restroDetails.toString().replaceAll("\n", "<br>"));
+		Iterator<Map<String, Object>> itrLatestBlog = getLatestBlog.iterator();
+		while (itrLatestBlog.hasNext()) {
+			aeLatestBlog = itrLatestBlog.next();
+			latestBlog
+					.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?pictureId="
+							+ aeLatestBlog.get("id")
+							+ "'>"
+							+ aeLatestBlog.get("blog_name")
+							+ "</a></font></li>");
+		}
 
+		Iterator<Map<String, Object>> itrTrendingBlog = getTrendingBlog
+				.iterator();
+		while (itrTrendingBlog.hasNext()) {
+			aeTrendingBlog = itrTrendingBlog.next();
+			trendingBlog
+					.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?pictureId="
+							+ aeTrendingBlog.get("id")
+							+ "'>"
+							+ aeTrendingBlog.get("blog_name")
+							+ "</a></font></li>");
+		}
 
-	      ModelAndView mv = new ModelAndView();
-	      
-			 ResourceBundle bundle = ResourceBundle.getBundle("jdbc"); 
-	         String driverClassName=bundle.getString("jdbc.driverClassName");
-	         String dbURL=bundle.getString("jdbc.databaseurl");
-	         String dbUser= bundle.getString("jdbc.username");
-	         String dbPass= bundle.getString("jdbc.password");
+		model.addAttribute("latestBlog", latestBlog.toString());
 
-			 Class.forName("com.mysql.jdbc.Driver");
-			 Connection con = DriverManager.getConnection(dbURL,dbUser,dbPass);
-			Statement st = con.createStatement();
-			String filename= null;
-			ResultSet i = st.executeQuery("select * from huntzdown.blog");
-			 while(i.next()){
-				 String path =  i.getString(3);
-				 filename = i.getString(1);
-				 String blogName= i.getString(2);
-					 restroDetails.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
-			                  + "<div><a href='/blogInfo?pictureId=" + filename+ "'><img src='"+path+"' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='#'><h5>" + blogName + "</h5></a>"  + "&nbsp;&nbsp;</div></div>");
-			      
+		model.addAttribute("restroDetails", restroDetails.toString()
+				.replaceAll("\n", "<br>"));
 
-			 	}
-	    
-	      mv.addObject("restroDetails", restroDetails.toString());
-	      mv.addObject("getLatestBlog",getLatestBlog);
-	      mv.addObject("getTrendingBlog",trendingBlog);
+		ModelAndView mv = new ModelAndView();
 
-	      if(getLatestBlog.size() > 0){
-		      mv.addObject("getLatestBlogImg",getLatestBlog.get(0).get("path"));
+		ResourceBundle bundle = ResourceBundle.getBundle("jdbc");
+		String driverClassName = bundle.getString("jdbc.driverClassName");
+		String dbURL = bundle.getString("jdbc.databaseurl");
+		String dbUser = bundle.getString("jdbc.username");
+		String dbPass = bundle.getString("jdbc.password");
 
-	      }
-	      
-	          mv.setViewName("index");
-	          return mv;
-	     
-	      //  return "index";
-	  } // ends : agencyDash() 
-	  
-	  
-	  @RequestMapping(value = "/blog", method = RequestMethod.POST)
-	    public String addBlog(@ModelAttribute("blog") AddBlog addBlog, BindingResult result, SessionStatus status, ModelMap model, HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException, ClassNotFoundException {
-	        HttpSession session = req.getSession();
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
+		Statement st = con.createStatement();
+		String filename = null;
+		ResultSet i = st.executeQuery("select * from huntzdown.blog");
+		while (i.next()) {
+			String path = i.getString(3);
+			filename = i.getString(1);
+			String blogName = i.getString(2);
+			restroDetails
+					.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
+							+ "<div><a href='/blogInfo?pictureId="
+							+ filename
+							+ "'><img src='"
+							+ path
+							+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='#'><h5>"
+							+ blogName
+							+ "</h5></a>"
+							+ "&nbsp;&nbsp;</div></div>");
 
-	        String path;
-	        InputStream inputStream = null;
-	      
-	        if (result.hasErrors()) {
-	            return "login";
-	        } else {
-	            userdao.addBlog(addBlog, "dfgdf",inputStream);
-	        }
+		}
 
+		mv.addObject("restroDetails", restroDetails.toString());
+		mv.addObject("getLatestBlog", getLatestBlog);
+		mv.addObject("getTrendingBlog", trendingBlog);
 
-	        return "home";
-	    }
-	  
-	 
-	    @RequestMapping(value = "/blogInfo", method = RequestMethod.GET)
-	    public String blogInfo(HttpServletRequest req, HttpServletResponse response, ModelMap model) throws IOException, SQLException, ClassNotFoundException {
-	        System.out.println("picId>> dekh");
+		if (getLatestBlog.size() > 0) {
+			mv.addObject("getLatestBlogImg", getLatestBlog.get(0).get("path"));
 
-	        HttpSession session = req.getSession();
-	        session.removeAttribute("userRatingsBlog");
-	        session.removeAttribute("commentBlog");
-	        session.removeAttribute("detailsDivBlog");
-	        session.removeAttribute("haedingBlog");
-	        session.removeAttribute("userIdBlog");
-	        session.removeAttribute("detailsBlog");
-	        session.removeAttribute("detailsDivTextBlog");
+		}
 
+		mv.setViewName("index");
+		return mv;
 
+		// return "index";
+	} // ends : agencyDash()
 
+	@RequestMapping(value = "/blog", method = RequestMethod.POST)
+	public String addBlog(@ModelAttribute("blog") AddBlog addBlog,
+			BindingResult result, SessionStatus status, ModelMap model,
+			HttpServletRequest req, HttpServletResponse res)
+			throws IOException, ServletException, ClassNotFoundException {
+		HttpSession session = req.getSession();
 
-	        String picId = req.getParameter("pictureId");
-	        StringBuilder details = new StringBuilder();
-	        StringBuilder detailsDiv = new StringBuilder();
-	        StringBuilder detailsDivText = new StringBuilder();
-	        StringBuilder haeding = new StringBuilder();
-	        StringBuilder userId = new StringBuilder();
-	        StringBuilder comment = new StringBuilder();
-	        StringBuilder ratingDiv = new StringBuilder();
-	        
-	        if (picId == null) {
-	            System.out.println("andar gaya null me....<>>>>" + req.getSession().getAttribute("userBlogId").toString());
-	            picId = req.getSession().getAttribute("userBlogId").toString();
+		String path;
+		InputStream inputStream = null;
 
-	        }
+		if (result.hasErrors()) {
+			return "login";
+		} else {
+			userdao.addBlog(addBlog, "dfgdf", inputStream);
+		}
 
+		return "home";
+	}
 
-	        Map<String, Object> aeDataMap = null;
-	        Map<String, Object> dataMap = null;
-	        List<Map<String, Object>> getProductList = userdao.getBlogPic(picId);
-	        
-	       
-	        Iterator<Map<String, Object>> itr = getProductList.iterator();
-	        while (itr.hasNext()) {
-	            aeDataMap = itr.next();
-	            details.append("<img src='"+aeDataMap.get("path")+"' alt='Alt text' height='945' width='945'/>");
-	            detailsDiv.append("<p><strong>Client </strong>" + aeDataMap.get("blog_name") + "</p><p><strong>Date </strong>" + aeDataMap.get("date") + "</p><p><a href='#' class='launch'>Launch Project</a></p>");
-	            detailsDivText.append("<p>" + aeDataMap.get("comments") + "</p>");
-	            System.out.println("check this"+aeDataMap.get("comments"));
-	            haeding.append("<p>" + aeDataMap.get("blog_name") + "</p>");
-	            userId.append(picId);
-	        }
+	@RequestMapping(value = "/blogInfo", method = RequestMethod.GET)
+	public String blogInfo(HttpServletRequest req,
+			HttpServletResponse response, ModelMap model) throws IOException,
+			SQLException, ClassNotFoundException {
+		HttpSession session = req.getSession();
+		session.removeAttribute("userRatingsBlog");
+		session.removeAttribute("commentBlog");
+		session.removeAttribute("detailsDivBlog");
+		session.removeAttribute("haedingBlog");
+		session.removeAttribute("userIdBlog");
+		session.removeAttribute("detailsBlog");
+		session.removeAttribute("detailsDivTextBlog");
 
+		String picId = req.getParameter("pictureId");
+		StringBuilder details = new StringBuilder();
+		StringBuilder detailsDiv = new StringBuilder();
+		StringBuilder detailsDivText = new StringBuilder();
+		StringBuilder haeding = new StringBuilder();
+		StringBuilder userId = new StringBuilder();
+		StringBuilder comment = new StringBuilder();
+		StringBuilder ratingDiv = new StringBuilder();
 
-	        session.setAttribute("userRatingsBlog", ratingDiv.toString());
-	        session.setAttribute("commentBlog", comment.toString());
-	        session.setAttribute("detailsDivTextBlog", detailsDiv.toString());
-	        session.setAttribute("haedingBlog", haeding.toString());
-	        session.setAttribute("userIdBlog", userId.toString());
-	        session.setAttribute("detailsBlog", details.toString());
-	        session.setAttribute("detailsDivTextBlog", detailsDivText.toString());
+		if (picId == null) {
+			System.out.println("andar gaya null me....<>>>>"
+					+ req.getSession().getAttribute("userBlogId").toString());
+			picId = req.getSession().getAttribute("userBlogId").toString();
 
+		}
 
+		Map<String, Object> aeDataMap = null;
+		Map<String, Object> dataMap = null;
+		List<Map<String, Object>> getProductList = userdao.getBlogPic(picId);
 
-	        return "blogComment";
+		Iterator<Map<String, Object>> itr = getProductList.iterator();
+		while (itr.hasNext()) {
+			aeDataMap = itr.next();
+			details.append("<img src='" + aeDataMap.get("path")
+					+ "' alt='Alt text' height='945' width='945'/>");
+			detailsDiv
+					.append("<p><strong>Client </strong>"
+							+ aeDataMap.get("blog_name")
+							+ "</p><p><strong>Date </strong>"
+							+ aeDataMap.get("date")
+							+ "</p><p><a href='#' class='launch'>Launch Project</a></p>");
+			detailsDivText.append("<p>" + aeDataMap.get("comments") + "</p>");
+			System.out.println("check this" + aeDataMap.get("comments"));
+			haeding.append("<p>" + aeDataMap.get("blog_name") + "</p>");
+			userId.append(picId);
+		}
 
-	    }
-	    
-	    @RequestMapping(value = "/writeBlog",method = RequestMethod.GET)
-			 public String writeBlog(HttpServletRequest req,
-						HttpServletResponse response, ModelMap model) throws IOException, SQLException{
-	                return "blog";
-	                 }
-	    
-	    @RequestMapping(value = "/searchUser",method = RequestMethod.GET)
-    	 public String searchUser(@ModelAttribute("blog")AddBlog addBlog,BindingResult result,SessionStatus status,ModelMap model,HttpServletRequest req,HttpServletResponse res) throws IOException{
-    		                    System.out.println("hiiiiiiiiiiiiiiiiiiiiiii match");
+		session.setAttribute("userRatingsBlog", ratingDiv.toString());
+		session.setAttribute("commentBlog", comment.toString());
+		session.setAttribute("detailsDivTextBlog", detailsDiv.toString());
+		session.setAttribute("haedingBlog", haeding.toString());
+		session.setAttribute("userIdBlog", userId.toString());
+		session.setAttribute("detailsBlog", details.toString());
+		session.setAttribute("detailsDivTextBlog", detailsDivText.toString());
 
-                   StringBuilder data = new StringBuilder();
-                    PrintWriter out = res.getWriter();
-                    res.setContentType("text/html");
-                    String uName=req.getParameter("userName");
-                    String password=req.getParameter("password"); 
-                    String userMail=req.getParameter("userMail");
-                    
-                    System.out.println("values of user name passwrd"+uName+"passwrd.."+password);
+		return "blogComment";
 
+	}
 
-                    if(uName != null && !uName.isEmpty()){
-                    List<Map<String, Object>> getProductList = userdao.getSearchList(uName);
-                    System.out.println("get product list>>see>>"+getProductList.size());
-                     
-                    if(getProductList.isEmpty()){
-                       data.append("Email Id not Registerd");
+	@RequestMapping(value = "/writeBlog", method = RequestMethod.GET)
+	public String writeBlog(HttpServletRequest req,
+			HttpServletResponse response, ModelMap model) throws IOException,
+			SQLException {
+		return "blog";
+	}
 
-                    }
-                    
-                    if(!getProductList.isEmpty()){
-                    String password1=getProductList.get(0).get("password").toString();
-                    if(!password.equals(password1)){
-                        System.out.println("not match");
-                        data.append("Email & Password not correct");
-                    }else{
-                    System.out.println("match");
-                    data.append("Success");
-                    }}
-                    out.write(data.toString());
-                    }
-                    
-                     if(userMail != null && !userMail.isEmpty()){
-                      
-                     System.out.println("null ni hai user mail"+userMail);
-                     List<Map<String, Object>> getProductList = userdao.getSearchList(userMail);
-                     if(!getProductList.isEmpty()){
-                     System.out.println("not null inner lloopp");
+	@RequestMapping(value = "/searchUser", method = RequestMethod.GET)
+	public String searchUser(@ModelAttribute("blog") AddBlog addBlog,
+			BindingResult result, SessionStatus status, ModelMap model,
+			HttpServletRequest req, HttpServletResponse res) throws IOException {
+		System.out.println("hiiiiiiiiiiiiiiiiiiiiiii match");
 
-                     data.append("Email already exist");
-                     }
-                     out.write(data.toString());
+		StringBuilder data = new StringBuilder();
+		PrintWriter out = res.getWriter();
+		res.setContentType("text/html");
+		String uName = req.getParameter("userName");
+		String password = req.getParameter("password");
+		String userMail = req.getParameter("userMail");
 
-                     
-                     }
-                     
-                    
-             
+		System.out.println("values of user name passwrd" + uName + "passwrd.."
+				+ password);
 
-                return null;
-             }
-	    
-	    
-	    @RequestMapping(value = "/about")
-	    public ModelAndView about() {
-	        ModelAndView about = new ModelAndView("about");
-	        return about;
-	    }
-	    
-	  //strt test
-	    @RequestMapping(value = "/blog", method = RequestMethod.GET)
-	    public ModelAndView getUserBlog(HttpServletRequest req, HttpServletResponse response, ModelMap model) throws IOException, SQLException {
-	        HttpSession session = req.getSession();
-	        session.removeAttribute("blogDetails");
+		if (uName != null && !uName.isEmpty()) {
+			List<Map<String, Object>> getProductList = userdao
+					.getSearchList(uName);
+			System.out.println("get product list>>see>>"
+					+ getProductList.size());
 
-	        StringBuilder detailsDiv = new StringBuilder();
-	        StringBuilder asideDiv = new StringBuilder();
+			if (getProductList.isEmpty()) {
+				data.append("Email Id not Registerd");
 
-	        Map<String, Object> aeDataMap = null;
-	        Map<String, Object> dataMap = null;
-	        List<Map<String, Object>> getCommentList = userdao.getDetailsBlogs();
+			}
 
-	        ModelAndView mv = new ModelAndView();
+			if (!getProductList.isEmpty()) {
+				String password1 = getProductList.get(0).get("password")
+						.toString();
+				if (!password.equals(password1)) {
+					System.out.println("not match");
+					data.append("Email & Password not correct");
+				} else {
+					System.out.println("match");
+					data.append("Success");
+				}
+			}
+			out.write(data.toString());
+		}
 
-	        int i=0;
-	        
-	        Iterator<Map<String, Object>> itrt = getCommentList.iterator();
-	        while (itrt.hasNext()) {
-	            dataMap = itrt.next();
-	            if(i % 2 == 0){
-	            	
-	            	 detailsDiv.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?pictureId=" + dataMap.get("id") + "'>"
-	 	            		+ "<img src=' "+ dataMap.get("path") + "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
+		if (userMail != null && !userMail.isEmpty()) {
 
-	 	            				+ "<div class='box cf'><div class='excerpt'><a href='single.html' class='post-heading'>" + dataMap.get("blog_name") + "</a><p></p></div>"
-	 	            						+ "</div></article>");
-	            	 i=i+1;
-	            }else{
-	               	asideDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?pictureId=" + dataMap.get("id") + "'>"
-	 	            		+ "<img src='"+ dataMap.get("path")+ "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
-	 	            				+ "<div class='box cf'><div class='excerpt'><a href='single.html' class='post-heading'>" + dataMap.get("blog_name") + "</a><p></p></div>"
-	 	            						+ "</div></article>");
-	            	 i=i+1;
-	            }
-	           
+			System.out.println("null ni hai user mail" + userMail);
+			List<Map<String, Object>> getProductList = userdao
+					.getSearchList(userMail);
+			if (!getProductList.isEmpty()) {
+				System.out.println("not null inner lloopp");
 
-	        }
+				data.append("Email already exist");
+			}
+			out.write(data.toString());
 
+		}
 
-	        mv.addObject("blogDetails", detailsDiv.toString());
-	        mv.addObject("asideDiv", asideDiv.toString());
+		return null;
+	}
 
-	        mv.setViewName("userBlog");
-	        return mv;
+	@RequestMapping(value = "/about")
+	public ModelAndView about() {
+		ModelAndView about = new ModelAndView("about");
+		return about;
+	}
 
-	    }
+	// strt test
+	@RequestMapping(value = "/blog", method = RequestMethod.GET)
+	public ModelAndView getUserBlog(HttpServletRequest req,
+			HttpServletResponse response, ModelMap model) throws IOException,
+			SQLException {
+		HttpSession session = req.getSession();
+		session.removeAttribute("blogDetails");
+		String category = req.getParameter("category");
 
+		StringBuilder detailsDiv = new StringBuilder();
+		StringBuilder asideDiv = new StringBuilder();
+
+		Map<String, Object> aeDataMap = null;
+		Map<String, Object> dataMap = null;
+		List<Map<String, Object>> getCommentList = userdao
+				.getDetailsBlogs(category);
+
+		ModelAndView mv = new ModelAndView();
+		if (getCommentList.size() > 0) {
+			int i = 0;
+
+			Iterator<Map<String, Object>> itrt = getCommentList.iterator();
+			while (itrt.hasNext()) {
+				dataMap = itrt.next();
+				if (i % 2 == 0) {
+
+					detailsDiv
+							.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?pictureId="
+									+ dataMap.get("id")
+									+ "'>"
+									+ "<img src=' "
+									+ dataMap.get("path")
+									+ "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
+
+									+ "<div class='box cf'><div class='excerpt'><a href='single.html' class='post-heading'>"
+									+ dataMap.get("blog_name")
+									+ "</a><p></p></div>" + "</div></article>");
+					i = i + 1;
+				} else {
+					asideDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?pictureId="
+							+ dataMap.get("id")
+							+ "'>"
+							+ "<img src='"
+							+ dataMap.get("path")
+							+ "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
+							+ "<div class='box cf'><div class='excerpt'><a href='single.html' class='post-heading'>"
+							+ dataMap.get("blog_name")
+							+ "</a><p></p></div>"
+							+ "</div></article>");
+					i = i + 1;
+				}
+
+			}
+		}
+
+		mv.addObject("blogDetails", detailsDiv.toString());
+		mv.addObject("asideDiv", asideDiv.toString());
+
+		mv.setViewName("userBlog");
+		return mv;
+
+	}
 
 }

@@ -19,18 +19,19 @@
         <!-- nav -->
       		 <ul id="nav" class="sf-menu" style="margin-top: 13px;">
 					<li><a href="homePage.do?help=index"><img src="<%=request.getContextPath()%>/resources/imagesPic/pictures/Home_icon.png" style=" width: 40px; height: 40px; padding-top: 14px;"></a></li>
-					<li class="current-menu-item"><a href="blog.html">BLOG</a>
+					<li class="current-menu-item"><a href="#">BLOG</a>
                                          <ul style="display: none; visibility: hidden;">
-														<li><a href="/blog">Read Blog</a></li>
+											<li><a href="/blog?category=BOLLYWOOD">BOLLYWOOD</a></li>
+											<li><a href="/blog?category=LIFESTYLE">LIFESTYLE</a></li>
+											<li><a href="/blog?category=WORLD">WORLD</a></li>
+											<li><a href="/blog?category=ENTERTAINMENT">ENTERTAINMENT</a></li>
+											<li><a href="/blog?category=NEWS">NEWS</a></li>
+											<li><a href="/blog?category=TECHNOLOGY">TECHNOLOGY</a></li>
+											<li><a href="/blog?category=AUTOMOBILES">AUTOMOBILES</a></li>
+											<li><a href="/blog?category=GAMES">GAMES</a></li>
                                          </ul></li>
-                                         
-                                         <li class="current-menu-item"><a href="signInUser.do">REVIEWS</a>
-                                            
-                                            </li>
-                                         
 					<li><a href="/about">ABOUT</a></li>
-					<li><a href="portfolio.html">WORK</a></li>
-					<li><a href="contact.do">CONTACT</a></li>
+					<li><a href="#">CONTACT</a></li>
 				</ul>
         <div id="combo-holder"></div>
         <!-- ends nav -->
