@@ -51,7 +51,7 @@ body {
 }
 #nav > li.current-menu-item > a,
 #nav > li.current_page_item > a {
-  border-top: 3px solid #cb5432;
+  border-top: 3px solid #929292;
 }
 #nav .sfHover ul {
   background: #f8f5f2;
