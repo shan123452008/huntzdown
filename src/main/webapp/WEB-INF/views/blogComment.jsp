@@ -9,23 +9,6 @@
 	<head>
         <meta charset="utf-8"/>
         <title>Huntzdown.com</title>
-        <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1514426895467147&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1514426895467147";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
 
 
         <%@include file="includeCssJs.jsp" %> 
@@ -34,6 +17,32 @@
 				 <jsp:include page="Header.jsp"/>
 
 		<!-- MAIN -->
+		<body>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '1698006363811207',
+		      xfbml      : true,
+		      version    : 'v2.5'
+		    });
+		  };
+		
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1698006363811207";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+				
 		<div id="main">
 			<div class="wrapper cf">
 			
@@ -94,7 +103,8 @@
 						
 			
 				<div id="fb-root"></div>
-				<div class="fb-comments" data-href="http://localhost:8080/news${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+				<div class="fb-like" data-share="true" data-width="450"	data-show-faces="true"></div>
 				<div class="fb-share-button" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}" data-layout="button"></div>
 				<!-- ENDS Respond -->
 					
