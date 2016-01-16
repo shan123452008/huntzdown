@@ -353,7 +353,7 @@ System.out.println("inside product list..");
 	public List<Map<String, Object>> getDetailsBlogs(String category) throws DataAccessException {
 		System.out.println("inside getDetailsPic list..");
 		
-		String query = "select * from huntzdown.blog where category="+category+"";
+		String query = "select * from huntzdown.blog where category='"+category+"'";
 
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getDetailsComments listsssssss.>>?????.."+getProductList);
