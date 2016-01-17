@@ -5,7 +5,7 @@
 
 	<head>
 		  <meta charset="utf-8"/>
-        <title>DekhoReview.com</title>
+        <title>HuntzDown</title>
 
       
 
@@ -41,7 +41,7 @@
 				    <h5 class="heading">Just share your ideas with us, and also give the feedback about our site. We are in the initial stage of development, so we will keep updating<br>
 				                        Our site.
 				    </h5>
-				     <h5 class="heading">You can just mail us at the <a href="mailto:shantanu@huntzdown.com">shantanu@huntzdown.com</a></h5>
+				     <h5 class="heading">You can just mail us at the <a href="mailto:info@huntzdown.com">info@huntzdown.com</a></h5>
 				     <h5 class="heading">Follow us on twitter and like our page. Check out our social widgets button the left bottem of the page.</h5>
 				     <h5 class="heading">Regards</h5>
 				     <h5 class="heading">HuntzDown Team</h5>
