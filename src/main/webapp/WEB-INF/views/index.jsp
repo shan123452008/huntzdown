@@ -9,6 +9,12 @@
 
     <head>
         <meta charset="utf-8"/>
+         <meta charset="utf-8"/>
+        <meta property="og:type" name="og:type" content="website" />
+		<meta property="og:title" name="og:title" content="Huntzdown" />
+		<meta property="og:url" name="og:url" content="http://www.huntzdown.com"/>
+		<meta property="og:image" name="og:image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg" />
+		<meta property="fb:app_id" content="1698006363811207" /> 
         <title>HuntzDown</title>
         <%@include file="includeCssJs.jsp" %> 
         <script type="text/javascript">
