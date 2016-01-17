@@ -30,7 +30,7 @@
 											<li><a href="/blog?category=GAMES">GAMES</a></li>
                                          </ul></li>
 					<li><a href="/about">ABOUT</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="/contact">CONTACT</a></li>
 				</ul>
         <!-- ends nav -->
 
