@@ -23,7 +23,7 @@
 
                     <div class="widget-block">
                         <div id="tweets" class="footer-col tweet">
-                            <h5><a href="#">Contact</a></h5>
+                            <h5><a href="/contact">Contact</a></h5>
                         </div>
                     </div>
 
