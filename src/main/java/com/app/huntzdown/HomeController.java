@@ -398,5 +398,11 @@ public class HomeController {
 		return mv;
 
 	}
+	
+	 @RequestMapping(value = "/contact")
+	    public ModelAndView contact() {
+	        ModelAndView contact = new ModelAndView("contact");
+	        return contact;
+	    }
 
 }
