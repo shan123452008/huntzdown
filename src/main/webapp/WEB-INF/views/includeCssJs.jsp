@@ -75,7 +75,10 @@
 		<script src="<%=request.getContextPath()%>/resources/js_home/jquery.flexslider.js"></script>
 		
 		
-
+		<!-- Screen -->
+     	<link rel='stylesheet' media="(max-width: 700px)" href='<%=request.getContextPath()%>/resources/cssHomePage/mobile.css' />
+		<link rel='stylesheet' media="(min-width: 701px)" href='<%=request.getContextPath()%>/resources/cssHomePage/tablet.css' />
+		<link rel='stylesheet' media='(min-width: 901px)' href='<%=request.getContextPath()%>/resources/cssHomePage/desktop.css' />
 <style>
     
             input[type=submit] {

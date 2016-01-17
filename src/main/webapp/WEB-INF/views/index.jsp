@@ -216,7 +216,7 @@
 
                 </div>
                 <!-- sidebar -->
-                <aside id="sidebar" style="height: 1006px;">
+                <aside id="sidebar" class="asidePage">
 
              
              

@@ -238,7 +238,7 @@ public class HomeController {
 			aeDataMap = itr.next();
 			imagePath=aeDataMap.get("path").toString();
 			details.append("<img src='" + aeDataMap.get("path")
-					+ "' alt='Alt text' height='945' width='945'/>");
+					+ "' alt='Alt text' class='blogImage'/>");
 			detailsDiv
 					.append("<p><strong>Client </strong>"
 							+ aeDataMap.get("blog_name")

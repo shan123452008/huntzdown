@@ -1,0 +1,29 @@
+.headerLogo {
+	height: 46px;
+    width: 89px;
+    margin-top: 8px;
+    margin-bottom: -20px;
+    margin-left: -70px;
+}
+
+.headerLogoRight {
+	height: 53px;
+    width: 200px;
+    margin-top: 8px;
+    margin-bottom: -30px;
+    margin-left: -28px;
+}
+.wrapperLogo {
+	width: 700px;
+	height: 71px;
+	margin-left: 98px;
+}
+.asidePage {
+	visibility: hidden;
+}
+
+.blogImage {
+	height: 400px; 
+	width:945px;
+}
+}

@@ -9,11 +9,11 @@
 
 <!-- HEADER -->
 <header>
-<div class="wrapper cf" style="width: 1059px;">
+<div class="wrapper cf wrapperLogo">
        
         <a href="homePage.do?help=index">
-            <img alt="Simpler" src="<%=request.getContextPath()%>/resources/img/Mainlogo.png" style="height: 80px;width: 193px;margin-top: 8px; margin-bottom: -20px;margin-left: 101px;">
-            <img alt="Simpler" src="<%=request.getContextPath()%>/resources/img/logoMain.png" style="height: 80px;width: 465px;margin-top: 8px; margin-bottom: -20px;margin-left: -77px;">
+            <img alt="Simpler" src="<%=request.getContextPath()%>/resources/img/Mainlogo.png" class="headerLogo">
+            <img alt="Simpler" src="<%=request.getContextPath()%>/resources/img/logoMain.png" class="headerLogoRight">
         </a>
       
         <!-- nav -->
