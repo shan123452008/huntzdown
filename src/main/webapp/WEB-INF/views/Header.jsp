@@ -33,7 +33,6 @@
 					<li><a href="/about">ABOUT</a></li>
 					<li><a href="#">CONTACT</a></li>
 				</ul>
-        <div id="combo-holder"></div>
         <!-- ends nav -->
 
     </div>
