@@ -21,7 +21,6 @@
 					<li><a href="homePage.do?help=index"><img src="<%=request.getContextPath()%>/resources/imagesPic/pictures/Home_icon.png" style=" width: 40px; height: 40px; padding-top: 14px;"></a></li>
 					<li class="current-menu-item"><a href="#">BLOG</a>
                                          <ul style="display: none; visibility: hidden;">
-											<li><a href="/blog?category=BOLLYWOOD">BOLLYWOOD</a></li>
 											<li><a href="/blog?category=LIFESTYLE">LIFESTYLE</a></li>
 											<li><a href="/blog?category=WORLD">WORLD</a></li>
 											<li><a href="/blog?category=ENTERTAINMENT">ENTERTAINMENT</a></li>
