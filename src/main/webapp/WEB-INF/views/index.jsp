@@ -121,7 +121,7 @@
 
                                 <div id="comment-1" class="comment-body cf">
 
-                                    <span><iframe src="https://www.youtube.com/embed/FZLDoF7VfaQ" allowfullscreen="allowfullscreen" width="350"></iframe></span>    
+                                    <span><iframe src="https://www.youtube.com/embed/FZLDoF7VfaQ" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
                                     <span class="carlist"><h4 class="heading1">Fitoor Official Trailer</span>
 
 
@@ -129,8 +129,8 @@
 
                                 <div id="comment-1" class="comment-body cf">
 
-                                    <span><iframe src="https://www.youtube.com/embed/HZRXsnqcbEs" allowfullscreen="allowfullscreen" width="350"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Saala Khadoos Official Trailer | Releasing Jan. 29
+                                    <span><iframe src="https://www.youtube.com/embed/HZRXsnqcbEs" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
+                                    <span class="carlist"><h4 class="heading1">Saala Khadoos Official Trailer
                                     </span>
 
 
@@ -140,8 +140,8 @@
                                 
                                  <div id="comment-1" class="comment-body cf">
 
-                                    <span><iframe src="https://www.youtube.com/embed/Xwyb7fT65Ac" allowfullscreen="allowfullscreen" width="350"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Airlift Teaser | Akshay Kumar | Nimrat Kaur</span>
+                                    <span><iframe src="https://www.youtube.com/embed/Xwyb7fT65Ac" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
+                                    <span class="carlist"><h4 class="heading1">Airlift Teaser </span>
 
 
 
@@ -149,8 +149,8 @@
                                 
                                  <div id="comment-1" class="comment-body cf">
 
-                                    <span><iframe src="https://www.youtube.com/embed/vKziLmjSVB4" allowfullscreen="allowfullscreen" width="350"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Teaser- Introducing Gaurav | Shah Rukh Khan </span>
+                                    <span><iframe src="https://www.youtube.com/embed/vKziLmjSVB4" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
+                                    <span class="carlist"><h4 class="heading1">Teaser- Introducing Gaurav </span>
 
 
 
