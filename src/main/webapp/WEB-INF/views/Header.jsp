@@ -30,6 +30,7 @@
 											<li><a href="/blog?category=SPORTS">SPORTS</a></li>
 											
                                          </ul></li>
+                    <li><a href="/videos">VIDEOS</a>
 					<li><a href="/about">ABOUT</a></li>
 					<li><a href="/contact">CONTACT</a></li>
 				</ul>

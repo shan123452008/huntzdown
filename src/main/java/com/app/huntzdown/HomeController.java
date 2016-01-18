@@ -361,7 +361,6 @@ public class HomeController {
 			while (itrt.hasNext()) {
 				dataMap = itrt.next();
 				if (i % 2 == 0) {
-
 					detailsDiv
 							.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?pictureId="
 									+ dataMap.get("id")
@@ -370,7 +369,7 @@ public class HomeController {
 									+ dataMap.get("path")
 									+ "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
 
-									+ "<div class='box cf'><div class='excerpt'><a href='single.html' class='post-heading'>"
+									+ "<div class='box cf'><div class='excerpt'><a href='#' class='post-heading'>"
 									+ dataMap.get("blog_name")
 									+ "</a><p></p></div>" + "</div></article>");
 					i = i + 1;
@@ -381,7 +380,7 @@ public class HomeController {
 							+ "<img src='"
 							+ dataMap.get("path")
 							+ "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
-							+ "<div class='box cf'><div class='excerpt'><a href='single.html' class='post-heading'>"
+							+ "<div class='box cf'><div class='excerpt'><a href='#' class='post-heading'>"
 							+ dataMap.get("blog_name")
 							+ "</a><p></p></div>"
 							+ "</div></article>");
@@ -398,6 +397,65 @@ public class HomeController {
 		return mv;
 
 	}
+	
+	//Video fetching for the site
+	// strt test
+		@RequestMapping(value = "/videos", method = RequestMethod.GET)
+		public ModelAndView getUservideos(HttpServletRequest req,
+				HttpServletResponse response, ModelMap model) throws IOException,
+				SQLException {
+			HttpSession session = req.getSession();
+			StringBuilder detailsDiv = new StringBuilder();
+			StringBuilder asideDiv = new StringBuilder();
+
+			Map<String, Object> aeDataMap = null;
+			Map<String, Object> dataMap = null;
+			List<Map<String, Object>> getCommentList = userdao.getDetailsVideos();
+
+			ModelAndView mv = new ModelAndView();
+			if (getCommentList.size() > 0) {
+				int i = 0;
+
+				Iterator<Map<String, Object>> itrt = getCommentList.iterator();
+				while (itrt.hasNext()) {
+					dataMap = itrt.next();
+					if (i % 2 == 0) {
+						detailsDiv
+								.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?pictureId="
+										+ dataMap.get("id")
+										+ "'>"
+										+ "<iframe src='"
+										+ dataMap.get("path")
+										+ "' alt='Alt text' allowfullscreen='allowfullscreen' width='600px' height='300px'/></div>"
+
+										+ "<div class='box cf'><div class='excerpt'><a href='#' class='post-heading'>"
+										+ dataMap.get("blog_name")
+										+ "</a><p></p></div>" + "</div></article>");
+						i = i + 1;
+					} else {
+						asideDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?pictureId="
+								+ dataMap.get("id")
+								+ "'>"
+								+ "<iframe src='"
+								+ dataMap.get("path")
+								+ "' alt='Alt text' allowfullscreen='allowfullscreen' width='600px' height='300px'/></div>"
+								+ "<div class='box cf'><div class='excerpt'><a href='#' class='post-heading'>"
+								+ dataMap.get("blog_name")
+								+ "</a><p></p></div>"
+								+ "</div></article>");
+						i = i + 1;
+					}
+
+				}
+			}
+
+			mv.addObject("blogDetails", detailsDiv.toString());
+			mv.addObject("asideDiv", asideDiv.toString());
+
+			mv.setViewName("userBlog");
+			return mv;
+
+		}
 	
 	 @RequestMapping(value = "/contact")
 	    public ModelAndView contact() {

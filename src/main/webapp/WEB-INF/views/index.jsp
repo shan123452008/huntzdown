@@ -82,11 +82,6 @@
                                 <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%=path%>" style=" width: 639px; height: 400px; "/></a></li>
 									<%  }%>
                                
-                               
-  
-                                
-
-
                             </ul>
                         </div>
                     </div>

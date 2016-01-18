@@ -157,6 +157,8 @@ public interface UserDao {
 
 	public void addUserForBlog(AddBlogUser addBlogUser, String path);
 
+	public List<Map<String, Object>> getDetailsVideos();
+
 
     //end shntanu
 }
