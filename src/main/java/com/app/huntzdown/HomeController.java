@@ -426,7 +426,7 @@ public class HomeController {
 										+ "'>"
 										+ "<iframe src='"
 										+ dataMap.get("path")
-										+ "' alt='Alt text' allowfullscreen='allowfullscreen' width='600px' height='300px'/></div>"
+										+ "' alt='Alt text' allowfullscreen='allowfullscreen' width='600px' height='300px'></iframe></div>"
 
 										+ "<div class='box cf'><div class='excerpt'><a href='#' class='post-heading'>"
 										+ dataMap.get("blog_name")
@@ -438,7 +438,7 @@ public class HomeController {
 								+ "'>"
 								+ "<iframe src='"
 								+ dataMap.get("path")
-								+ "' alt='Alt text' allowfullscreen='allowfullscreen' width='600px' height='300px'/></div>"
+								+ "' alt='Alt text' allowfullscreen='allowfullscreen' width='600px' height='300px'></iframe></div>"
 								+ "<div class='box cf'><div class='excerpt'><a href='#' class='post-heading'>"
 								+ dataMap.get("blog_name")
 								+ "</a><p></p></div>"
