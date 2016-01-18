@@ -27,7 +27,8 @@
 											<li><a href="/blog?category=NEWS">NEWS</a></li>
 											<li><a href="/blog?category=TECHNOLOGY">TECHNOLOGY</a></li>
 											<li><a href="/blog?category=AUTOMOBILES">AUTOMOBILES</a></li>
-											<li><a href="/blog?category=GAMES">GAMES</a></li>
+											<li><a href="/blog?category=SPORTS">SPORTS</a></li>
+											
                                          </ul></li>
 					<li><a href="/about">ABOUT</a></li>
 					<li><a href="/contact">CONTACT</a></li>

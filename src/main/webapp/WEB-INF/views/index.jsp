@@ -95,7 +95,7 @@
 
                     <!--Latest Reviews-->
                     <div id="comments-wrap">
-                        <h4 class="heading">LATEST REVIEWS</h4>
+                        <h4 class="heading">BLOGS</h4>
 
                         <ol class="commentlist">
 
