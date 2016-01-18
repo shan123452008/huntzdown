@@ -69,7 +69,7 @@
 									 Connection con = DriverManager.getConnection("jdbc:mysql://127.7.201.130:3306/huntzdown","admin1ucVL7Z", "xRWsL2hKVAXT");
 									Statement st = con.createStatement();
 									
-									ResultSet i = st.executeQuery("select * from huntzdown.blog");
+									ResultSet i = st.executeQuery("select * from huntzdown.blog where isVideo IS NULL order by id desc limit 5");
 								
 									%>
 									
