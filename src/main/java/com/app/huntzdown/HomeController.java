@@ -147,7 +147,7 @@ public class HomeController {
 		Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
 		Statement st = con.createStatement();
 		String filename = null;
-		ResultSet i = st.executeQuery("select * from huntzdown.blog");
+		ResultSet i = st.executeQuery("select * from huntzdown.blog where isVideo IS NULL order by id desc");
 		while (i.next()) {
 			String path = i.getString(3);
 			filename = i.getString(1);
