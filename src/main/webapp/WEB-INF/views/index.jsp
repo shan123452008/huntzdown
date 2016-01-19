@@ -29,7 +29,14 @@
       
     </head>
     <body class="single">
-    
+	    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-XXXX"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-XXXX');</script>
+	    
     <script>
 		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -111,7 +118,7 @@
 
                     <!--Video start-->
                     <div id="comments-wrap">
-                        <h4 class="heading">LATEST VIDEOS</h4>
+                        <h4 class="heading">Trailors</h4>
 
                         <ol class="commentlist">
 
@@ -257,9 +264,6 @@ iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important
                             
 
    <br><br>           
-
-<div data-WRID="WRID-145241983197871072" data-widgetType="searchWidget" data-class="affiliateAdsByFlipkart" height="250" ></div><script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>           
-
 
                 </aside>
                 <!-- ENDS sidebar -->
