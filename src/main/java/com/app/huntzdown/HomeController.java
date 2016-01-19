@@ -109,7 +109,7 @@ public class HomeController {
 		while (itrVideo.hasNext()) {
 			aeVideo = itrVideo.next();
 			videoBlog.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
-					+ "<div><iframe src='"+aeVideo.get("path")+"' allowfullscreen='allowfullscreen' width='300' height='150'></iframe><a href='#'><h5>"
+					+ "<div><iframe src='"+aeVideo.get("path")+"' allowfullscreen='allowfullscreen' width='200' height='114'></iframe><a href='#'><h5>"
 					+ aeVideo.get("blog_name")
 					+ "</h5></a>"
 					+ "&nbsp;&nbsp;</div></div>");
