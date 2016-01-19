@@ -88,6 +88,10 @@ public class HomeController {
 		StringBuilder topNews = new StringBuilder();
 		StringBuilder latestBlog = new StringBuilder();
 		StringBuilder trendingBlog = new StringBuilder();
+		StringBuilder videoBlog = new StringBuilder();
+
+		
+
 
 		Map<String, Object> aeTopNewsMapRestro = null;
 
@@ -98,6 +102,21 @@ public class HomeController {
 
 		List<Map<String, Object>> getLatestBlog = userdao.getLatestBlog();
 		List<Map<String, Object>> getTrendingBlog = userdao.getTrendingBlog();
+		
+		//Video Functinality
+		List<Map<String, Object>> getVideo = userdao.getDetailsVideos();
+		Iterator<Map<String, Object>> itrVideo = getVideo.iterator();
+		Map<String, Object> aeVideo = null;
+
+		while (itrVideo.hasNext()) {
+			aeVideo = itrVideo.next();
+			videoBlog.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
+					+ "<div><iframe src='"+aeVideo.get("path")+"' allowfullscreen='allowfullscreen' width='300' height='150'></iframe><a href='#'><h5>"
+					+ aeVideo.get("blog_name")
+					+ "</h5></a>"
+					+ "&nbsp;&nbsp;</div></div>");
+		}
+		//End Video Functionality
 
 		Iterator<Map<String, Object>> itrTopNews = getHighRatingRestro
 				.iterator();
@@ -168,6 +187,8 @@ public class HomeController {
 		mv.addObject("restroDetails", restroDetails.toString());
 		mv.addObject("getLatestBlog", getLatestBlog);
 		mv.addObject("getTrendingBlog", trendingBlog);
+		mv.addObject("videoBlog", videoBlog);
+
 
 		if (getLatestBlog.size() > 0) {
 			mv.addObject("getLatestBlogImg", getLatestBlog.get(0).get("path"));

@@ -93,7 +93,7 @@
                     <!-- ENDS slider -->
                     <!-- ENDS  Standard -->
 
-                    <!--Latest Reviews-->
+                    <!--Latest Blogs-->
                     <div id="comments-wrap">
                         <h4 class="heading">BLOGS</h4>
 
@@ -105,6 +105,29 @@
                                 <div id="comment-1" class="comment-body cf">
 
                                     ${restroDetails}            
+
+                                </div>
+
+                            </li>
+                            
+
+
+                        </ol>
+                    </div>
+                    
+                    
+                      <!--Latest Reviews-->
+                    <div id="comments-wrap">
+                        <h4 class="heading">Videos</h4>
+
+                        <ol class="commentlist">
+
+
+                            <li class="comment even thread-even depth-1" id="li-comment-1">
+
+                                <div id="comment-1" class="comment-body cf">
+
+                                    ${videoBlog}            
 
                                 </div>
 
