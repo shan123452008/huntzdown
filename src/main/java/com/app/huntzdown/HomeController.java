@@ -88,9 +88,7 @@ public class HomeController {
 		StringBuilder topNews = new StringBuilder();
 		StringBuilder latestBlog = new StringBuilder();
 		StringBuilder trendingBlog = new StringBuilder();
-		StringBuilder videoBlog = new StringBuilder();
-
-		
+		StringBuilder videoBlog = new StringBuilder();	
 
 
 		Map<String, Object> aeTopNewsMapRestro = null;

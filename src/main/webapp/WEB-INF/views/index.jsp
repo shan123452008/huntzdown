@@ -113,8 +113,7 @@
 
 
                         </ol>
-                    </div>
-                    
+                    </div>                    
                     
                       <!--Latest Reviews-->
                     <div id="comments-wrap">
