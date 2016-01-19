@@ -79,38 +79,48 @@
      	<link rel='stylesheet' media="(max-width: 700px)" href='<%=request.getContextPath()%>/resources/cssHomePage/mobile.css' />
 		<link rel='stylesheet' media="(min-width: 701px)" href='<%=request.getContextPath()%>/resources/cssHomePage/tablet.css' />
 		<link rel='stylesheet' media='(min-width: 901px)' href='<%=request.getContextPath()%>/resources/cssHomePage/desktop.css' />
-<style>
-    
-            input[type=submit] {
+		<style>
+		    
+		            input[type=submit] {
+		
+		                margin-right: 20px;
+		
+		                width: 80px;
+		                height: 27px;
+		                font-size: 14px;
+		                font-weight: bold;
+		                color: #fff;
+		                background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
+		                background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+		                background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+		                border-radius: 30px;
+		                border: 1px solid #66add6;
+		                box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+		                cursor: pointer;
+		            }
+		
+		            input[type=submit]:hover {
+		                background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
+		                background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+		                background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+		            }
+		
+		            input[type=submit]:active {
+		                background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
+		                background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+		                background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+		            }
+		
+		</style>
+		  <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-72608242-1', 'auto');
+		  ga('send', 'pageview');
 
-                margin-right: 20px;
-
-                width: 80px;
-                height: 27px;
-                font-size: 14px;
-                font-weight: bold;
-                color: #fff;
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
-                background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-                background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-                border-radius: 30px;
-                border: 1px solid #66add6;
-                box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
-                cursor: pointer;
-            }
-
-            input[type=submit]:hover {
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
-                background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-                background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-            }
-
-            input[type=submit]:active {
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
-                background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-                background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-            }
-
-</style>
+		</script>
 
        

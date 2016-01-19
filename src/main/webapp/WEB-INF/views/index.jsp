@@ -24,10 +24,8 @@
         	window.location.href = "search.do?search="+value;
         	
             }
-        	
         }
         </script>
-       
       
     </head>
     <body class="single">

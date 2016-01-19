@@ -9,8 +9,6 @@
 	<head>
         <meta charset="utf-8"/>
         <title>DekhoReview.com</title>
-
-
         <%@include file="includeCssJs.jsp" %> 
     </head>
 	

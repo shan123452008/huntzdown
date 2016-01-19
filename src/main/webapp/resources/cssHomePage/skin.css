@@ -10,7 +10,7 @@ a {
 }
 header,
 footer {
-  background: #929292;
+    background: #34CABC;
 }
 /* Selection colours (easy to forget) */
 :selection {
@@ -34,7 +34,7 @@ body {
 }
 /* NAVIGATION ------------------------------------------------------------*/
 #nav > li > a {
-  color: #dcd2be;
+    color: #131111;
 }
 #nav > li:hover > a {
   -webkit-transition: all 0.3s ease;
@@ -51,7 +51,7 @@ body {
 }
 #nav > li.current-menu-item > a,
 #nav > li.current_page_item > a {
-  border-top: 3px solid #929292;
+  border-top: 3px solid #34CABC;
 }
 #nav .sfHover ul {
   background: #f8f5f2;
