@@ -14,7 +14,7 @@
 		<meta property="og:image" name="og:image" content="${imagePath}" />
 		<meta property="fb:app_id" content="1698006363811207" /> 
 		
-        <title>Huntzdown.com</title>
+        <title>${haedingBlog}</title>
 
 
         <%@include file="includeCssJs.jsp" %> 
