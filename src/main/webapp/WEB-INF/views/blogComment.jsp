@@ -9,7 +9,7 @@
 	<head>
         <meta charset="utf-8"/>
         <meta property="og:type" name="og:type" content="website" />
-		<meta property="og:title" name="og:title" content="Huntzdown" />
+		<meta property="og:title" name="og:title" content="${titlePage}" />
 		<meta property="og:url" name="og:url" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"/>
 		<meta property="og:image" name="og:image" content="${imagePath}" />
 		<meta property="fb:app_id" content="1698006363811207" /> 
