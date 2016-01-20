@@ -238,6 +238,7 @@ public class HomeController {
 		StringBuilder detailsDiv = new StringBuilder();
 		StringBuilder detailsDivText = new StringBuilder();
 		StringBuilder haeding = new StringBuilder();
+		StringBuilder titlePage = new StringBuilder();
 		StringBuilder userId = new StringBuilder();
 		StringBuilder comment = new StringBuilder();
 		StringBuilder ratingDiv = new StringBuilder();
@@ -269,6 +270,8 @@ public class HomeController {
 			detailsDivText.append("<p>" + aeDataMap.get("comments") + "</p>");
 			System.out.println("check this" + aeDataMap.get("comments"));
 			haeding.append("<p>" + aeDataMap.get("blog_name") + "</p>");
+			titlePage.append(aeDataMap.get("blog_name"));
+
 			userId.append(picId);
 		}
 
@@ -276,6 +279,7 @@ public class HomeController {
 		session.setAttribute("commentBlog", comment.toString());
 		session.setAttribute("detailsDivTextBlog", detailsDiv.toString());
 		session.setAttribute("haedingBlog", haeding.toString());
+		session.setAttribute("titlePage", titlePage.toString());
 		session.setAttribute("userIdBlog", userId.toString());
 		session.setAttribute("detailsBlog", details.toString());
 		session.setAttribute("detailsDivTextBlog", detailsDivText.toString());
