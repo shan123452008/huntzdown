@@ -6,16 +6,22 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html class="no-js">
-
     <head>
-        <meta charset="utf-8"/>
-         <meta charset="utf-8"/>
         <meta property="og:type" name="og:type" content="website" />
 		<meta property="og:title" name="og:title" content="Huntzdown" />
 		<meta property="og:url" name="og:url" content="http://www.huntzdown.com"/>
 		<meta property="og:image" name="og:image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg" />
-		<meta property="fb:app_id" content="1698006363811207" /> 
-        <title>HuntzDown</title>
+		<meta property="fb:app_id" content="1698006363811207" />
+		<meta name="Name" content="Huntzdown">
+		<meta name="description" content="India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports">
+		<meta name="Image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta http-equiv="refresh" content="30">
+		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+		<meta name="keywords" content="blogs, entertainment, sports , automobiles, videos, facts"/> 
+       
+        <title>HuntzDown.com - India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports
+        </title>
         <%@include file="includeCssJs.jsp" %> 
         <script type="text/javascript">
         function searchVal(){
