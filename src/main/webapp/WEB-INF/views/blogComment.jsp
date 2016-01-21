@@ -13,8 +13,14 @@
 		<meta property="og:url" name="og:url" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"/>
 		<meta property="og:image" name="og:image" content="${imagePath}" />
 		<meta property="fb:app_id" content="1698006363811207" /> 
-		
         <title>${titlePage}</title>
+        <meta name="Name" content="${titlePage}">
+		<meta name="description" content="${titlePage}">
+		<meta name="Image" content="${imagePath}">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta http-equiv="refresh" content="30">
+		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+		<meta name="keywords" content="${keywords}"/> 
 
 
         <%@include file="includeCssJs.jsp" %> 

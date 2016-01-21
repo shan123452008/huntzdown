@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<title>HuntzDown</title>
 <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/resources/img/iconSiteLogo.png">
 		 
 		<!--[if lt IE 9]>

@@ -8,7 +8,14 @@
 
 	<head>
         <meta charset="utf-8"/>
-        <title>DekhoReview.com</title>
+        <title>HuntzDown.com - videos</title>        
+        <meta name="Name" content="HuntzDown.com - videos">
+		<meta name="description" content="HuntzDown.com - videos">
+		<meta name="Image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta http-equiv="refresh" content="30">
+		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+		<meta name="keywords" content="videos"/> 
         <%@include file="includeCssJs.jsp" %> 
     </head>
 	

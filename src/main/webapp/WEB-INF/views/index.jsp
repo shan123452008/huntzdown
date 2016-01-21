@@ -8,7 +8,7 @@
 <html class="no-js">
     <head>
         <meta property="og:type" name="og:type" content="website" />
-		<meta property="og:title" name="og:title" content="Huntzdown" />
+		<meta property="og:title" name="og:title" content="HuntzDown" />
 		<meta property="og:url" name="og:url" content="http://www.huntzdown.com"/>
 		<meta property="og:image" name="og:image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg" />
 		<meta property="fb:app_id" content="1698006363811207" />

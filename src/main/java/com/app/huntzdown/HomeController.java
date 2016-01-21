@@ -242,6 +242,8 @@ public class HomeController {
 		StringBuilder userId = new StringBuilder();
 		StringBuilder comment = new StringBuilder();
 		StringBuilder ratingDiv = new StringBuilder();
+		StringBuilder keywords = new StringBuilder();
+
 
 		if (picId == null) {
 			System.out.println("andar gaya null me....<>>>>"
@@ -271,6 +273,7 @@ public class HomeController {
 			System.out.println("check this" + aeDataMap.get("comments"));
 			haeding.append("<p>" + aeDataMap.get("blog_name") + "</p>");
 			titlePage.append(aeDataMap.get("blog_name"));
+			keywords.append(aeDataMap.get("keywords"));
 
 			userId.append(picId);
 		}
@@ -284,6 +287,8 @@ public class HomeController {
 		session.setAttribute("detailsBlog", details.toString());
 		session.setAttribute("detailsDivTextBlog", detailsDivText.toString());
 		session.setAttribute("imagePath", imagePath);
+		session.setAttribute("keywords", keywords.toString());
+
 
 
 		return "blogComment";
