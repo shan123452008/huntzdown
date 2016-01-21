@@ -13,6 +13,7 @@
 		<meta property="og:image" name="og:image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg" />
 		<meta property="fb:app_id" content="1698006363811207" />
 		<meta name="Name" content="Huntzdown">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
 		<meta name="description" content="India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports">
 		<meta name="Image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">

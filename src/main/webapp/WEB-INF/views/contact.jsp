@@ -5,11 +5,20 @@
 
 	 <head>
         <meta charset="utf-8"/>
-        <title>HuntzDown</title>
-
       
 
         <%@include file="includeCssJs.jsp" %> 
+        
+        <meta name="Name" content="Contact HuntzDown">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+		<meta name="description" content="Contact HuntzDown">
+		<meta name="Image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta http-equiv="refresh" content="30">
+		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+		<meta name="keywords" content="contact huntzdown"/> 
+        <title>Contact HuntzDown</title>
+        
        
       
     </head>
