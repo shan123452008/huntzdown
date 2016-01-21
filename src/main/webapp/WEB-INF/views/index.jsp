@@ -17,10 +17,8 @@
 		<meta name="description" content="India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports">
 		<meta name="Image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-		<meta http-equiv="refresh" content="30">
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 		<meta name="keywords" content="blogs, entertainment, sports , automobiles, videos, facts"/> 
-       
         <title>HuntzDown.com - India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports
         </title>
         <%@include file="includeCssJs.jsp" %> 

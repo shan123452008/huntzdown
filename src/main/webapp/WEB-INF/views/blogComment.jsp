@@ -19,7 +19,6 @@
 		<meta name="description" content="${titlePage}">
 		<meta name="Image" content="${imagePath}">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-		<meta http-equiv="refresh" content="30">
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 		<meta name="keywords" content="${keywords}"/> 
 
