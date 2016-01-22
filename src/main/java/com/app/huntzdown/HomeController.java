@@ -177,7 +177,7 @@ public class HomeController {
 							+ path
 							+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?pictureId="
 							+ filename
-							+ "'><h5>"
+							+ "'><h5 style='height:59px;'>"
 							+ blogName
 							+ "</h5></a>"
 							+ "&nbsp;&nbsp;</div></div>");
