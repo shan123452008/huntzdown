@@ -6,7 +6,7 @@
                 <li class="first-col">
 
                     <div class="widget-block">
-                        <h5><a href="homePage.do?help=index">Home</a></h5>
+                        <h5><a href="/homePage">Home</a></h5>
                        
                     </div>
                 </li>
