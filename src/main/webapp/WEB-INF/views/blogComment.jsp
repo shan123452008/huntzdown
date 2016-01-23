@@ -63,7 +63,7 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 				
 		<div id="main">
-			<div class="wrapper cf">
+			<div class="wrapper cf" itemscope itemtype="http://schema.org/Article">
 			
 			
 			<!-- masthead -->
@@ -84,13 +84,7 @@
 						  ${detailsBlog}
 					</div>
 					<div class="box cf">
-					
-						<!-- <div class="entry-date"><div class="number">
-						Rating</div>
-						<div class="month">2</div>
-						
-						</div> -->
-						
+											
 						<div class="excerpt">
 							<div class="post-heading" >${haedingBlog}</div>
 							<div class="entry-content">

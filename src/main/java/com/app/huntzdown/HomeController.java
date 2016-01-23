@@ -123,13 +123,13 @@ public class HomeController {
 			
 			restroDetails
 			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
-					+ "<div itemscope itemtype='http://schema.org/Person'><a href='/blogInfo?pictureId="
+					+ "<div itemscope='' itemtype='http://schema.org/BlogPosting'><a href='/blogInfo?pictureId="
 					+ aeLatestBlog.get("id")
 					+ "' itemprop='url'><img src='"
 					+ aeLatestBlog.get("path")
 					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?pictureId="
 					+ aeLatestBlog.get("id")
-					+ "'><h5 style='height:59px;'>"
+					+ "'><h5 style='height:59px;' itemprop='name headline'>"
 					+ aeLatestBlog.get("blog_name")
 					+ "</h5></a>"
 					+ "&nbsp;&nbsp;</div></div>");
@@ -224,15 +224,10 @@ public class HomeController {
 		while (itr.hasNext()) {
 			aeDataMap = itr.next();
 			imagePath=aeDataMap.get("path").toString();
-			details.append("<img src='" + aeDataMap.get("path")
-					+ "' alt='Alt text' class='blogImage'/>");
-			detailsDiv
-					.append("<p><strong>Client </strong>"
-							+ aeDataMap.get("blog_name")
-							+ "</p><p><strong>Date </strong>"
-							+ aeDataMap.get("date")
-							+ "</p><p><a href='#' class='launch'>Launch Project</a></p>");
-			detailsDivText.append("<p>" + aeDataMap.get("comments") + "</p>");
+			details.append("<img itemprop='image' src='" + aeDataMap.get("path")
+					+ "' alt='markup3' class='blogImage'/>");
+			
+			detailsDivText.append("<p itemprop='description'>" + aeDataMap.get("comments") + "</p>");
 			System.out.println("check this" + aeDataMap.get("comments"));
 			haeding.append("<p>" + aeDataMap.get("blog_name") + "</p>");
 			titlePage.append(aeDataMap.get("blog_name"));
