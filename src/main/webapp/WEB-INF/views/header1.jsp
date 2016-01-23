@@ -140,7 +140,7 @@
 				
 				<!-- nav -->
 				<ul id="nav" class="sf-menu">
-					<li><a href="homePage.do?help=index"><img src="imagesPic/pictures/Home_icon.png" style=" width: 40px; height: 40px; padding-top: 14px;"></a></li>
+					<li><a href="/homePage"><img src="imagesPic/pictures/Home_icon.png" style=" width: 40px; height: 40px; padding-top: 14px;"></a></li>
 					<li class="current-menu-item"><a href="signInUser.do">SIGN IN</a></li>
 				   <li class="current-menu-item"><a href="signInUser.do">Blogs</a>
 				   <ul>

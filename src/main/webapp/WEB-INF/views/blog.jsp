@@ -221,12 +221,12 @@
 			<div class="wrapper cf">
 				
 				<div id="logo">
-					<a href="homePage.do?help=index"><img alt="Simpler" src="resources/img/logo.png" style="height: 92px; width: 423px; margin-top: -10px; margin-bottom: -20px;"></a>
+					<a href="/homePage"><img alt="Simpler" src="resources/img/logo.png" style="height: 92px; width: 423px; margin-top: -10px; margin-bottom: -20px;"></a>
 				</div>
 				
 				<!-- nav -->
 				<ul id="nav" class="sf-menu">
-					<li><a href="homePage.do"><span>HOME</span></a></li>
+					<li><a href="/homePage"><span>HOME</span></a></li>
 					<li class="current-menu-item"><a href="blog.html">BLOG</a>
                                          <ul>
 							<li><a href="blog.do">Read Blog</a></li>

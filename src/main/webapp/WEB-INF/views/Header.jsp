@@ -11,7 +11,7 @@
 <header>
 <div class="wrapper cf wrapperLogo">
        
-        <a href="homePage.do?help=index">
+        <a href="/homePage">
             <img alt="Simpler" src="<%=request.getContextPath()%>/resources/img/Mainlogo.png" class="headerLogo">
             <img alt="Simpler" src="<%=request.getContextPath()%>/resources/img/logoMain.png" class="headerLogoRight">
         </a>
