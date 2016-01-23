@@ -22,23 +22,7 @@
         <title>HuntzDown.com - India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports
         </title>
         <%@include file="includeCssJs.jsp" %> 
-      
-    	<script type="application/ld+json">
-		{
- 	 	"@context" : "http://schema.org",
- 		 "@type" : "Organization",
-		"name" : "HuntzDown",
- 		 "url" : "http://www.huntzdown.com",
-		"sameAs" : [
- 				  "http://www.facebook.com/huntzdown",
-   				 "http://www.twitter.com/huntzzdown",
-   				 "http://plus.google.com/109675515064224468340"
-  					]
-        "logo": "https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg"
-  		
-		}
-</script>
-    	
+         	
       
     </head>
     <body class="single">
