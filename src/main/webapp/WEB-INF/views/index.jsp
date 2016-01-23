@@ -12,12 +12,12 @@
 		<meta property="og:url" name="og:url" content="http://www.huntzdown.com"/>
 		<meta property="og:image" name="og:image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg" />
 		<meta property="fb:app_id" content="1698006363811207" />
-		<meta name="Name" content="Huntzdown">
-		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
-		<meta name="description" content="India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports">
+		<meta name="Name" content="Huntzdown"/>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
+		<meta name="description" content="India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports"/>
 		<meta name="Image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg">
-		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"/>
 		<meta name="keywords" content="blogs, entertainment, sports , automobiles, videos, facts"/> 
         <title>HuntzDown.com - India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports
         </title>
@@ -26,13 +26,13 @@
       
     </head>
     <body class="single">
-	    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-XXXX"
+	    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MT87C5"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-XXXX');</script>
+	})(window,document,'script','dataLayer','GTM-MT87C5');</script>
 	    
     <script>
 		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
