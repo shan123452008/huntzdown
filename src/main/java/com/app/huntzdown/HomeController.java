@@ -123,9 +123,9 @@ public class HomeController {
 			
 			restroDetails
 			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
-					+ "<div><a href='/blogInfo?pictureId="
+					+ "<div itemscope itemtype='http://schema.org/Person'><a href='/blogInfo?pictureId="
 					+ aeLatestBlog.get("id")
-					+ "'><img src='"
+					+ "' itemprop='url'><img src='"
 					+ aeLatestBlog.get("path")
 					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?pictureId="
 					+ aeLatestBlog.get("id")
