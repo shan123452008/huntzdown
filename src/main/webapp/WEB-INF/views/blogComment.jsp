@@ -136,7 +136,7 @@
 				  })();
 				</script>
 
-					<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}s" data-text="${haedingBlog}" data-via="huntzzdown" data-size="small" data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
+					<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}s" data-text="${titlePage}" data-via="huntzzdown" data-size="small" data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 				<!-- ENDS Respond -->					
 										
