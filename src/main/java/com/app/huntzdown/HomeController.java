@@ -83,20 +83,14 @@ public class HomeController {
 		response.setCharacterEncoding("utf-8");
 		Writer out;
 		out = response.getWriter();
-
 		StringBuilder restroDetails = new StringBuilder();
-		StringBuilder topNews = new StringBuilder();
 		StringBuilder latestBlog = new StringBuilder();
 		StringBuilder trendingBlog = new StringBuilder();
 		StringBuilder videoBlog = new StringBuilder();	
 
 
-		Map<String, Object> aeTopNewsMapRestro = null;
-
 		Map<String, Object> aeLatestBlog = null;
 		Map<String, Object> aeTrendingBlog = null;
-
-		List<Map<String, Object>> getHighRatingRestro = userdao.getLatestBlog();
 
 		List<Map<String, Object>> getLatestBlog = userdao.getLatestBlog();
 		List<Map<String, Object>> getTrendingBlog = userdao.getTrendingBlog();
@@ -116,13 +110,6 @@ public class HomeController {
 		}
 		//End Video Functionality
 
-		Iterator<Map<String, Object>> itrTopNews = getHighRatingRestro
-				.iterator();
-		while (itrTopNews.hasNext()) {
-			aeTopNewsMapRestro = itrTopNews.next();
-			topNews.append("<li>" + aeTopNewsMapRestro.get("restro_name")
-					+ "</li>");
-		}
 
 		Iterator<Map<String, Object>> itrLatestBlog = getLatestBlog.iterator();
 		while (itrLatestBlog.hasNext()) {
@@ -133,6 +120,19 @@ public class HomeController {
 							+ "'>"
 							+ aeLatestBlog.get("blog_name")
 							+ "</a></font></li>");
+			
+			restroDetails
+			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
+					+ "<div><a href='/blogInfo?pictureId="
+					+ aeLatestBlog.get("id")
+					+ "'><img src='"
+					+ aeLatestBlog.get("path")
+					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?pictureId="
+					+ aeLatestBlog.get("id")
+					+ "'><h5 style='height:59px;'>"
+					+ aeLatestBlog.get("blog_name")
+					+ "</h5></a>"
+					+ "&nbsp;&nbsp;</div></div>");
 		}
 
 		Iterator<Map<String, Object>> itrTrendingBlog = getTrendingBlog
@@ -154,50 +154,13 @@ public class HomeController {
 
 		ModelAndView mv = new ModelAndView();
 
-		ResourceBundle bundle = ResourceBundle.getBundle("jdbc");
-		String driverClassName = bundle.getString("jdbc.driverClassName");
-		String dbURL = bundle.getString("jdbc.databaseurl");
-		String dbUser = bundle.getString("jdbc.username");
-		String dbPass = bundle.getString("jdbc.password");
-
-		Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
-		Statement st = con.createStatement();
-		String filename = null;
-		ResultSet i = st.executeQuery("select * from huntzdown.blog where isVideo IS NULL order by id desc");
-		while (i.next()) {
-			String path = i.getString(3);
-			filename = i.getString(1);
-			String blogName = i.getString(2);
-			restroDetails
-					.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
-							+ "<div><a href='/blogInfo?pictureId="
-							+ filename
-							+ "'><img src='"
-							+ path
-							+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?pictureId="
-							+ filename
-							+ "'><h5 style='height:59px;'>"
-							+ blogName
-							+ "</h5></a>"
-							+ "&nbsp;&nbsp;</div></div>");
-
-		}
-
+		
 		mv.addObject("restroDetails", restroDetails.toString());
 		mv.addObject("getLatestBlog", getLatestBlog);
 		mv.addObject("getTrendingBlog", trendingBlog);
 		mv.addObject("videoBlog", videoBlog);
-
-
-		if (getLatestBlog.size() > 0) {
-			mv.addObject("getLatestBlogImg", getLatestBlog.get(0).get("path"));
-
-		}
-
 		mv.setViewName("index");
 		return mv;
-
 		// return "index";
 	} // ends : agencyDash()
 
