@@ -40,19 +40,6 @@
 		src="https://www.facebook.com/tr?id=649374138528079&ev=PageView&noscript=1"
 		/></noscript>
 		
-		<script>
-		  (function() {
-		    var cx = '001371981805070111122:wwsmgfbdih0';
-		    var gcse = document.createElement('script');
-		    gcse.type = 'text/javascript';
-		    gcse.async = true;
-		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-		        '//cse.google.com/cse.js?cx=' + cx;
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(gcse, s);
-		  })();
-		</script>
-		<gcse:search></gcse:search>
 
         <jsp:include page="Header.jsp"/>
         <!-- ENDS HEADER -->
