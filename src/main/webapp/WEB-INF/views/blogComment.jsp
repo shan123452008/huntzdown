@@ -125,9 +125,7 @@
 				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 <%-- 		        <div class="fb-send" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"></div>
  --%>				<div class="fb-like" data-share="true" data-width="450"	data-show-faces="true"></div>
- 					<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}s" data-text="${haedingBlog}" data-via="huntzzdown" data-size="large" data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-				<!-- ENDS Respond -->
+ 					
 				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="300" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"></div>
 				<!-- Place this tag after the last +1 button tag. -->
 				<script type="text/javascript">
@@ -137,8 +135,10 @@
 				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 				  })();
 				</script>
-				<!-- ENDS Respond -->
-					
+
+					<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}s" data-text="${haedingBlog}" data-via="huntzzdown" data-size="small" data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<!-- ENDS Respond -->					
 										
 				
     		</div>
