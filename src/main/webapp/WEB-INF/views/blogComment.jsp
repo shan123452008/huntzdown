@@ -91,7 +91,10 @@
 							
 							${detailsDivTextBlog}
 							
-								
+								<span class="vcard author"><span class="fn">
+									<a href=""
+									rel="author"></a>
+								</span></span>
 							</div>
 							
 							
