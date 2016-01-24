@@ -22,10 +22,9 @@
 					<li class="current-menu-item"><a href="#">BLOG</a>
                                          <ul style="display: none; visibility: hidden;">
                                             <li><a href="/blog?category=ENTERTAINMENT">ENTERTAINMENT</a></li>
-											<li><a href="/blog?category=LIFESTYLE">LIFESTYLE</a></li>
-											<li><a href="/blog?category=WORLD">FACTS</a></li>
+											<li><a href="/blog?category=FACTS">FACTS</a></li>
 											<li><a href="/blog?category=NEWS">NEWS</a></li>
-											<li><a href="/blog?category=TECHNOLOGY">SCIENCE</a></li>
+											<li><a href="/blog?category=SCIENCE">SCIENCE</a></li>
 											<li><a href="/blog?category=AUTOMOBILES">AUTOMOBILES</a></li>
 											<li><a href="/blog?category=SPORTS">SPORTS</a></li>
 											
