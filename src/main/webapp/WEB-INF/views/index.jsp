@@ -57,8 +57,6 @@
                     <div class="project-slider">
                         <div class="flexslider">
                             <ul class="slides">
-                               
-                                
                                 <%
 									 Class.forName("com.mysql.jdbc.Driver");
 									 Connection con = DriverManager.getConnection("jdbc:mysql://127.7.201.130:3306/huntzdown","admin1ucVL7Z", "xRWsL2hKVAXT");

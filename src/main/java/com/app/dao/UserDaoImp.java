@@ -287,7 +287,7 @@ System.out.println("inside product list..");
 	
 	@Override
 	public List<Map<String, Object>> getBlogPic(String id) throws DataAccessException {
-		String query = "select * from huntzdown.blog where tag='"+id+"'";
+		String query = "select * from huntzdown.blog where tag= \""+id+"\"";
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getProductList.>>?????.."+getProductList);
 		return getProductList;
