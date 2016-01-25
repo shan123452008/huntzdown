@@ -456,10 +456,6 @@ public class HomeController {
 	        return contact;
 	    }
 	 
-	 @RequestMapping(value = "/robots.txt")
-	    public ModelAndView robot() {
-	        ModelAndView robot = new ModelAndView("robots.txt");
-	        return robot;
-	    }
+	
 
 }
