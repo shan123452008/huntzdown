@@ -46,16 +46,12 @@
 				<p><u><h3 align="left">Contact HuntzDown.com</h3></u></p>
 				<h6 align="left">So now we are here among you. Please share your thougts and suggestion with us. We will appreciate all your views and thoughts.</h6>
 				<h4 align="left">Connect with Our Team<br></h4>
-				<h5>Shantanu Pandey - Cofounder and Editor<br></h5>
+				<h5>Shantanu Pandey - Founder and Editor<br></h5>
 				<h6>Shantanu@huntzdown.com</h6>
 				<p>&nbsp;</p>
 				
 				<h5>Balneet Singh Bagga - Chief Editor<br></h5>
 				<h6>balneet@huntzdown.com</h6>
-				<p>&nbsp;</p>
-				
-				<h5>Tushar Mittal - Chief Editor<br></h5>
-				<h6>Tushar@huntzdown.com</h6>
 				<p>&nbsp;</p>
 				
 				<h5>HuntzDown Team<br></h5>

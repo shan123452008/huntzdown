@@ -459,6 +459,12 @@ public class HomeController {
 	        return contact;
 	    }
 	 
+	 @RequestMapping(value = "/privacy")
+	    public ModelAndView privacy() {
+	        ModelAndView contact = new ModelAndView("contact");
+	        return contact;
+	    }
+	 
 	
 
 }

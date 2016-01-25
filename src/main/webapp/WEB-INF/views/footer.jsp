@@ -32,7 +32,7 @@
                 <li class="fourth-col">
 
                     <div class="widget-block">
-                        <h5><a href="#">Privacy</a></h5>
+                        <h5><a href="/privacy">Privacy</a></h5>
                        
                     </div>
 
