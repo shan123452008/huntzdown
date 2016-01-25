@@ -159,6 +159,8 @@ public interface UserDao {
 
 	public List<Map<String, Object>> getDetailsVideos();
 
+	public List<Map<String, Object>> getBlogOldPic(String oldpicId);
+
 
     //end shntanu
 }

@@ -197,6 +197,8 @@ public class HomeController {
 		session.removeAttribute("detailsDivTextBlog");
 
 		String picId = req.getParameter("tag");
+		String oldpicId = req.getParameter("pictureId");
+
 		StringBuilder details = new StringBuilder();
 		StringBuilder detailsDiv = new StringBuilder();
 		StringBuilder detailsDivText = new StringBuilder();
@@ -217,7 +219,16 @@ public class HomeController {
 
 		Map<String, Object> aeDataMap = null;
 		Map<String, Object> dataMap = null;
-		List<Map<String, Object>> getProductList = userdao.getBlogPic(picId);
+		List<Map<String, Object>> getProductList;
+		
+		if(oldpicId != null){
+			getProductList = userdao.getBlogOldPic(oldpicId);
+			
+		}else{
+			getProductList = userdao.getBlogPic(picId);
+		}
+		
+		
 
 		Iterator<Map<String, Object>> itr = getProductList.iterator();
 		String imagePath= null;

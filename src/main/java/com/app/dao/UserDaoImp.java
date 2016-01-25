@@ -825,6 +825,14 @@ System.out.println("inside product list..");
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		return getProductList;
 	}
+
+	@Override
+	public List<Map<String, Object>> getBlogOldPic(String oldpicId) {
+		String query = "select * from huntzdown.blog where id= '"+oldpicId+"'";
+		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
+		System.out.println("getProductList.>>?????.."+getProductList);
+		return getProductList;
+	}
     
 	
 
