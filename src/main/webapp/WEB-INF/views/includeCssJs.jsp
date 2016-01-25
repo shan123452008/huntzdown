@@ -7,6 +7,7 @@
 		<link rel="stylesheet" media="all" href="<%=request.getContextPath()%>/resources/cssHomePage/style.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="google-site-verification" content="JRl3bcsYHIV9muchLRXocq0wrvaZ5Va1G9XqvrjRUcU" />
+		<meta name="msvalidate.01" content="2FC042E4EA47DDF65A0D2AC57DA23C48" />
 		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->			
                  
                 
