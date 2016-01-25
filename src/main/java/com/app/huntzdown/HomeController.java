@@ -209,14 +209,6 @@ public class HomeController {
 		StringBuilder ratingDiv = new StringBuilder();
 		StringBuilder keywords = new StringBuilder();
 
-
-		if (picId == null) {
-			System.out.println("andar gaya null me....<>>>>"
-					+ req.getSession().getAttribute("userBlogId").toString());
-			picId = req.getSession().getAttribute("userBlogId").toString();
-
-		}
-
 		Map<String, Object> aeDataMap = null;
 		Map<String, Object> dataMap = null;
 		List<Map<String, Object>> getProductList;
