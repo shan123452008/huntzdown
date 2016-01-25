@@ -72,7 +72,7 @@
 									 <%
 									 while(i.next()){
 										 String path =  i.getString(3);
-										 String filename = i.getString(1);		
+										 String filename = i.getString(10);		
 
 									   %>
                                 <li><a href="blogInfo?pictureId=<%=filename%>"><img id="fixed" src="<%=path%>" style=" width: 639px; height: 400px; "/></a></li>

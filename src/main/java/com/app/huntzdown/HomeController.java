@@ -115,20 +115,20 @@ public class HomeController {
 		while (itrLatestBlog.hasNext()) {
 			aeLatestBlog = itrLatestBlog.next();
 			latestBlog
-					.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?pictureId="
-							+ aeLatestBlog.get("id")
+					.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?tag="
+							+ aeLatestBlog.get("tag")
 							+ "'>"
 							+ aeLatestBlog.get("blog_name")
 							+ "</a></font></li>");
 			
 			restroDetails
 			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
-					+ "<div><a href='/blogInfo?pictureId="
-					+ aeLatestBlog.get("id")
+					+ "<div><a href='/blogInfo?tag="
+					+ aeLatestBlog.get("tag")
 					+ "'><img src='"
 					+ aeLatestBlog.get("path")
-					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?pictureId="
-					+ aeLatestBlog.get("id")
+					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?tag="
+					+ aeLatestBlog.get("tag")
 					+ "'><h5 style='height:59px;'>"
 					+ aeLatestBlog.get("blog_name")
 					+ "</h5></a>"
@@ -140,8 +140,8 @@ public class HomeController {
 		while (itrTrendingBlog.hasNext()) {
 			aeTrendingBlog = itrTrendingBlog.next();
 			trendingBlog
-					.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?pictureId="
-							+ aeTrendingBlog.get("id")
+					.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?tag="
+							+ aeTrendingBlog.get("tag")
 							+ "'>"
 							+ aeTrendingBlog.get("blog_name")
 							+ "</a></font></li>");
@@ -196,7 +196,7 @@ public class HomeController {
 		session.removeAttribute("detailsBlog");
 		session.removeAttribute("detailsDivTextBlog");
 
-		String picId = req.getParameter("pictureId");
+		String picId = req.getParameter("tag");
 		StringBuilder details = new StringBuilder();
 		StringBuilder detailsDiv = new StringBuilder();
 		StringBuilder detailsDivText = new StringBuilder();
@@ -355,8 +355,8 @@ public class HomeController {
 				dataMap = itrt.next();
 				if (i % 2 == 0) {
 					detailsDiv
-							.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?pictureId="
-									+ dataMap.get("id")
+							.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?tag="
+									+ dataMap.get("tag")
 									+ "'>"
 									+ "<img src=' "
 									+ dataMap.get("path")
@@ -367,8 +367,8 @@ public class HomeController {
 									+ "</a><p></p></div>" + "</div></article>");
 					i = i + 1;
 				} else {
-					asideDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?pictureId="
-							+ dataMap.get("id")
+					asideDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?tag="
+							+ dataMap.get("tag")
 							+ "'>"
 							+ "<img src='"
 							+ dataMap.get("path")
@@ -414,8 +414,8 @@ public class HomeController {
 					dataMap = itrt.next();
 					if (i % 2 == 0) {
 						detailsDiv
-								.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?pictureId="
-										+ dataMap.get("id")
+								.append("<article class='format-standard'><div class='feature-image'><a href='blogInfo?tag="
+										+ dataMap.get("tag")
 										+ "'>"
 										+ "<iframe src='"
 										+ dataMap.get("path")
@@ -426,8 +426,8 @@ public class HomeController {
 										+ "</a><p></p></div>" + "</div></article>");
 						i = i + 1;
 					} else {
-						asideDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?pictureId="
-								+ dataMap.get("id")
+						asideDiv.append("<article class='format-standard'><div class='feature-image'><a href='/blogInfo?tag="
+								+ dataMap.get("tag")
 								+ "'>"
 								+ "<iframe src='"
 								+ dataMap.get("path")
