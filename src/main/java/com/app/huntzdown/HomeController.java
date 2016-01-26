@@ -237,8 +237,7 @@ public class HomeController {
 							+ "</p><p><a href='#' class='launch'>Launch Project</a></p>");
 			detailsDivText.append("<p>" + aeDataMap.get("comments") + "</p>");
 			System.out.println("check this" + aeDataMap.get("comments"));
-		//	haeding.append("<p>" + aeDataMap.get("blog_name") + "</p>");
-			haeding.append("<p>&nbsp;</p>");
+			haeding.append("<p>" + aeDataMap.get("blog_name") + "</p>");
 			titlePage.append(aeDataMap.get("blog_name"));
 			keywords.append(aeDataMap.get("keywords"));
 
