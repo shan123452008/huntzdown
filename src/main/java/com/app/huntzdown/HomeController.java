@@ -461,8 +461,8 @@ public class HomeController {
 	 
 	 @RequestMapping(value = "/privacy")
 	    public ModelAndView privacy() {
-	        ModelAndView contact = new ModelAndView("contact");
-	        return contact;
+	        ModelAndView privacy = new ModelAndView("privacy");
+	        return privacy;
 	    }
 	 
 	
