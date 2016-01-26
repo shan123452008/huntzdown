@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
         <meta property="og:type" name="og:type" content="website" />
 		<meta property="og:title" name="og:title" content="${titlePage}" />
-		<meta property="og:url" name="og:url" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"/>
+		<meta property="og:url" name="og:url" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}"/>
 		<meta property="og:image" name="og:image" content="${imagePath}" />
 		<meta property="fb:app_id" content="1698006363811207" /> 
         <title>${titlePage}</title>
@@ -122,11 +122,11 @@
 						
 			
 				<div id="fb-root"></div>
-				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 <%-- 		        <div class="fb-send" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"></div>
  --%>				<div class="fb-like" data-share="true" data-width="400"	data-show-faces="true"></div>
  					
-				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="250" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"></div>
+				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="250" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}"></div>
 				<!-- Place this tag after the last +1 button tag. -->
 				<script type="text/javascript">
 				  (function() {
@@ -136,7 +136,7 @@
 				  })();
 				</script>
 
-					<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}s" data-text="${titlePage}" data-via="huntzzdown" data-size="large" data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
+					<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}s" data-text="${titlePage}" data-via="huntzzdown" data-size="large" data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
 					<a href="https://twitter.com/huntzzdown" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @huntzzdown</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 					
