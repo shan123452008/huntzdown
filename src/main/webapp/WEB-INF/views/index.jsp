@@ -19,7 +19,7 @@
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"/>
 		<meta name="keywords" content="blogs, entertainment, sports , automobiles, videos, facts"/> 
-        <title>HuntzDown.com - India's largest Online blog site. Offering blogs on news, facts, videos, entertainment, automobiles and sports
+        <title>HuntzDown - India's blog site. Offering blogs on news, facts, videos, entertainment
         </title>
         <%@include file="includeCssJs.jsp" %> 
          	
