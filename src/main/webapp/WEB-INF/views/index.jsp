@@ -19,8 +19,12 @@
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"/>
 		<meta name="keywords" content="blogs, entertainment, sports , automobiles, videos, facts"/> 
-        <title>HuntzDown - India's blog site. Offering blogs on news, facts, videos, entertainment
+        <title>HuntzDown - Entertainment! News! Videos! Facts
         </title>
+		<meta name="author" content="shantanu pandey">
+		<meta name="copyright" content="huntzdown.com">
+		<meta http-equiv="Reply-to" content="huntzdown@gmail.com">
+		<meta http-equiv="content-language" content="EN">
         <%@include file="includeCssJs.jsp" %> 
          	
       
