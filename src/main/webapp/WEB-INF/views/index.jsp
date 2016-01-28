@@ -284,13 +284,16 @@
                   
 
                             
-  								                         
+  
+<div id="fb-root"></div>
+<div class="fb-page" data-href="https://www.facebook.com/huntzdown/" data-tabs="timeline" data-small-header="false" data-width="239" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/huntzdown/"><a href="https://www.facebook.com/huntzdown/">Huntzdown</a></blockquote></div></div>
+
+
+
+								                         
  <a class="twitter-timeline" href="https://twitter.com/huntzzdown" data-widget-id="686142833212821504" width="250">Tweets by @huntzzdown</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-
-<div id="fb-root"></div>
-<div class="fb-page" data-href="https://www.facebook.com/huntzdown/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/huntzdown/"><a href="https://www.facebook.com/huntzdown/">Huntzdown</a></blockquote></div></div>
 
 <style type="text/css">
 iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important;}
