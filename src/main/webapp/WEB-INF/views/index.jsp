@@ -289,6 +289,8 @@
 <div class="fb-page" data-href="https://www.facebook.com/huntzdown/" data-tabs="timeline" data-small-header="false" data-width="239" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/huntzdown/"><a href="https://www.facebook.com/huntzdown/">Huntzdown</a></blockquote></div></div>
 
 
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 
 								                         
  <a class="twitter-timeline" href="https://twitter.com/huntzzdown" data-widget-id="686142833212821504" width="250">Tweets by @huntzzdown</a>
@@ -297,6 +299,7 @@
 
 <style type="text/css">
 iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important;}
+.fb-like-box iframe[style] {width:  100% !important;min-width: 239px !important;}
 </style>
                             
 
