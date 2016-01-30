@@ -253,11 +253,7 @@
                 </div>
                 <!-- sidebar -->
                 <aside id="sidebar" class="asidePage">
-
-             
-             
-             
-                 <h4  style="width: 239px;">Trending Topics</h4>
+                 <%-- <h4  style="width: 239px;">Trending Topics</h4>
  					<ul style="list-style: none;"> 
 
                         <li class="block" style="overflow-y: scroll;overflow-x: auto;width:239px;height:272px;">
@@ -268,7 +264,7 @@
 					</ul>
                         </li>
                      
-                    </ul>
+                    </ul> --%>
                    
  				<h4 style="width: 239px;">Latest Blogs</h4>
                     <ul style="list-style: none;"> 
