@@ -93,15 +93,13 @@
 						
 						<div class="excerpt">
 							<div class="post-heading" >${haedingBlog}</div>
-							<div class="entry-content">
-							
-							${detailsDivTextBlog}
-							
-								
-							</div>
-							
-							
-						</div>
+						<div class="entry-content"
+							style="font-size: 18px; font-family: helveticaNeue; margin: 30px 0; line-height: 32px;">
+
+							${detailsDivTextBlog}</div>
+
+
+					</div>
 						
 						
 					</div>
