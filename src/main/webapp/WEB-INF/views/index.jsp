@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+tr<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <%@ page import ="java.sql.*,java.io.*,javax.imageio.ImageIO,java.awt.image.BufferedImage" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
@@ -147,6 +147,16 @@
 
                             <li class="comment even thread-even depth-1" id="li-comment-1">
                             
+                            <div id="comment-1" class="comment-body cf">
+
+                                    <span><iframe src="https://www.youtube.com/embed/s7YYt9_KfsM" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
+                                    <span class="carlist"><h4 class="heading1">Kapoor & Sons Official Trailer </span>
+
+
+
+                                </div>
+                                
+                            
                              <div id="comment-1" class="comment-body cf">
 
                                     <span><iframe src="https://www.youtube.com/embed/uFKluii3rmI" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
@@ -165,8 +175,8 @@
 
                                 <div id="comment-1" class="comment-body cf">
 
-                                    <span><iframe src="https://www.youtube.com/embed/HZRXsnqcbEs" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Saala Khadoos Official Trailer
+                                    <span><iframe src="https://www.youtube.com/embed/cMsszmx3dh0" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
+                                    <span class="carlist"><h4 class="heading1">M.A. Pass official Trailer
                                     </span>
 
 
@@ -174,15 +184,7 @@
                                 </div>
                                 
                                 
-                                 <div id="comment-1" class="comment-body cf">
-
-                                    <span><iframe src="https://www.youtube.com/embed/Xwyb7fT65Ac" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Airlift Teaser </span>
-
-
-
-                                </div>
-                                
+                                 
                                  <div id="comment-1" class="comment-body cf">
 
                                     <span><iframe src="https://www.youtube.com/embed/vKziLmjSVB4" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
