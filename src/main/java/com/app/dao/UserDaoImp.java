@@ -821,7 +821,7 @@ System.out.println("inside product list..");
 
 	@Override
 	public List<Map<String, Object>> getDetailsVideos() {
-		String query = "select * from huntzdown.blog where isVideo='video'";
+		String query = "select * from huntzdown.blog where isVideo='video' order by id desc";
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		return getProductList;
 	}
