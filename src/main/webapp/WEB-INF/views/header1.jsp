@@ -7,9 +7,7 @@
 		<![endif]-->
 		<link rel="stylesheet" media="all" href="cssHomePage/style.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		
-		
-                 
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		                 
                 
 		<!-- JS -->
 		<script src="js_home/jquery-1.7.1.min.js"></script>
