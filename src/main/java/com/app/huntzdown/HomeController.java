@@ -184,20 +184,14 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/blogInfo", method = RequestMethod.GET)
-	public String blogInfo(HttpServletRequest req,
+	public ModelAndView blogInfo(HttpServletRequest req,
 			HttpServletResponse response, ModelMap model) throws IOException,
 			SQLException, ClassNotFoundException {
-		HttpSession session = req.getSession();
 		response.setHeader("Cache-Control", "no-cache");
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("utf-8");
-		session.removeAttribute("userRatingsBlog");
-		session.removeAttribute("commentBlog");
-		session.removeAttribute("detailsDivBlog");
-		session.removeAttribute("haedingBlog");
-		session.removeAttribute("userIdBlog");
-		session.removeAttribute("detailsBlog");
-		session.removeAttribute("detailsDivTextBlog");
+		Writer out;
+		out = response.getWriter();
 
 		String picId = req.getParameter("tag");
 		String oldpicId = req.getParameter("pictureId");
@@ -247,21 +241,26 @@ public class HomeController {
 			userId.append(picId);
 		}
 
-		session.setAttribute("userRatingsBlog", ratingDiv.toString());
-		session.setAttribute("commentBlog", comment.toString());
-		session.setAttribute("detailsDivTextBlog", detailsDiv.toString());
-		session.setAttribute("haedingBlog", haeding.toString());
-		session.setAttribute("titlePage", titlePage.toString());
-		session.setAttribute("userIdBlog", userId.toString());
-		session.setAttribute("detailsBlog", details.toString());
-		session.setAttribute("detailsDivTextBlog", detailsDivText.toString());
-		session.setAttribute("imagePath", imagePath);
-		session.setAttribute("keywords", keywords.toString());
+		//
+		model.addAttribute("userRatingsBlog", ratingDiv.toString());
 
+		model.addAttribute("commentBlog", comment.toString());
+		model.addAttribute("detailsDivTextBlog", detailsDiv.toString());
+		model.addAttribute("haedingBlog", haeding.toString());
+		model.addAttribute("titlePage", titlePage.toString());
+		model.addAttribute("userIdBlog", userId.toString());
+		model.addAttribute("detailsBlog", details.toString());
+		model.addAttribute("detailsDivTextBlog", detailsDivText.toString());
+		model.addAttribute("imagePath", imagePath);
+		model.addAttribute("keywords", keywords.toString());
 
+		ModelAndView mv = new ModelAndView();
 
-		return "blogComment";
-
+		
+		
+		mv.setViewName("blogComment");
+		return mv;
+		
 	}
 
 	@RequestMapping(value = "/writeBlog", method = RequestMethod.GET)
