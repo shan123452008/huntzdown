@@ -188,6 +188,9 @@ public class HomeController {
 			HttpServletResponse response, ModelMap model) throws IOException,
 			SQLException, ClassNotFoundException {
 		HttpSession session = req.getSession();
+		response.setHeader("Cache-Control", "no-cache");
+		response.setContentType("text/plain");
+		response.setCharacterEncoding("utf-8");
 		session.removeAttribute("userRatingsBlog");
 		session.removeAttribute("commentBlog");
 		session.removeAttribute("detailsDivBlog");
