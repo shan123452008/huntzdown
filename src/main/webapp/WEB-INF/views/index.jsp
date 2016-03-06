@@ -300,6 +300,7 @@ iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important
 
 </style>
 
+<div data-WRID="WRID-145729401515879270" data-widgetType="staticBanner" data-responsive="yes" data-class="affiliateAdsByFlipkart" height="350" width="300"></div><script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
 
 
 <div>&nbsp;</div>
