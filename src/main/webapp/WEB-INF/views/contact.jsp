@@ -50,8 +50,8 @@
 				<h6>Shantanu@huntzdown.com</h6>
 				<p>&nbsp;</p>
 				
-				<h5>Balneet Singh Bagga - Chief Editor<br></h5>
-				<h6>balneet@huntzdown.com</h6>
+				<h5>Aman Singh - Chief Editor<br></h5>
+				<h6>aman@huntzdown.com</h6>
 				<p>&nbsp;</p>
 				
 				<h5>HuntzDown Team<br></h5>
