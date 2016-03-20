@@ -72,7 +72,6 @@
 				
 				
 				<!-- ENDS form -->				
-				
     		</div>
     		<!-- ENDS page content-->
 			
