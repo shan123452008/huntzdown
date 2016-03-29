@@ -74,6 +74,7 @@
 		<!-- flexslider -->
 		<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/cssHomePage/flexslider.css" >
 		<script src="<%=request.getContextPath()%>/resources/js_home/jquery.flexslider.js"></script>
+	    <script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
 		
 		
 		<!-- Screen -->

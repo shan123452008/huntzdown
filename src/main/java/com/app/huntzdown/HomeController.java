@@ -540,7 +540,6 @@ public class HomeController {
 			public ModelAndView chapterConfession(HttpServletRequest req,
 					HttpServletResponse response, ModelMap model) throws IOException,
 					SQLException, ClassNotFoundException {
-			 	System.out.println("helllo******************************************************");
 				response.setHeader("Cache-Control", "no-cache");
 				response.setContentType("text/plain");
 				response.setCharacterEncoding("utf-8");
