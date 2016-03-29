@@ -21,6 +21,7 @@ import com.app.user.AddRestroComment;
 import com.app.user.AddUserBlog;
 import com.app.user.RestroSearch;
 import com.app.user.User;
+import com.app.user.WriteConfession;
 
 
 public interface UserDao {
@@ -160,6 +161,12 @@ public interface UserDao {
 	public List<Map<String, Object>> getDetailsVideos();
 
 	public List<Map<String, Object>> getBlogOldPic(String oldpicId);
+
+	public void addConfession(WriteConfession writeConfession);
+
+	public List<Map<String, Object>> getConfessionDetail(String tag);
+
+	List<Map<String, Object>> getConfession();
 
 
     //end shntanu

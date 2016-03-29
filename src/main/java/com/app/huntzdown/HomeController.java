@@ -43,6 +43,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.app.dao.UserDao;
 import com.app.user.AddBlog;
+import com.app.user.WriteConfession;
 
 /**
  * Handles requests for the application home page.
@@ -467,6 +468,144 @@ public class HomeController {
 	        return privacy;
 	    }
 	 
+	 
+	 
+	 @RequestMapping(value = "/bikePage.do",method = RequestMethod.GET)
+     public String detailsBike(HttpServletRequest req,HttpServletResponse response, ModelMap model) throws IOException, SQLException{
+	 HttpSession session = req.getSession();
+	
+	  StringBuilder details = new StringBuilder();
+	  StringBuilder detailsDiv = new StringBuilder();
+	  StringBuilder detailsDivText = new StringBuilder();
+	  StringBuilder haeding = new StringBuilder();
+	  StringBuilder userId = new StringBuilder();
+	  StringBuilder comment = new StringBuilder();
+	  StringBuilder trendDiv = new StringBuilder();
+	  String bikeId= "1";
+    
+        
+
+
+	  Map<String,Object> aeDataMap = null;
+	  Map<String,Object> dataMap = null;            
+	  List<Map<String, Object>> getBikeList = userdao.getBikePic(bikeId);
+
+	 Iterator<Map<String, Object>> itr = getBikeList.iterator();
+		while(itr.hasNext()){	
+			aeDataMap = itr.next(); 
+			details.append("<li><img src='"+aeDataMap.get("path1")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments1")+"</div></li>");
+			details.append("<li><img src='"+aeDataMap.get("path2")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments2")+"</div></li>");
+			details.append("<li><img src='"+aeDataMap.get("path3")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments3")+"</div></li>");
+			details.append("<li><img src='"+aeDataMap.get("path4")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments4")+"</div></li>");
+			details.append("<li><img src='"+aeDataMap.get("path5")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments5")+"</div></li>");
+			details.append("<li><img src='"+aeDataMap.get("path6")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments6")+"</div></li>");
+
+		}
+		userId.append(bikeId);
+
+		 Iterator<Map<String, Object>> itrt = getBikeList.iterator();
+
+		while(itrt.hasNext()){	
+			dataMap = itrt.next(); 
+			haeding.append(""+aeDataMap.get("company")+" - "+aeDataMap.get("bike_name")+"");
+			detailsDiv.append(""+aeDataMap.get("comments")+"");
+		}
+                   model.addAttribute("bikeRating", details.toString());
+                   model.addAttribute("heading", haeding.toString());
+
+	return "bikeRating";
+	 
+}
+	 
+	 @RequestMapping(value = "/writeConfession", method = RequestMethod.GET)
+		public String writeConfession(HttpServletRequest req, HttpServletResponse response, ModelMap model)
+				throws IOException, SQLException {
+			return "confession";
+		}
+
+		 @RequestMapping(value = "/writeConfession",method = RequestMethod.POST)
+		 public String writeConfession(@ModelAttribute("writeConfession")WriteConfession writeConfession,BindingResult result,SessionStatus status,ModelMap model,HttpServletRequest req,HttpServletResponse res) throws IOException{
+			 HttpSession session = req.getSession();
+
+			System.out.println("check comment"+writeConfession.getConfession());
+			System.out.println("check author name"+writeConfession.getAuthorName());
+			
+			 userdao.addConfession(writeConfession);
+			 
+			 return "confession";
+		 }     
+		 
+		 
+		 @RequestMapping(value = "/chapterConfession", method = RequestMethod.GET)
+			public ModelAndView chapterConfession(HttpServletRequest req,
+					HttpServletResponse response, ModelMap model) throws IOException,
+					SQLException, ClassNotFoundException {
+			 	System.out.println("helllo******************************************************");
+				response.setHeader("Cache-Control", "no-cache");
+				response.setContentType("text/plain");
+				response.setCharacterEncoding("utf-8");
+				Writer out;
+				out = response.getWriter();
+
+				String tag = req.getParameter("tag");
+
+				StringBuilder details = new StringBuilder();
+				StringBuilder detailsDiv = new StringBuilder();
+				StringBuilder detailsDivText = new StringBuilder();
+				StringBuilder haeding = new StringBuilder();
+				StringBuilder titlePage = new StringBuilder();
+				StringBuilder userId = new StringBuilder();
+				StringBuilder comment = new StringBuilder();
+				StringBuilder ratingDiv = new StringBuilder();
+				StringBuilder keywords = new StringBuilder();
+
+				Map<String, Object> aeDataMap = null;
+				Map<String, Object> dataMap = null;
+				List<Map<String, Object>> getProductList;
+				
+				getProductList = userdao.getConfessionDetail(tag);
+			
+				Iterator<Map<String, Object>> itr = getProductList.iterator();
+				String imagePath= null;
+				while (itr.hasNext()) {
+					aeDataMap = itr.next();
+					imagePath=aeDataMap.get("path").toString();
+					details.append("<img src='" + aeDataMap.get("path")
+							+ "' alt='"+aeDataMap.get("title")+"' class='blogImage'/>");
+					detailsDiv
+							.append("<p><strong>Client </strong>"
+									+ aeDataMap.get("title")
+									+ "</p><p><strong>Date </strong>"
+									+ aeDataMap.get("date")
+									+ "</p><p><a href='#' class='launch'>Launch Project</a></p>");
+					detailsDivText.append("<p>" + aeDataMap.get("comments") + "</p>");
+					System.out.println("check this" + aeDataMap.get("comments"));
+					haeding.append("<p>" + aeDataMap.get("title") + "</p>");
+					titlePage.append(aeDataMap.get("title"));
+					keywords.append(aeDataMap.get("keywords"));
+
+					userId.append(tag);
+				}
+				model.addAttribute("userRatingsBlog", ratingDiv.toString());
+
+				model.addAttribute("commentBlog", comment.toString());
+				model.addAttribute("detailsDivTextBlog", detailsDiv.toString());
+				model.addAttribute("haedingBlog", haeding.toString());
+				model.addAttribute("titlePage", titlePage.toString());
+				model.addAttribute("userIdBlog", userId.toString());
+				model.addAttribute("detailsBlog", details.toString());
+				model.addAttribute("detailsDivTextBlog", detailsDivText.toString());
+				model.addAttribute("imagePath", imagePath);
+				model.addAttribute("keywords", keywords.toString());
+
+				ModelAndView mv = new ModelAndView();
+
+				
+				
+				mv.setViewName("blogComment");
+				return mv;
+				
+			}
 	
 
 }

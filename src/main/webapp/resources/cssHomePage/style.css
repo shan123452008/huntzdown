@@ -737,3 +737,16 @@ footer h6 {
 	font-size:.8em
 }
 
+
+.sliderComment {
+	font-size: 18px;
+	font-family: helveticaNeue;
+	margin: 30px 0;
+	line-height: 32px;
+	margin-bottom: 21px;
+	margin-left: 11px;
+	margin-right: 47px;
+	margin-top: 10px;
+	text-align: justify;
+}
+

@@ -38,6 +38,7 @@ import com.app.user.AddRestroComment;
 import com.app.user.AddUserBlog;
 import com.app.user.RestroSearch;
 import com.app.user.User;
+import com.app.user.WriteConfession;
 
 @Repository
 public class UserDaoImp implements UserDao {
@@ -833,6 +834,37 @@ System.out.println("inside product list..");
 		System.out.println("getProductList.>>?????.."+getProductList);
 		return getProductList;
 	}
+
+	@Override
+	public void addConfession(WriteConfession writeConfession) {
+	System.out.println("inside");
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		   Calendar cal = Calendar.getInstance();
+    String autherName= "";
+    if(writeConfession.getAuthorName().length() == 0){
+    	autherName= "Anonymous";
+    }
+    else{
+    	autherName= writeConfession.getAuthorName();
+    }
+	String sql = "INSERT INTO huntzdown.confession(comments,date,keywords,tag,userName,title) VALUES(?,?,?,?,?,?)";
+	jdbcTemplate.update(sql, new Object[] { writeConfession.getConfession(),dateFormat.format(cal.getTime()),"keywords","tag",autherName,"title"});
+	}
+
+	@Override
+	public List<Map<String, Object>> getConfession() {
+		String query = "SELECT * FROM huntzdown.confession WHERE approve='yes'";
+		List<Map<String, Object>> getCommentList = jdbcTemplate.queryForList(query);	
+		return getCommentList;
+	}
+
+	@Override
+	public List<Map<String, Object>> getConfessionDetail(String tag) {
+		String query = "SELECT * FROM huntzdown.confession WHERE tag='"+tag+"' && approve='yes'" ;
+		List<Map<String, Object>> getCommentList = jdbcTemplate.queryForList(query);	
+		return getCommentList;
+	}
+    
     
 	
 
