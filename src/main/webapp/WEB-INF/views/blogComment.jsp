@@ -92,9 +92,9 @@
 						</div> -->
 						
 						<div class="excerpt">
-							<div class="post-heading" >${haedingBlog}</div>
-						<div class="entry-content"
-							style="font-size: 18px; font-family: helveticaNeue; margin: 30px 0; line-height: 32px;">
+							<div class="post-heading" style="margin-left: 7px;">${haedingBlog}</div>
+							<div class="entry-content"
+							style="font-size: 20px;font-family: 'ProximaNova-Regular', 'Arial',sans-serif;margin: 0px 8px 0;line-height: 47px;text-align: justify;">
 
 							${detailsDivTextBlog}</div>
 
