@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
         <meta property="og:type" name="og:type" content="website" />
 		<meta property="og:title" name="og:title" content="${titlePage}" />
-		<meta property="og:url" name="og:url" content="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}"/>
+		<meta property="og:url" name="og:url" content="http://huntzdown-mobreview.rhcloud.com/chapterConfession?tag=${userIdBlog}"/>
 		<meta property="og:image" name="og:image" content="${imagePath}" />
 		<meta property="fb:app_id" content="1698006363811207" /> 
         <title>${titlePage}</title>

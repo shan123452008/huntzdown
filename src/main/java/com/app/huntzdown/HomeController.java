@@ -470,7 +470,7 @@ public class HomeController {
 	 
 	 
 	 
-	 @RequestMapping(value = "/bikePage.do",method = RequestMethod.GET)
+	 @RequestMapping(value = "/newsFacts",method = RequestMethod.GET)
      public String detailsBike(HttpServletRequest req,HttpServletResponse response, ModelMap model) throws IOException, SQLException{
 	 HttpSession session = req.getSession();
 	
