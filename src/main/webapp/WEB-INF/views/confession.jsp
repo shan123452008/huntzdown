@@ -123,49 +123,7 @@
             
     </script>
     </head>
-    <header>
-			<div class="wrapper cf">
-				
-				<div id="logo">
-					<a href="homePage.do?help=index"><img alt="Simpler" src="resources/img/logo.png" style="height: 92px; width: 423px; margin-top: -10px; margin-bottom: -20px;"></a>
-				</div>
-				
-				<!-- nav -->
-				<ul id="nav" class="sf-menu">
-					<li><a href="homePage.do"><span>HOME</span></a></li>
-					<li class="current-menu-item"><a href="blog.html">BLOG</a>
-                                         <ul>
-							<li><a href="blog.do">Read Blog</a></li>
-                                                        <li><a href="writeBlog.do">Write Blog</a></li>
-							
-                                         </ul></li>
-                                         
-                                         <li class="current-menu-item"><a href="signInUser.do">REVIEWS</a>
-                                                <ul>
-                                                    <li><a href="details.do">Movie</a></li>
-                                                    <li><a href="details.do">Restro</a></li>
-                                                    <li><a href="carReviews.do">Car</a></li>
-                                                     <li><a href="bikes.do">Bikes</a></li>
-                                                     <li><a href="mobile.do">Mobiles</a></li>
-
-                                                </ul>
-                                            </li>
-                                         
-					<li><a href="page.html">ABOUT</a>
-						<ul>
-							<li><a href="page-elements.html">Elements</a></li>
-							<li><a href="page-icons.html">Icons</a></li>
-							<li><a href="page-typography.html">Typography</a></li>
-						</ul>
-					</li>
-					<li><a href="portfolio.html">WORK</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-				</ul>
-				<div id="combo-holder"></div>
-				<!-- ends nav -->
-
-			</div>
-		</header>
+    
 <style type="text/css">
     #wrapper {
         width:650px;
