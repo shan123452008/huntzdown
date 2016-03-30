@@ -604,7 +604,7 @@ public class HomeController {
 
 				
 				
-				mv.setViewName("blogComment");
+				mv.setViewName("chapterConfession");
 				return mv;
 				
 			}
