@@ -181,7 +181,7 @@
         cursor: pointer;
         font-size: 15px;
         margin: 5px 0;
-        padding: 5px 22px;
+        padding: 5px 8px;
         -moz-border-radius: 4px;
         border-radius: 4px;
         -webkit-border-radius:4px;
