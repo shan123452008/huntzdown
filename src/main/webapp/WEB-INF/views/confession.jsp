@@ -243,6 +243,7 @@
                 
                 <tr><td>&nbsp;<input type="submit" value="Submit"/></td></tr>
                 
+                <tr><td colspan="2"><font color="red"><b>${message}</b></font></td></tr>
                 
 
             </table>    

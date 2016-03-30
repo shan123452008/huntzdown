@@ -532,6 +532,9 @@ public class HomeController {
 			
 			 userdao.addConfession(writeConfession);
 			 
+			 model.addAttribute("message", "Thanks for confessing. We will review and publish your confession.");
+
+			 
 			 return "confession";
 		 }     
 		 
