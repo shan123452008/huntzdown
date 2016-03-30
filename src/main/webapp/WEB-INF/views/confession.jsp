@@ -22,6 +22,8 @@
              });
         </script>
         <script type="text/javascript" src="resources/js_home/jquery-1.5.2.js"></script> 
+        <jsp:include page="Header.jsp"/>
+        
          <script type="text/javascript">
          
     function showDialog()
