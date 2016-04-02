@@ -88,13 +88,21 @@ public class HomeController {
 		StringBuilder latestBlog = new StringBuilder();
 		StringBuilder trendingBlog = new StringBuilder();
 		StringBuilder videoBlog = new StringBuilder();	
+		StringBuilder newsFact = new StringBuilder();
+
 
 
 		Map<String, Object> aeLatestBlog = null;
 		Map<String, Object> aeTrendingBlog = null;
+		Map<String, Object> aeConfession = null;
+		Map<String, Object> aeFactsNews = null;
+
+
 
 		List<Map<String, Object>> getLatestBlog = userdao.getLatestBlog();
 		List<Map<String, Object>> getTrendingBlog = userdao.getTrendingBlog();
+		List<Map<String, Object>> getNewsFacts = userdao.getNewsFacts();
+
 		
 		//Video Functinality
 		List<Map<String, Object>> getVideo = userdao.getDetailsVideos();
@@ -136,6 +144,25 @@ public class HomeController {
 					+ "&nbsp;&nbsp;</div></div>");
 		}
 
+		Iterator<Map<String, Object>> itrFactsNews = getNewsFacts.iterator();
+		while (itrFactsNews.hasNext()) {
+			aeFactsNews = itrFactsNews.next();
+					
+			newsFact
+			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
+					+ "<div><a href='/newsFacts?tag="
+					+ aeFactsNews.get("tag")
+					+ "'><img src='"
+					+ aeFactsNews.get("path")
+					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/newsFacts?tag="
+					+ aeFactsNews.get("tag")
+					+ "'><h5 style='height:59px;'>"
+					+ aeFactsNews.get("fact_name")
+					+ "</h5></a>"
+					+ "&nbsp;&nbsp;</div></div>");
+		}
+		
+		
 		Iterator<Map<String, Object>> itrTrendingBlog = getTrendingBlog
 				.iterator();
 		while (itrTrendingBlog.hasNext()) {
@@ -472,48 +499,67 @@ public class HomeController {
 	 
 	 @RequestMapping(value = "/newsFacts",method = RequestMethod.GET)
      public String detailsBike(HttpServletRequest req,HttpServletResponse response, ModelMap model) throws IOException, SQLException{
-	 HttpSession session = req.getSession();
-	
-	  StringBuilder details = new StringBuilder();
-	  StringBuilder detailsDiv = new StringBuilder();
-	  StringBuilder detailsDivText = new StringBuilder();
-	  StringBuilder haeding = new StringBuilder();
-	  StringBuilder userId = new StringBuilder();
-	  StringBuilder comment = new StringBuilder();
-	  StringBuilder trendDiv = new StringBuilder();
-	  String bikeId= "1";
-    
-        
+		HttpSession session = req.getSession();
 
+		StringBuilder details = new StringBuilder();
+		StringBuilder detailsDiv = new StringBuilder();
+		StringBuilder haeding = new StringBuilder();
+		StringBuilder userId = new StringBuilder();
+		StringBuilder comment = new StringBuilder();
+		String bikeId = req.getParameter("tag");
 
-	  Map<String,Object> aeDataMap = null;
-	  Map<String,Object> dataMap = null;            
-	  List<Map<String, Object>> getBikeList = userdao.getBikePic(bikeId);
+		Map<String, Object> aeDataMap = null;
+		Map<String, Object> dataMap = null;
+		List<Map<String, Object>> getBikeList = userdao.getBikePic(bikeId);
+		String imagePath = null;
+		String keywords = null;
 
-	 Iterator<Map<String, Object>> itr = getBikeList.iterator();
-		while(itr.hasNext()){	
-			aeDataMap = itr.next(); 
-			details.append("<li><img src='"+aeDataMap.get("path1")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments1")+"</div></li>");
-			details.append("<li><img src='"+aeDataMap.get("path2")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments2")+"</div></li>");
-			details.append("<li><img src='"+aeDataMap.get("path3")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments3")+"</div></li>");
-			details.append("<li><img src='"+aeDataMap.get("path4")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments4")+"</div></li>");
-			details.append("<li><img src='"+aeDataMap.get("path5")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments5")+"</div></li>");
-			details.append("<li><img src='"+aeDataMap.get("path6")+"' class='blogImage'/><div class='sliderComment'>"+aeDataMap.get("comments6")+"</div></li>");
+		Iterator<Map<String, Object>> itr = getBikeList.iterator();
+		while (itr.hasNext()) {
+			aeDataMap = itr.next();
+			imagePath = aeDataMap.get("path1").toString();
+			keywords = aeDataMap.get("keywords").toString();
+			details.append("<li><img src='" + aeDataMap.get("path1")
+					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ aeDataMap.get("comments1") + "</div></li>");
+			details.append("<li><img src='" + aeDataMap.get("path2")
+					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ aeDataMap.get("comments2") + "</div></li>");
+			details.append("<li><img src='" + aeDataMap.get("path3")
+					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ aeDataMap.get("comments3") + "</div></li>");
+			details.append("<li><img src='" + aeDataMap.get("path4")
+					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ aeDataMap.get("comments4") + "</div></li>");
+			details.append("<li><img src='" + aeDataMap.get("path5")
+					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ aeDataMap.get("comments5") + "</div></li>");
+			details.append("<li><img src='" + aeDataMap.get("path6")
+					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ aeDataMap.get("comments6") + "</div></li>");
 
 		}
 		userId.append(bikeId);
 
-		 Iterator<Map<String, Object>> itrt = getBikeList.iterator();
+		Iterator<Map<String, Object>> itrt = getBikeList.iterator();
 
-		while(itrt.hasNext()){	
-			dataMap = itrt.next(); 
-			haeding.append(""+aeDataMap.get("company")+" - "+aeDataMap.get("bike_name")+"");
-			detailsDiv.append(""+aeDataMap.get("comments")+"");
+		while (itrt.hasNext()) {
+			dataMap = itrt.next();
+			haeding.append("" + aeDataMap.get("fact_name") + "");
+			detailsDiv.append("" + aeDataMap.get("comments") + "");
 		}
-                   model.addAttribute("bikeRating", details.toString());
-                   model.addAttribute("heading", haeding.toString());
+		model.addAttribute("bikeRating", details.toString());
+		model.addAttribute("heading", haeding.toString());
+		model.addAttribute("commentBlog", comment.toString());
+		model.addAttribute("detailsDivTextBlog", detailsDiv.toString());
+		model.addAttribute("haedingBlog", haeding.toString());
+		model.addAttribute("titlePage", haeding.toString());
+		model.addAttribute("userIdBlog", userId.toString());
+		model.addAttribute("detailsBlog", details.toString());
+		model.addAttribute("imagePath", imagePath);
+		model.addAttribute("keywords", keywords.toString());
 
-	return "bikeRating";
+		return "bikeRating";
 	 
 }
 	 

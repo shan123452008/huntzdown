@@ -168,6 +168,8 @@ public interface UserDao {
 
 	List<Map<String, Object>> getConfession();
 
+	public List<Map<String, Object>> getNewsFacts();
+
 
     //end shntanu
 }

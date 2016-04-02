@@ -684,10 +684,9 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getBikePic(String id) {
         System.out.println("inside getMobilePic list..");
 
-        String query = "select * from huntzdown.bike where id='" + id + "'";
+        String query = "select * from huntzdown.facts where id='" + id + "'";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
-        System.out.println("getProductList.>>?????.." + getProductList);
         return getProductList;    }
 
     @Override
@@ -861,6 +860,13 @@ System.out.println("inside product list..");
 	@Override
 	public List<Map<String, Object>> getConfessionDetail(String tag) {
 		String query = "SELECT * FROM huntzdown.confession WHERE tag='"+tag+"' && approve='yes'" ;
+		List<Map<String, Object>> getCommentList = jdbcTemplate.queryForList(query);	
+		return getCommentList;
+	}
+
+	@Override
+	public List<Map<String, Object>> getNewsFacts() {
+		String query = "SELECT * FROM huntzdown.facts" ;
 		List<Map<String, Object>> getCommentList = jdbcTemplate.queryForList(query);	
 		return getCommentList;
 	}
