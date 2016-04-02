@@ -520,22 +520,22 @@ public class HomeController {
 			imagePath = aeDataMap.get("path1").toString();
 			keywords = aeDataMap.get("keywords").toString();
 			details.append("<li><img src='" + aeDataMap.get("path1")
-					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ "' class='blogImageFacts'/><div class='sliderComment'>"
 					+ aeDataMap.get("comments1") + "</div></li>");
 			details.append("<li><img src='" + aeDataMap.get("path2")
-					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ "' class='blogImageFacts'/><div class='sliderComment'>"
 					+ aeDataMap.get("comments2") + "</div></li>");
 			details.append("<li><img src='" + aeDataMap.get("path3")
-					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ "' class='blogImageFacts'/><div class='sliderComment'>"
 					+ aeDataMap.get("comments3") + "</div></li>");
 			details.append("<li><img src='" + aeDataMap.get("path4")
-					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ "' class='blogImageFacts'/><div class='sliderComment'>"
 					+ aeDataMap.get("comments4") + "</div></li>");
 			details.append("<li><img src='" + aeDataMap.get("path5")
-					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ "' class='blogImageFacts'/><div class='sliderComment'>"
 					+ aeDataMap.get("comments5") + "</div></li>");
 			details.append("<li><img src='" + aeDataMap.get("path6")
-					+ "' class='blogImage'/><div class='sliderComment'>"
+					+ "' class='blogImageFacts'/><div class='sliderComment'>"
 					+ aeDataMap.get("comments6") + "</div></li>");
 
 		}
