@@ -112,6 +112,29 @@
 
 
                         </ol>
+                    </div>
+                    
+                    
+                     <!--News Gallery-->
+                    <div id="comments-wrap">
+                        <h4 class="heading">News Gallery</h4>
+
+                        <ol class="commentlist">
+
+
+                            <li class="comment even thread-even depth-1" id="li-comment-1">
+
+                                <div id="comment-1" class="comment-body cf">
+
+                                    ${newsFact}            
+
+                                </div>
+
+                            </li>
+                            
+
+
+                        </ol>
                     </div>                    
                     
                       <!--Latest Reviews-->

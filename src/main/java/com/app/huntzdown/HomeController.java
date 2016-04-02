@@ -182,7 +182,7 @@ public class HomeController {
 
 		ModelAndView mv = new ModelAndView();
 
-		
+		mv.addObject("newsFact", newsFact.toString());
 		mv.addObject("restroDetails", restroDetails.toString());
 		mv.addObject("getLatestBlog", getLatestBlog);
 		mv.addObject("getTrendingBlog", trendingBlog);

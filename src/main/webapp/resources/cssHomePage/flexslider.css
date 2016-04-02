@@ -144,8 +144,8 @@ html[xmlns] .slides {
   margin: 0;
 }
 .flex-control-nav li a {
-  width: 8px;
-  height: 8px;
+  width: 13px;
+  height: 13px;
   display: block;
   background: #fff;
   cursor: pointer;
