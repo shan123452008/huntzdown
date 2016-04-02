@@ -153,7 +153,7 @@ public class HomeController {
 					+ "<div><a href='/newsFacts?tag="
 					+ aeFactsNews.get("tag")
 					+ "'><img src='"
-					+ aeFactsNews.get("path")
+					+ aeFactsNews.get("path1")
 					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/newsFacts?tag="
 					+ aeFactsNews.get("tag")
 					+ "'><h5 style='height:59px;'>"

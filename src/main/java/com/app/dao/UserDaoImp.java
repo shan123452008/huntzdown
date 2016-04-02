@@ -681,10 +681,10 @@ System.out.println("inside product list..");
         return getTreandMobile;    }
 
     @Override
-    public List<Map<String, Object>> getBikePic(String id) {
+    public List<Map<String, Object>> getBikePic(String tag) {
         System.out.println("inside getMobilePic list..");
 
-        String query = "select * from huntzdown.facts where id='" + id + "'";
+        String query = "select * from huntzdown.facts where tag='" + tag + "'";
 
         List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);
         return getProductList;    }
