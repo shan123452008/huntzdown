@@ -126,7 +126,8 @@
 				<!-- ENDS Respond -->		
 				
 				
-				<!-- Adds -->	
+				    <!-- Adds -->	
+				    <script type='text/javascript' src='//clksite.com/adServe/banners?tid=121736_206505_5&type=shadowbox&size=800x440'></script>
 					<script type='text/javascript' src='//clksite.com/adServe/banners?tid=121736_206505_3&type=footer&size=468x60'></script>
 					<!-- End Adds -->			
 										
