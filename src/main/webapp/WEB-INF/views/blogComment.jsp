@@ -139,8 +139,10 @@
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 					
 				<!-- ENDS Respond -->	
-				<script type='text/javascript' src='//clksite.com/adServe/banners?tid=121736_206505_0&type=slider&size=800x440&animate=on'></script>				
-										
+					
+					<!-- Adds -->	
+					<script type='text/javascript' src='//clksite.com/adServe/banners?tid=121736_206505_3&type=footer&size=468x60'></script>
+					<!-- End Adds -->											
 				
     		</div>
     	</div><!-- ENDS WRAPPER -->
