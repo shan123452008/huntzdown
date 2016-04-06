@@ -95,6 +95,10 @@
                     <!--Latest Blogs-->
                     <div id="comments-wrap">
                         <h4 class="heading">BLOGS</h4>
+                        
+                <!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
@@ -118,6 +122,10 @@
                      <!--News Gallery-->
                     <div id="comments-wrap">
                         <h4 class="heading">News Gallery</h4>
+                        
+                       	    <!-- Begin BidVertiser code -->
+							<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+							<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
@@ -140,6 +148,10 @@
                       <!--Latest Reviews-->
                     <div id="comments-wrap">
                         <h4 class="heading">Videos</h4>
+                        
+                        <!-- Begin BidVertiser code -->
+						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+						<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
@@ -323,9 +335,7 @@ iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important
 
 </style>
 
-				 <!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code -->
+				
 
 				<div>&nbsp;</div>
 <div>&nbsp;</div>

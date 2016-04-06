@@ -114,6 +114,10 @@
 					<ol class="commentlist">
 					
 					</ol>
+					
+					<!-- Begin BidVertiser code -->
+				    <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+					<!-- End BidVertiser code -->
 				</div>
 				<!-- ENDS comments list -->
 						
@@ -139,8 +143,11 @@
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 					
 				<!-- ENDS Respond -->	
+				
+				
+				<div>&nbsp;</div>
 					
-					 <!-- Begin BidVertiser code -->
+				<!-- Begin BidVertiser code -->
 				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
 				<!-- End BidVertiser code -->										
 				

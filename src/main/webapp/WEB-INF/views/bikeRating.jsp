@@ -99,6 +99,10 @@
 					<ol class="commentlist">
 					
 					</ol>
+					<!-- Begin BidVertiser code -->
+				    <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+					<!-- End BidVertiser code -->
+				
 				</div>
 				<!-- ENDS comments list -->
 						
@@ -125,7 +129,8 @@
 					
 				<!-- ENDS Respond -->
 
-
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
 				<!-- Begin BidVertiser code -->
 				 <!-- Begin BidVertiser code -->
 					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>				
