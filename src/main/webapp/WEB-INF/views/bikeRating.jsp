@@ -128,8 +128,8 @@
 
 				<!-- Begin BidVertiser code -->
 				 <!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code --> 
+					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>				
+					<!-- End BidVertiser code --> 
 				<!-- End BidVertiser code -->
 
 
