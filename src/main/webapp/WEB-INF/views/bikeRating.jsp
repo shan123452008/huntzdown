@@ -123,15 +123,17 @@
 					<a href="https://twitter.com/huntzzdown" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @huntzzdown</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 					
-				<!-- ENDS Respond -->		
-				
-				
-				    <!-- Adds -->	
-				   <script type='text/javascript' src='//eclkmpsa.com/adServe/banners?tid=121736_206505_6&tagid=2'></script>				
-					<!-- End Adds -->			
-										
-				
-    		</div>
+				<!-- ENDS Respond -->
+
+
+				<!-- Begin BidVertiser code -->
+				 <!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code --> 
+				<!-- End BidVertiser code -->
+
+
+			</div>
     	</div><!-- ENDS WRAPPER -->
 		</div>
 		<!-- ENDS MAIN -->

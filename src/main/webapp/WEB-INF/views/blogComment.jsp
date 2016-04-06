@@ -140,9 +140,9 @@
 					
 				<!-- ENDS Respond -->	
 					
-					<!-- Adds -->	
-					<script type='text/javascript' src='//clksite.com/adServe/banners?tid=121736_206505_3&type=footer&size=468x60'></script>
-					<!-- End Adds -->											
+					 <!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code -->										
 				
     		</div>
     	</div><!-- ENDS WRAPPER -->
