@@ -111,8 +111,10 @@
                                 <div id="comment-1" class="comment-body cf">
 
                                     ${restroDetails} 
+                                    <div>&nbsp;</div>
+                                    <div>&nbsp;</div>
                                     <a href="/blog?category=ALL"
-									style="color: #6B6F5C; font-size: 18px; font-family: cursive;">Click Here For More Blogs</a>
+									style="color: #34CABC; font-size: 18px; font-family: cursive;">Click Here For More Blogs</a>
 							</div>
 
                             </li>
