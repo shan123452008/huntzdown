@@ -508,7 +508,7 @@ public class HomeController {
 		StringBuilder comment = new StringBuilder();
 		StringBuilder restroDetails = new StringBuilder();
 		
-		List<Map<String, Object>> getLatestBlog = userdao.getLatestBlog();
+		List<Map<String, Object>> getLatestBlog = userdao.getTrendingBlog();
 		String bikeId = req.getParameter("tag");
 
 		Map<String, Object> aeDataMap = null;
