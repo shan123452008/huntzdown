@@ -63,7 +63,7 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 				
 		<div id="main">
-			<div class="wrapper cf">
+			<div class="wrapper cf" style="width: 1256px;">
 			
 			
 			<!-- masthead -->

@@ -136,7 +136,7 @@ public class HomeController {
 					+ aeLatestBlog.get("tag")
 					+ "'><img src='"
 					+ aeLatestBlog.get("path")
-					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?tag="
+					+ "' title='' alt='alt' width=\"200px\" height=\"214px\"></a><a href='/blogInfo?tag="
 					+ aeLatestBlog.get("tag")
 					+ "'><h5 style='height:59px;'>"
 					+ aeLatestBlog.get("blog_name")
@@ -154,7 +154,7 @@ public class HomeController {
 					+ aeFactsNews.get("tag")
 					+ "'><img src='"
 					+ aeFactsNews.get("path1")
-					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/newsFacts?tag="
+					+ "' title='' alt='alt' width=\"200px\" height=\"214px\"></a><a href='/newsFacts?tag="
 					+ aeFactsNews.get("tag")
 					+ "'><h5 style='height:59px;'>"
 					+ aeFactsNews.get("fact_name")
@@ -500,6 +500,10 @@ public class HomeController {
 	 @RequestMapping(value = "/newsFacts",method = RequestMethod.GET)
      public String detailsBike(HttpServletRequest req,HttpServletResponse response, ModelMap model) throws IOException, SQLException{
 		HttpSession session = req.getSession();
+		
+		response.setHeader("Cache-Control", "no-cache");
+		response.setContentType("text/plain");
+		response.setCharacterEncoding("utf-8");
 
 		StringBuilder details = new StringBuilder();
 		StringBuilder detailsDiv = new StringBuilder();
@@ -530,7 +534,7 @@ public class HomeController {
 					+ aeLatestBlog.get("tag")
 					+ "'><img src='"
 					+ aeLatestBlog.get("path")
-					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?tag="
+					+ "' title='' alt='alt' width=\"200px\" height=\"214px\"></a><a href='/blogInfo?tag="
 					+ aeLatestBlog.get("tag")
 					+ "'><h5 style='height:59px;'>"
 					+ aeLatestBlog.get("blog_name")

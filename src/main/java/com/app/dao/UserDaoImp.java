@@ -349,7 +349,13 @@ System.out.println("inside product list..");
 	
 	@Override
 	public List<Map<String, Object>> getDetailsBlogs(String category) throws DataAccessException {
-		String query = "select * from huntzdown.blog where category='"+category+"'";
+		String query= "" ;
+		if(category.equals("ALL")){
+			 query = "select * from huntzdown.blog order by id desc";
+		}else{
+			 query = "select * from huntzdown.blog where category='"+category+"' order by id desc";
+		}
+		
 		List<Map<String, Object>> getProductList = jdbcTemplate.queryForList(query);	
 		System.out.println("getDetailsComments listsssssss.>>?????.."+getProductList);
 		return getProductList;
@@ -755,7 +761,7 @@ System.out.println("inside product list..");
 
     @Override
     public List<Map<String, Object>> getTrendingBlog() {
-        String query = "select * from huntzdown.blog where stars>=3 order by id DESC";
+        String query = "select * from huntzdown.blog where stars>=3 and isVideo IS NULL order by id DESC LIMIT 9";
         List<Map<String, Object>> getTreandBlog = jdbcTemplate.queryForList(query);	
 	return getTreandBlog;    
     }
@@ -778,7 +784,7 @@ System.out.println("inside product list..");
     
     @Override
     public List<Map<String, Object>> getLatestBlog() {
-        String query = "SELECT * FROM huntzdown.blog  where isVideo IS NULL order by id desc";
+        String query = "SELECT * FROM huntzdown.blog  where isVideo IS NULL order by id desc LIMIT 15";
         List<Map<String, Object>> getblogs = jdbcTemplate.queryForList(query);	
         System.out.println("getProductList..."+getblogs);
 	return getblogs;
@@ -866,7 +872,7 @@ System.out.println("inside product list..");
 
 	@Override
 	public List<Map<String, Object>> getNewsFacts() {
-		String query = "SELECT * FROM huntzdown.facts" ;
+		String query = "SELECT * FROM huntzdown.facts order by id desc LIMIT 15" ;
 		List<Map<String, Object>> getCommentList = jdbcTemplate.queryForList(query);	
 		return getCommentList;
 	}

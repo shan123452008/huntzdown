@@ -107,9 +107,10 @@
 
                                 <div id="comment-1" class="comment-body cf">
 
-                                    ${restroDetails}            
-
-                                </div>
+                                    ${restroDetails} 
+                                    <a href="/blog?category=ALL"
+									style="color: #6B6F5C; font-size: 18px; font-family: cursive;">Click Here For More Blogs</a>
+							</div>
 
                             </li>
                             
