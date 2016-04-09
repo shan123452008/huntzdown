@@ -23,6 +23,8 @@
 		<meta name="keywords" content="${keywords}"/> 
 
 
+
+
         <%@include file="includeCssJs.jsp" %> 
     </head>
 		<!-- ENDS HEADER -->

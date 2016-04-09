@@ -29,7 +29,7 @@
 											<li><a href="/blog?category=SCIENCE">SCIENCE</a></li>
 											<li><a href="/blog?category=AUTOMOBILES">AUTOMOBILES</a></li>
 											<li><a href="/blog?category=SPORTS">SPORTS</a></li>		
-																			
+																								
 											
 											
 																						
