@@ -30,6 +30,7 @@
 											<li><a href="/blog?category=AUTOMOBILES">AUTOMOBILES</a></li>
 											<li><a href="/blog?category=SPORTS">SPORTS</a></li>
 											
+											
 																						
                                          </ul></li>
                     <li><a href="/videos">VIDEOS</a>
