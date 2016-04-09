@@ -770,6 +770,7 @@ System.out.println("inside product list..");
     public List<Map<String, Object>> getTreandBike() {
         String query = "select * from huntzdown.bike where rating>=3";
         List<Map<String, Object>> getTreandBike = jdbcTemplate.queryForList(query);	
+        
 	return getTreandBike;
     }
 

@@ -587,6 +587,7 @@ public class HomeController {
 		model.addAttribute("imagePath", imagePath);
 		model.addAttribute("keywords", keywords.toString());
 		model.addAttribute("restroDetails", restroDetails.toString());
+		
 		return "bikeRating";
 	 
 }
