@@ -564,6 +564,7 @@ public class HomeController {
 					+ aeDataMap.get("comments5") + "</div></li>");
 			details.append("<li><img src='" + aeDataMap.get("path6")
 					+ "' class='blogImageFacts'/><div class='sliderComment'>"
+					
 					+ aeDataMap.get("comments6") + "</div></li>");
 
 		}
