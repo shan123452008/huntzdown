@@ -171,7 +171,6 @@
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
 
-
 				<a class="twitter-timeline" href="https://twitter.com/huntzzdown"
 					data-widget-id="686142833212821504" width="250">Tweets by
 					@huntzzdown</a>
@@ -179,6 +178,7 @@
 
 
 				<style type="text/css">
+				
 iframe[id^='twitter-widget-'] {
 	width: 100% !important;
 	min-width: 239px !important;

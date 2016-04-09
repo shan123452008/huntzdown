@@ -154,7 +154,6 @@
                                     ${restroDetails}            
 
                                 </div>
-
                             </li>
                             
 
