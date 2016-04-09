@@ -66,7 +66,7 @@
 			<div class="wrapper cf">
 			
 			<!-- masthead -->
-			<div class="masthead cf">
+			<div class="masthead cf" style="width: 948px;">
 				${heading}
 			</div>
 			<!-- ENDS masthead -->
@@ -136,10 +136,89 @@
 					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>				
 					<!-- End BidVertiser code --> 
 				<!-- End BidVertiser code -->
+				
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				
+				<!--Latest Reviews-->
+                    <div id="comments-wrap">
+                        <h4 class="heading">MORE HUNTZDOWN POST</h4>
+
+                        <ol class="commentlist">
+
+
+                            <li class="comment even thread-even depth-1" id="li-comment-1">
+
+                                <div id="comment-1" class="comment-body cf">
+
+                                    ${restroDetails}            
+
+                                </div>
+
+                            </li>
+                            
+
+
+
+                        </ol>
+                    </div>
 
 
 			</div>
-    	</div><!-- ENDS WRAPPER -->
+
+			<aside id="sidebar" class="asidePage">
+				
+				<div id="fb-root"></div>
+				<div class="fb-page" data-href="https://www.facebook.com/huntzdown/"
+					data-tabs="timeline" data-small-header="false" data-width="239"
+					data-adapt-container-width="true" data-hide-cover="false"
+					data-show-facepile="true">
+					<div class="fb-xfbml-parse-ignore">
+						<blockquote cite="https://www.facebook.com/huntzdown/">
+							<a href="https://www.facebook.com/huntzdown/">Huntzdown</a>
+						</blockquote>
+					</div>
+				</div>
+
+
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+
+
+				<a class="twitter-timeline" href="https://twitter.com/huntzzdown"
+					data-widget-id="686142833212821504" width="250">Tweets by
+					@huntzzdown</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+				<style type="text/css">
+iframe[id^='twitter-widget-'] {
+	width: 100% !important;
+	min-width: 239px !important;
+}
+
+.fb-page, .fb-page iframe[style], .fb-like-box, .fb-like-box iframe[style]
+	{
+	width: 100% !important;
+	min-width: 239px !important;
+}
+</style>
+
+
+
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+
+
+
+
+				<br>
+				<br>
+
+
+			</aside>
+			<!-- ENDS sidebar -->
+		</div><!-- ENDS WRAPPER -->
 		</div>
 		<!-- ENDS MAIN -->
 		

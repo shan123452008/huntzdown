@@ -506,13 +506,36 @@ public class HomeController {
 		StringBuilder haeding = new StringBuilder();
 		StringBuilder userId = new StringBuilder();
 		StringBuilder comment = new StringBuilder();
+		StringBuilder restroDetails = new StringBuilder();
+		
+		List<Map<String, Object>> getLatestBlog = userdao.getLatestBlog();
 		String bikeId = req.getParameter("tag");
 
 		Map<String, Object> aeDataMap = null;
 		Map<String, Object> dataMap = null;
+		Map<String, Object> aeLatestBlog = null;
 		List<Map<String, Object>> getBikeList = userdao.getBikePic(bikeId);
 		String imagePath = null;
 		String keywords = null;
+		
+		
+		Iterator<Map<String, Object>> itrLatestBlog = getLatestBlog.iterator();
+		while (itrLatestBlog.hasNext()) {
+			aeLatestBlog = itrLatestBlog.next();
+			
+			restroDetails
+			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
+					+ "<div><a href='/blogInfo?tag="
+					+ aeLatestBlog.get("tag")
+					+ "'><img src='"
+					+ aeLatestBlog.get("path")
+					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/blogInfo?tag="
+					+ aeLatestBlog.get("tag")
+					+ "'><h5 style='height:59px;'>"
+					+ aeLatestBlog.get("blog_name")
+					+ "</h5></a>"
+					+ "&nbsp;&nbsp;</div></div>");
+		}
 
 		Iterator<Map<String, Object>> itr = getBikeList.iterator();
 		while (itr.hasNext()) {
@@ -558,6 +581,7 @@ public class HomeController {
 		model.addAttribute("detailsBlog", details.toString());
 		model.addAttribute("imagePath", imagePath);
 		model.addAttribute("keywords", keywords.toString());
+		model.addAttribute("restroDetails", restroDetails.toString());
 
 		return "bikeRating";
 	 
