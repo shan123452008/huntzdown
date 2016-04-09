@@ -178,68 +178,7 @@
                     </div>
 
 
-                    <!--Video start-->
-                    <div id="comments-wrap">
-                        <h4 class="heading">Trailors</h4>
-
-                        <ol class="commentlist">
-
-
-                            <li class="comment even thread-even depth-1" id="li-comment-1">
-                            
-                            <div id="comment-1" class="comment-body cf">
-
-                                    <span><iframe src="https://www.youtube.com/embed/s7YYt9_KfsM" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Kapoor & Sons Official Trailer </span>
-
-
-
-                                </div>
-                                
-                            
-                             <div id="comment-1" class="comment-body cf">
-
-                                    <span><iframe src="https://www.youtube.com/embed/uFKluii3rmI" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Rocky Handsome Teaser</span>
-
-
-                                </div>
-
-                                <div id="comment-1" class="comment-body cf">
-
-                                    <span><iframe src="https://www.youtube.com/embed/FZLDoF7VfaQ" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Fitoor Official Trailer</span>
-
-
-                                </div>
-
-                                <div id="comment-1" class="comment-body cf">
-
-                                    <span><iframe src="https://www.youtube.com/embed/cMsszmx3dh0" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">M.A. Pass official Trailer
-                                    </span>
-
-
-
-                                </div>
-                                
-                                
-                                 
-                                 <div id="comment-1" class="comment-body cf">
-
-                                    <span><iframe src="https://www.youtube.com/embed/vKziLmjSVB4" allowfullscreen="allowfullscreen" class="videoWidth"></iframe></span>    
-                                    <span class="carlist"><h4 class="heading1">Teaser- Introducing Gaurav </span>
-
-
-
-                                </div>
-                            </li>
-
-
-
-                        </ol>
-                    </div>
-                    <!--Video End-->
+                   
 
                    
                     
