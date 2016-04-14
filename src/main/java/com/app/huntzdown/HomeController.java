@@ -367,6 +367,11 @@ public class HomeController {
 	public ModelAndView getUserBlog(HttpServletRequest req,
 			HttpServletResponse response, ModelMap model) throws IOException,
 			SQLException {
+		
+		response.setHeader("Cache-Control", "no-cache");
+		response.setContentType("text/plain");
+		response.setCharacterEncoding("utf-8");
+		
 		HttpSession session = req.getSession();
 		session.removeAttribute("blogDetails");
 		String category = req.getParameter("category");
@@ -500,6 +505,7 @@ public class HomeController {
 	 @RequestMapping(value = "/newsFacts",method = RequestMethod.GET)
      public String detailsBike(HttpServletRequest req,HttpServletResponse response, ModelMap model) throws IOException, SQLException{
 		HttpSession session = req.getSession();
+		
 		
 		response.setHeader("Cache-Control", "no-cache");
 		response.setContentType("text/plain");
