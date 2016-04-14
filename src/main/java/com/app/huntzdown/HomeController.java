@@ -368,11 +368,12 @@ public class HomeController {
 			HttpServletResponse response, ModelMap model) throws IOException,
 			SQLException {
 		
+		
+		HttpSession session = req.getSession();
 		response.setHeader("Cache-Control", "no-cache");
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("utf-8");
 		
-		HttpSession session = req.getSession();
 		session.removeAttribute("blogDetails");
 		String category = req.getParameter("category");
 
@@ -436,6 +437,10 @@ public class HomeController {
 				HttpServletResponse response, ModelMap model) throws IOException,
 				SQLException {
 			HttpSession session = req.getSession();
+			response.setHeader("Cache-Control", "no-cache");
+			response.setContentType("text/plain");
+			response.setCharacterEncoding("utf-8");
+			
 			StringBuilder detailsDiv = new StringBuilder();
 			StringBuilder asideDiv = new StringBuilder();
 
