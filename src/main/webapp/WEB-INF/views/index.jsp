@@ -245,20 +245,14 @@
                 </div>
                 <!-- sidebar -->
                 <aside id="sidebar" class="asidePage">
-                 <%-- <h4  style="width: 239px;">Trending Topics</h4>
- 					<ul style="list-style: none;"> 
-
-                        <li class="block" style="overflow-y: scroll;overflow-x: auto;width:239px;height:272px;">
-                            <ul type="disc" style="/* width:239px; */height:272px;padding-left: 3px;">
-  								    
-  								    ${getTrendingBlog}                     
-							
-					</ul>
-                        </li>
-                     
-                    </ul> --%>
-                   
- 				<h4 style="width: 239px;">Latest Blogs</h4>
+                
+                <script type="text/javascript" language="javascript"> 
+                var aax_size='220x600'; var aax_pubname = 'huntzdown-21'; var aax_src='302'; 
+                </script>
+                <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+                
+                
+ 				<%-- <h4 style="width: 239px;">Latest Blogs</h4>
                     <ul style="list-style: none;"> 
 
                         <li class="block" style="overflow-y: scroll;overflow-x: hidden;width:239px;height:272px;">
@@ -268,7 +262,7 @@
                             </ul>
                         </li>
 
-                    </ul>
+                    </ul> --%>
                   
 
                             
