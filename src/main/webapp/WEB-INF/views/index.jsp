@@ -114,7 +114,7 @@
                                     <div>&nbsp;</div>
                                     <div>&nbsp;</div>
                                     <a href="/blog?category=ALL"
-									style="color: #34CABC; font-size: 18px; font-family: cursive;">Click Here For More Blogs</a>
+									style="color: #34CABC; font-size: 18px; font-family: cursive;">More Blogs</a>
 							</div>
 
                             </li>
@@ -122,6 +122,10 @@
 
 
                         </ol>
+                        
+                        <!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code -->
                     </div>
                     
                     
@@ -149,6 +153,10 @@
 
 
                         </ol>
+                        
+                        <!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code -->
                     </div>                    
                     
                       <!--Latest Reviews-->
@@ -175,6 +183,9 @@
 
 
                         </ol>
+                        <!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code -->
                     </div>
 
 

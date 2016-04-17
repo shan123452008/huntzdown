@@ -65,7 +65,7 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 				
 		<div id="main">
-			<div class="wrapper cf" style="width: 1256px;">
+			<div class="wrapper cf mb" style="width: 1256px;">
 			
 			
 			<!-- masthead -->
@@ -74,7 +74,10 @@
 			</div>
 			<!-- ENDS masthead -->
 			
-			
+			 <!-- Begin BidVertiser code -->
+					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>				
+					<!-- End BidVertiser code --> 
+				<!-- End BidVertiser code -->
 				
 			<!-- posts list -->
         	<div id="posts-list" class="cf">        	

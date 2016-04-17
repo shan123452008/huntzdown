@@ -282,7 +282,7 @@ px      68    160    252    */
   }
   /*  BLOG MOBILE ----------------------------------------------------*/#posts-list,
   body.single #posts-list {
-    width: 252px;
+    width: 340px;
     margin-right: 0px;
     margin-left: 0px;
     /* Jplayer MOBILE ----------------------------------------------------*/
@@ -337,7 +337,7 @@ px      68    160    252    */
   #posts-list article .box .excerpt,
   body.single #posts-list article .box .excerpt {
     float: left;
-    width: 192px;
+    width: 267px;
     margin-left: 40px;
     margin-bottom: 20px;
     margin-top: 10px;

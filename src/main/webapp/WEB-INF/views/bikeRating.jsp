@@ -66,10 +66,15 @@
 			<div class="wrapper cf" style="width: 1256px;">
 			
 			<!-- masthead -->
-			<div class="masthead cf" style="width: 948px;">
+			<div class="masthead cf mb" style="width: 948px;">
 				${heading}
 			</div>
 			<!-- ENDS masthead -->
+			
+			 <!-- Begin BidVertiser code -->
+					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>				
+					<!-- End BidVertiser code --> 
+				<!-- End BidVertiser code -->
 			
 				
 			<!-- posts list -->
