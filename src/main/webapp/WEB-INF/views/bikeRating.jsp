@@ -116,9 +116,9 @@
 				<div id="fb-root"></div>
 				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/newsFacts?tag=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 <%-- 		        <div class="fb-send" data-href="http://huntzdown-mobreview.rhcloud.com/newsFacts?pictureId=${userIdBlog}"></div>
- --%>				<div class="fb-like" data-share="true" data-width="400"	data-show-faces="true"></div>
+ --%>				<div class="fb-like" data-share="true" data-width="200"	data-show-faces="true"></div>
  					
-				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="250" data-href="http://huntzdown-mobreview.rhcloud.com/newsFacts?tag=${userIdBlog}"></div>
+				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="200" data-href="http://huntzdown-mobreview.rhcloud.com/newsFacts?tag=${userIdBlog}"></div>
 				<!-- Place this tag after the last +1 button tag. -->
 				<script type="text/javascript">
 				  (function() {

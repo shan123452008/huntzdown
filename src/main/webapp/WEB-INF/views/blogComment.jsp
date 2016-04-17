@@ -65,11 +65,11 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 				
 		<div id="main">
-			<div class="wrapper cf mb" style="width: 1256px;">
+			<div class="wrapper cf" style="width: 1256px;">
 			
 			
 			<!-- masthead -->
-			<div class="masthead cf" style="width: 948px;">
+			<div class="masthead cf mb" style="width: 948px;">
 				${haedingBlog}
 			</div>
 			<!-- ENDS masthead -->
@@ -131,9 +131,9 @@
 				<div id="fb-root"></div>
 				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 <%-- 		        <div class="fb-send" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"></div>
- --%>				<div class="fb-like" data-share="true" data-width="400"	data-show-faces="true"></div>
+ --%>				<div class="fb-like" data-share="true" data-width="200"	data-show-faces="true"></div>
  					
-				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="250" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}"></div>
+				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="200" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}"></div>
 				<!-- Place this tag after the last +1 button tag. -->
 				<script type="text/javascript">
 				  (function() {
