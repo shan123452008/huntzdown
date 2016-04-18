@@ -100,8 +100,10 @@
                         
                      
                 <!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code -->
+			<SCRIPT
+				SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726"
+				TYPE="text/javascript"></SCRIPT>
+			<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
@@ -155,8 +157,8 @@
                         </ol>
                         
                         <!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code -->
+						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786041" TYPE="text/javascript"></SCRIPT>
+						<!-- End BidVertiser code --> 
                     </div>                    
                     
                       <!--Latest Reviews-->
@@ -296,6 +298,18 @@
 
 <div>&nbsp;</div>
 <div>&nbsp;</div>
+
+
+				<!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786045" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code --> 
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				 <!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code --> 
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
 
 								                         
  <a class="twitter-timeline" href="https://twitter.com/huntzzdown" data-widget-id="686142833212821504" width="250">Tweets by @huntzzdown</a>

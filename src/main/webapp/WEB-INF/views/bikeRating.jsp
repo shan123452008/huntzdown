@@ -71,10 +71,11 @@
 			</div>
 			<!-- ENDS masthead -->
 			
-			 <!-- Begin BidVertiser code -->
-					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>				
-					<!-- End BidVertiser code --> 
-				<!-- End BidVertiser code -->
+			<!-- Begin BidVertiser code -->
+			<SCRIPT
+				SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726"
+				TYPE="text/javascript"></SCRIPT>
+			<!-- End BidVertiser code -->
 			
 				
 			<!-- posts list -->
@@ -105,8 +106,8 @@
 					
 					</ol>
 					<!-- Begin BidVertiser code -->
-				    <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
-					<!-- End BidVertiser code -->
+						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786041" TYPE="text/javascript"></SCRIPT>
+						<!-- End BidVertiser code --> 
 				
 				</div>
 				<!-- ENDS comments list -->
@@ -208,15 +209,19 @@
 
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
-				
-				<script type="text/javascript" language="javascript"> 
-                var aax_size='220x600'; var aax_pubname = 'huntzdown-21'; var aax_src='302'; 
-                </script>
-                <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
-                
-                <div>&nbsp;</div>
+				<!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786045" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code --> 
 				<div>&nbsp;</div>
-
+				<div>&nbsp;</div>
+				
+				<!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code --> 
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				
+				
 
 				<a class="twitter-timeline" href="https://twitter.com/huntzzdown"
 					data-widget-id="686142833212821504" width="250">Tweets by
