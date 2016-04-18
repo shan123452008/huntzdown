@@ -305,11 +305,7 @@
 				<!-- End BidVertiser code --> 
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
-				 <!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code --> 
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
+				
 
 								                         
  <a class="twitter-timeline" href="https://twitter.com/huntzzdown" data-widget-id="686142833212821504" width="250">Tweets by @huntzzdown</a>
@@ -322,10 +318,15 @@ iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important
 
 </style>
 
-				
-
 				<div>&nbsp;</div>
-<div>&nbsp;</div>
+				<div>&nbsp;</div>
+
+				<!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code --> 
+				
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
 
 
 <!--BEGIN TRIBALAD ADZONE DISPLAY CODE -->

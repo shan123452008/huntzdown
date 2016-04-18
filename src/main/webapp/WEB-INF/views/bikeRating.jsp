@@ -215,11 +215,6 @@
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
 				
-				<!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code --> 
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
 				
 				
 
@@ -242,8 +237,13 @@ iframe[id^='twitter-widget-'] {
 }
 </style>
 
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
 
-
+				<!-- Begin BidVertiser code -->
+				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code --> 
+				
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
 
