@@ -208,7 +208,12 @@ iframe[id^='twitter-widget-'] {
 				<div>&nbsp;</div>
 
 
-
+<!--BEGIN TRIBALAD ADZONE DISPLAY CODE -->
+<script>(function(ins){ if ('https:'==document.location.protocol){var h='link';} else {var h='z42577-p36510-n231.pub';}
+var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
+s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=42577&p=36510&n=231&s=m&rr='+d; s.async = true; s.defer = true; 
+document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
+<!--END TRIBALAD ADZONE DISPLAY CODE -->
 
 				<br>
 				<br>
