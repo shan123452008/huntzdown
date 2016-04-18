@@ -176,13 +176,13 @@
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
 				
-				<!-- <script type="text/javascript" language="javascript"> 
+				<script type="text/javascript" language="javascript"> 
                 var aax_size='220x600'; var aax_pubname = 'huntzdown-21'; var aax_src='302'; 
                 </script>
                 <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
                 
                 <div>&nbsp;</div>
-				<div>&nbsp;</div> -->
+				<div>&nbsp;</div>
 
 				<a class="twitter-timeline" href="https://twitter.com/huntzzdown"
 					data-widget-id="686142833212821504" width="250">Tweets by
