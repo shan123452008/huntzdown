@@ -128,7 +128,7 @@
                         </ol>
                         
                         <!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+				<!-- <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT> -->
 				<!-- End BidVertiser code -->
                     </div>
                     
@@ -138,8 +138,8 @@
                         <h4 class="heading">News Gallery</h4>
                         
                        	    <!-- Begin BidVertiser code -->
-							<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
-							<!-- End BidVertiser code -->
+<!-- 							<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+ -->							<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
@@ -159,8 +159,8 @@
                         </ol>
                         
                         <!-- Begin BidVertiser code -->
-						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786041" TYPE="text/javascript"></SCRIPT>
-						<!-- End BidVertiser code --> 
+<!-- 						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786041" TYPE="text/javascript"></SCRIPT>
+ -->						<!-- End BidVertiser code --> 
                     </div>                    
                     
                       <!--Latest Reviews-->
@@ -168,8 +168,8 @@
                         <h4 class="heading">Videos</h4>
                         
                         <!-- Begin BidVertiser code -->
-						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
-						<!-- End BidVertiser code -->
+<!-- 						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+ -->						<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
@@ -188,8 +188,8 @@
 
                         </ol>
                         <!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code -->
+<!-- 				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+ -->				<!-- End BidVertiser code -->
                     </div>
 
 
@@ -303,8 +303,8 @@
 
 
 				<!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786045" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code --> 
+<!-- 				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786045" TYPE="text/javascript"></SCRIPT>
+ -->				<!-- End BidVertiser code --> 
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
 				
@@ -324,18 +324,18 @@ iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important
 				<div>&nbsp;</div>
 
 				<!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code --> 
+<!-- 				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
+ -->				<!-- End BidVertiser code --> 
 				
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
 
 
 <!--BEGIN TRIBALAD ADZONE DISPLAY CODE -->
-<script>(function(ins){ if ('https:'==document.location.protocol){var h='link';} else {var h='z42577-p36510-n231.pub';}
+<!-- <script>(function(ins){ if ('https:'==document.location.protocol){var h='link';} else {var h='z42577-p36510-n231.pub';}
 var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
 s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=42577&p=36510&n=231&s=m&rr='+d; s.async = true; s.defer = true; 
-document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
+document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script> -->
 <!--END TRIBALAD ADZONE DISPLAY CODE -->
 
 
