@@ -99,11 +99,13 @@
                         <h4 class="heading">BLOGS</h4>
                         
                      
-                <!-- Begin BidVertiser code -->
-			<SCRIPT
-				SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726"
-				TYPE="text/javascript"></SCRIPT>
-			<!-- End BidVertiser code -->
+                <!-- Begin Infolink code -->
+					<script type="text/javascript">
+						var infolinks_pid = 2718312;
+						var infolinks_wsid = 0;
+						</script>
+					<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+			<!-- End Infolink code -->
 
                         <ol class="commentlist">
 
