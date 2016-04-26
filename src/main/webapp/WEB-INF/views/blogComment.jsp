@@ -76,9 +76,8 @@
 			<!-- ENDS masthead -->
 
 			<!-- Begin BidVertiser code -->
-			<SCRIPT
-				SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726"
-				TYPE="text/javascript"></SCRIPT>
+									<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
+
 			<!-- End BidVertiser code -->
 
 			<!-- posts list -->
@@ -123,7 +122,7 @@
 					</ol>
 					
 					 <!-- Begin BidVertiser code -->
-						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786041" TYPE="text/javascript"></SCRIPT>
+						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
 						<!-- End BidVertiser code --> 
 				</div>
 				<!-- ENDS comments list -->
@@ -155,7 +154,7 @@
 				<div>&nbsp;</div>
 					
 				<!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1782279" TYPE="text/javascript"></SCRIPT>
+						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
 				<!-- End BidVertiser code -->										
 				
     		</div>
