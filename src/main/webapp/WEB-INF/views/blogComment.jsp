@@ -81,60 +81,67 @@
 			<!-- End BidVertiser code -->
 
 			<!-- posts list -->
-        	<div id="posts-list" class="cf">        	
-	        		
-	        		
+			<div id="posts-list" class="cf"
+				style="border-right: 1px solid; border-right-color: rgba(128, 128, 128, 0.47);">
+
+
 				<!-- Standard -->
 				<article class="format-standard">
-					<div class="feature-image">
-						  ${detailsBlog}
-					</div>
+					<div class="feature-image">${detailsBlog}</div>
 					<div class="box cf">
-					
+
 						<!-- <div class="entry-date"><div class="number">
 						Rating</div>
 						<div class="month">2</div>
 						
 						</div> -->
-						
+
 						<div class="excerpt">
 							<div class="post-heading" style="margin-left: 7px;">${haedingBlog}</div>
 							<div class="entry-content"
-							style="font-size: 20px;font-family: 'ProximaNova-Regular', 'Arial',sans-serif;margin: 0px 8px 0;line-height: 47px;text-align: justify;">
+								style="font-size: 20px; font-family: 'ProximaNova-Regular', 'Arial', sans-serif; margin: 0px 8px 0; line-height: 47px; text-align: justify;">
 
-							${detailsDivTextBlog}</div>
+								${detailsDivTextBlog}</div>
 
 
-					</div>
-						
-						
+						</div>
+
+
 					</div>
 				</article>
 				<!-- ENDS  Standard -->
-					
-					
+
+
 				<!-- comments list -->
 				<div id="comments-wrap">
 					<h4 class="heading">Comments</h4>
-					
+
 					<ol class="commentlist">
-					
+
 					</ol>
-					
-					 <!-- Begin BidVertiser code -->
-						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
-						<!-- End BidVertiser code --> 
+
+					<!-- Begin BidVertiser code -->
+					<SCRIPT
+						SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726"
+						TYPE="text/javascript"></SCRIPT>
+					<!-- End BidVertiser code -->
 				</div>
 				<!-- ENDS comments list -->
-						
-						
-			
+
+
+
 				<div id="fb-root"></div>
-				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
-<%-- 		        <div class="fb-send" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"></div>
- --%>				<div class="fb-like" data-share="true" data-width="200"	data-show-faces="true"></div>
- 					
-				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="200" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}"></div>
+				<div class="fb-comments"
+					data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}"
+					data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+				<%-- 		        <div class="fb-send" data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?pictureId=${userIdBlog}"></div>
+ --%>
+				<div class="fb-like" data-share="true" data-width="200"
+					data-show-faces="true"></div>
+
+				<div class="g-plusone" data-size="tall" data-annotation="inline"
+					data-width="200"
+					data-href="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}"></div>
 				<!-- Place this tag after the last +1 button tag. -->
 				<script type="text/javascript">
 				  (function() {
@@ -144,22 +151,29 @@
 				  })();
 				</script>
 
-					<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}s" data-text="${titlePage}" data-via="huntzzdown" data-size="large" data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
-					<a href="https://twitter.com/huntzzdown" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @huntzzdown</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					
-				<!-- ENDS Respond -->	
-				
-				
+				<a href="https://twitter.com/share" class="twitter-share-button"
+					{count} data-url="http://huntzdown-mobreview.rhcloud.com/blogInfo?tag=${userIdBlog}s"
+					data-text="${titlePage}" data-via="huntzzdown" data-size="large"
+					data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
+				<a href="https://twitter.com/huntzzdown"
+					class="twitter-follow-button" data-show-count="false"
+					data-size="large">Follow @huntzzdown</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+				<!-- ENDS Respond -->
+
+
 				<div>&nbsp;</div>
-					
+
 				<!-- Begin BidVertiser code -->
-						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code -->										
-				
-    		</div>
-    		
-    		 <aside id="sidebar" class="asidePage">
+				<SCRIPT
+					SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726"
+					TYPE="text/javascript"></SCRIPT>
+				<!-- End BidVertiser code -->
+
+			</div>
+
+			<aside id="sidebar" class="asidePage">
     		 
     		 
     		 	<script charset="utf-8" type="text/javascript">
@@ -237,12 +251,6 @@ iframe[id^='twitter-widget-'] {
 
 
 
-<!--BEGIN TRIBALAD ADZONE DISPLAY CODE -->
-<script>(function(ins){ if ('https:'==document.location.protocol){var h='link';} else {var h='z42577-p36510-n231.pub';}
-var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
-s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=42577&p=36510&n=231&s=m&rr='+d; s.async = true; s.defer = true; 
-document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
-<!--END TRIBALAD ADZONE DISPLAY CODE -->
 
 				<br>
 				<br>

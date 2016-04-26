@@ -65,7 +65,8 @@
             <div class="wrapper cf">
 
 
-                <div id="posts-list" class="cf">        	
+               <div id="posts-list" class="cf"
+				style="border-right: 1px solid; border-right-color: rgba(128, 128, 128, 0.47);">        	
 
 
                     <!-- Standard -->
@@ -115,9 +116,16 @@
 
                                     ${restroDetails} 
                                     <div>&nbsp;</div>
-                                    <div>&nbsp;</div>
-                                    <a href="/blog?category=ALL"
-									style="color: #34CABC; font-size: 18px; font-family: cursive;">More Blogs</a>
+								<div
+									style="float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px; background-color: floralwhite;">
+									<div>
+										<a href="/blog?category=ALL"
+											style="color: #34CABC; font-size: 18px; font-family: cursive;">More
+											Blogs</a>
+									</div>
+								</div>
+								<div>&nbsp;</div>
+								<div>&nbsp;</div>
 							</div>
 
                             </li>
@@ -328,14 +336,6 @@ iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important
 				
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
-
-
-<!--BEGIN TRIBALAD ADZONE DISPLAY CODE -->
-<script>(function(ins){ if ('https:'==document.location.protocol){var h='link';} else {var h='z42577-p36510-n231.pub';}
-var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
-s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=42577&p=36510&n=231&s=m&rr='+d; s.async = true; s.defer = true; 
-document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
-<!--END TRIBALAD ADZONE DISPLAY CODE -->
 
 
                          
