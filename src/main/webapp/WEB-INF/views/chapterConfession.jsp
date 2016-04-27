@@ -141,7 +141,6 @@
 				<!-- ENDS Respond -->	
 				
 				<!-- Adds -->	
-					<script type='text/javascript' src='//clksite.com/adServe/banners?tid=121736_206505_3&type=footer&size=468x60'></script>
 			   <!-- End Adds -->				
 										
 				
