@@ -98,14 +98,6 @@
 					
 				</article>
 				<!-- ENDS  Standard -->
-				
-				
-				<!-- comments list -->
-				<!-- Go to www.addthis.com/dashboard to customize your tools -->
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-571871078c8a60fd"></script>
-				<!-- Go to www.addthis.com/dashboard to customize your tools -->
-				<div class="addthis_sharing_toolbox"></div></div>
-				<div id="comments-wrap">
 					
 					
 				<!-- comments list -->
@@ -127,11 +119,11 @@
 				<div id="fb-root"></div>
 				<div class="fb-comments" data-href="http://huntzdown-mobreview.rhcloud.com/newsFacts?tag=${userIdBlog}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 <%-- 		        <div class="fb-send" data-href="http://huntzdown-mobreview.rhcloud.com/newsFacts?pictureId=${userIdBlog}"></div>
- --%>				<%-- <div class="fb-like" data-share="true" data-width="200"	data-show-faces="true"></div>
+ --%>				<div class="fb-like" data-share="true" data-width="200"	data-show-faces="true"></div>
  					
-				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="200" data-href="http://huntzdown-mobreview.rhcloud.com/newsFacts?tag=${userIdBlog}"></div> --%>
+				<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="200" data-href="http://huntzdown-mobreview.rhcloud.com/newsFacts?tag=${userIdBlog}"></div>
 				<!-- Place this tag after the last +1 button tag. -->
-				<%-- <script type="text/javascript">
+				<script type="text/javascript">
 				  (function() {
 				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 				    po.src = 'https://apis.google.com/js/platform.js';
@@ -142,7 +134,7 @@
 					<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://huntzdown-mobreview.rhcloud.com/newsFacts?tag=${userIdBlog}" data-text="${titlePage}" data-via="huntzzdown" data-size="large" data-related="huntzzdown" data-hashtags="huntzdown" data-dnt="true">Tweet</a>
 					<a href="https://twitter.com/huntzzdown" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @huntzzdown</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					 --%>
+					
 				<!-- ENDS Respond -->
 
 				<div>&nbsp;</div>
