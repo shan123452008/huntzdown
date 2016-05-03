@@ -369,12 +369,11 @@ public class HomeController {
 			SQLException {
 		
 		
-		HttpSession session = req.getSession();
+		
 		response.setHeader("Cache-Control", "no-cache");
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("utf-8");
 		
-		session.removeAttribute("blogDetails");
 		String category = req.getParameter("category");
 
 		StringBuilder detailsDiv = new StringBuilder();
@@ -401,7 +400,9 @@ public class HomeController {
 									+ dataMap.get("path")
 									+ "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
 
-									+ "<div class='box cf'><div class='excerpt'><a href='#' class='post-heading'>"
+									+ "<div class='box cf'><div class='excerpt'><a href='blogInfo?tag="
+									+ dataMap.get("tag")
+									+ "' class='post-heading'>"
 									+ dataMap.get("blog_name")
 									+ "</a><p></p></div>" + "</div></article>");
 					i = i + 1;
@@ -412,7 +413,9 @@ public class HomeController {
 							+ "<img src='"
 							+ dataMap.get("path")
 							+ "' alt='Alt text' style='width: 600px; height: 300px;'/></a></div>"
-							+ "<div class='box cf'><div class='excerpt'><a href='#' class='post-heading'>"
+							+ "<div class='box cf'><div class='excerpt'><a href='/blogInfo?tag="
+							+ dataMap.get("tag")
+							+ "' class='post-heading'>"
 							+ dataMap.get("blog_name")
 							+ "</a><p></p></div>"
 							+ "</div></article>");

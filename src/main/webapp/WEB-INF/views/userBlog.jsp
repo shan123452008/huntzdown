@@ -7,7 +7,6 @@
 <html class="no-js">
 
 	<head>
-		<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
         <title>HuntzDown.com - videos</title>        
         <meta name="Name" content="HuntzDown.com - videos">
