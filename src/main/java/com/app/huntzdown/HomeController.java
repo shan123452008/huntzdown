@@ -665,7 +665,7 @@ public class HomeController {
 					imagePath=aeDataMap.get("path").toString();
 					details.append("<img src='" + aeDataMap.get("path")
 							+ "' alt='"+aeDataMap.get("title")+"' class='blogImage'/>");
-					detailsDiv
+					detailsDiv	
 							.append("<p><strong>Client </strong>"
 									+ aeDataMap.get("title")
 									+ "</p><p><strong>Date </strong>"
@@ -680,7 +680,6 @@ public class HomeController {
 					userId.append(tag);
 				}
 				model.addAttribute("userRatingsBlog", ratingDiv.toString());
-
 				model.addAttribute("commentBlog", comment.toString());
 				model.addAttribute("detailsDivTextBlog", detailsDiv.toString());
 				model.addAttribute("haedingBlog", haeding.toString());
