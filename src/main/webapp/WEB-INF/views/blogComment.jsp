@@ -176,13 +176,42 @@
 
 			</div>
 
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+				
+				<!--Latest Reviews-->
+                    <div id="comments-wrap">
+                        <h4 class="heading">MORE HUNTZDOWN POST</h4>
+                        
+
+                        <ol class="commentlist">
+
+
+                            <li class="comment even thread-even depth-1" id="li-comment-1">
+
+                                <div id="comment-1" class="comment-body cf">
+
+                                    ${restroDetails}            
+
+                               </div>
+                            </li>
+                            
+
+
+
+                        </ol>
+                    </div>
+
+
+			</div>
+
 			<aside id="sidebar" class="asidePage">
-    		 
-    		 <!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://zeenews.india.com/rss/india-national-news.xml",rssmikle_frame_width: "239",rssmikle_frame_height: "400",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on_mc",scrolldirection: "up",scrollstep: "4",mcspeed: "30",sort: "Off",rssmikle_title: "on",rssmikle_title_sentence: "Latest News",rssmikle_title_link: "http://zeenews.india.com/rss/india-national-news.xml",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#0066FF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:239px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!--  end  feedwind code -->
-                <div>&nbsp;</div>
-			    <div>&nbsp;</div>
-    		 
-    		 	<script charset="utf-8" type="text/javascript">
+			
+			<!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://zeenews.india.com/rss/india-national-news.xml",rssmikle_frame_width: "239",rssmikle_frame_height: "400",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on_mc",scrolldirection: "up",scrollstep: "4",mcspeed: "30",sort: "Off",rssmikle_title: "on",rssmikle_title_sentence: "Latest News",rssmikle_title_link: "http://zeenews.india.com/rss/india-national-news.xml",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#0066FF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:239px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!--  end  feedwind code -->
+            <div>&nbsp;</div>
+			<div>&nbsp;</div>
+			
+			<script charset="utf-8" type="text/javascript">
 						amzn_assoc_ad_type = "responsive_search_widget";
 						amzn_assoc_tracking_id = "huntzdown-21";
 						amzn_assoc_marketplace = "amazon";
@@ -216,13 +245,11 @@
 
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
-				
 				<!-- Begin BidVertiser code -->
 				<!-- <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786045" TYPE="text/javascript"></SCRIPT> -->
 				<!-- End BidVertiser code --> 
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
-				
 				
 				
 				
@@ -232,7 +259,8 @@
 					@huntzzdown</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-		<style type="text/css">
+
+				<style type="text/css">
 iframe[id^='twitter-widget-'] {
 	width: 100% !important;
 	min-width: 239px !important;
@@ -249,13 +277,11 @@ iframe[id^='twitter-widget-'] {
 				<div>&nbsp;</div>
 
 				<!-- Begin BidVertiser code -->
-				<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT>
+				<!-- <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT> -->
 				<!-- End BidVertiser code --> 
 				
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
-
-
 
 
 				<br>

@@ -233,10 +233,14 @@ public class HomeController {
 		StringBuilder comment = new StringBuilder();
 		StringBuilder ratingDiv = new StringBuilder();
 		StringBuilder keywords = new StringBuilder();
+		StringBuilder restroDetails = new StringBuilder();
 
 		Map<String, Object> aeDataMap = null;
 		Map<String, Object> dataMap = null;
 		List<Map<String, Object>> getProductList;
+		List<Map<String, Object>> getLatestBlog = userdao.getTrendingBlog();
+		Map<String, Object> aeLatestBlog = null;
+
 		
 		if(oldpicId != null){
 			getProductList = userdao.getBlogOldPic(oldpicId);
@@ -268,6 +272,25 @@ public class HomeController {
 
 			userId.append(picId);
 		}
+		
+		
+		Iterator<Map<String, Object>> itrLatestBlog = getLatestBlog.iterator();
+		while (itrLatestBlog.hasNext()) {
+			aeLatestBlog = itrLatestBlog.next();
+			
+			restroDetails
+			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
+					+ "<div><a href='/blogInfo?tag="
+					+ aeLatestBlog.get("tag")
+					+ "'><img src='"
+					+ aeLatestBlog.get("path")
+					+ "' title='' alt='alt' width=\"200px\" height=\"214px\"></a><a href='/blogInfo?tag="
+					+ aeLatestBlog.get("tag")
+					+ "'><h5 style='height:59px;'>"
+					+ aeLatestBlog.get("blog_name")
+					+ "</h5></a>"
+					+ "&nbsp;&nbsp;</div></div>");
+		}
 
 		//
 		model.addAttribute("userRatingsBlog", ratingDiv.toString());
@@ -281,6 +304,7 @@ public class HomeController {
 		model.addAttribute("detailsDivTextBlog", detailsDivText.toString());
 		model.addAttribute("imagePath", imagePath);
 		model.addAttribute("keywords", keywords.toString());
+		model.addAttribute("restroDetails", restroDetails.toString());
 
 		ModelAndView mv = new ModelAndView();
 
