@@ -446,9 +446,9 @@ public class HomeController {
 			}
 		}
 
-		mv.addObject("blogDetails", detailsDiv.toString());
-		mv.addObject("asideDiv", asideDiv.toString());
-
+		
+		model.addAttribute("blogDetails", detailsDiv.toString());
+		model.addAttribute("asideDiv", asideDiv.toString());
 		mv.setViewName("userBlog");
 		return mv;
 

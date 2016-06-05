@@ -15,6 +15,7 @@
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 		<meta name="keywords" content="videos"/> 
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
         <%@include file="includeCssJs.jsp" %> 
     </head>
 	
