@@ -449,7 +449,7 @@ public class HomeController {
 		
 		model.addAttribute("blogDetails", detailsDiv.toString());
 		model.addAttribute("asideDiv", asideDiv.toString());
-		mv.setViewName("userBlog");
+		mv.setViewName("blogList");
 		return mv;
 
 	}
