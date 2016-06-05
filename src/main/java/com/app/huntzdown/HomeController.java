@@ -513,7 +513,7 @@ public class HomeController {
 			mv.addObject("blogDetails", detailsDiv.toString());
 			mv.addObject("asideDiv", asideDiv.toString());
 
-			mv.setViewName("userBlog");
+			mv.setViewName("blogList");
 			return mv;
 
 		}
