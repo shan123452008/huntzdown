@@ -533,12 +533,12 @@ public class HomeController {
 	 
 	 @RequestMapping(value = "/newsFacts",method = RequestMethod.GET)
      public ModelAndView detailsBike(HttpServletRequest req,HttpServletResponse response, ModelMap model) throws IOException, SQLException{
-		HttpSession session = req.getSession();
-		
 		
 		response.setHeader("Cache-Control", "no-cache");
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("utf-8");
+		Writer out;
+		out = response.getWriter();
 
 		StringBuilder details = new StringBuilder();
 		StringBuilder detailsDiv = new StringBuilder();
@@ -626,7 +626,7 @@ public class HomeController {
 		model.addAttribute("restroDetails", restroDetails.toString());
 
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("bikeRating");
+		mv.setViewName("factsNews");
 		return mv;
 }
 	 
