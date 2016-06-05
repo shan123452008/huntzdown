@@ -176,7 +176,7 @@
 
 			</div>
 
-			<div>&nbsp;</div>
+			<%-- <div>&nbsp;</div>
 			<div>&nbsp;</div>
 				
 				<!--Latest Reviews-->
@@ -203,7 +203,7 @@
                     </div>
 
 
-			</div>
+			</div> --%>
 
 			<aside id="sidebar" class="asidePage">
 			
