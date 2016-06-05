@@ -175,6 +175,35 @@
 				<!-- End BidVertiser code -->
 
 			</div>
+			
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+				
+				<!--Latest Reviews-->
+                    <div id="comments-wrap">
+                        <h4 class="heading">MORE HUNTZDOWN POST</h4>
+                        
+
+                        <ol class="commentlist">
+
+
+                            <li class="comment even thread-even depth-1" id="li-comment-1">
+
+                                <div id="comment-1" class="comment-body cf">
+
+                                    ${restroDetails}            
+
+                               </div>
+                            </li>
+                            
+
+
+
+                        </ol>
+                    </div>
+
+
+			</div>
 
 			<aside id="sidebar" class="asidePage">
     		 
