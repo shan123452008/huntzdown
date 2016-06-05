@@ -27,7 +27,6 @@
     </head>
 		<!-- ENDS HEADER -->
 				 <jsp:include page="Header.jsp"/>
-
 		<!-- MAIN -->
 		<body>
 		<!-- <script type='text/javascript' src='//go.oclaserver.com/apu.php?zoneid=627269'></script> -->
