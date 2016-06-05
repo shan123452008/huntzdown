@@ -9,6 +9,20 @@
 
 <!-- HEADER -->
 <header>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1698006363811207";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="wrapper cf wrapperLogo">
+
+
+
 <div class="wrapper cf wrapperLogo">
 
        
@@ -37,6 +51,9 @@
                     <li><a href="/videos">VIDEOS</a>
 					<li><a href="/about">ABOUT</a></li>
 					<li><a href="/contact">CONTACT</a></li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<div class="fb-like" data-href="https://www.facebook.com/huntzdown/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
 				</ul>
         <!-- ends nav -->
 
