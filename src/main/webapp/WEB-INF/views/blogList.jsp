@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
@@ -12,7 +12,6 @@
         <meta name="Name" content="HuntzDown.com - videos">
 		<meta name="description" content="HuntzDown.com - videos">
 		<meta name="Image" content="https://c2.staticflickr.com/2/1474/24069025379_465e71ae86.jpg">
-		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 		<meta name="keywords" content="videos"/> 
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">

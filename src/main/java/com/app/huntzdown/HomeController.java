@@ -405,7 +405,7 @@ public class HomeController {
 		List<Map<String, Object>> getCommentList = userdao
 				.getDetailsBlogs(category);
 
-		ModelAndView mv = new ModelAndView();
+		
 		if (getCommentList.size() > 0) {
 			int i = 0;
 
@@ -449,6 +449,7 @@ public class HomeController {
 		
 		model.addAttribute("blogDetails", detailsDiv.toString());
 		model.addAttribute("asideDiv", asideDiv.toString());
+		ModelAndView mv = new ModelAndView();
 		mv.setViewName("blogList");
 		return mv;
 
