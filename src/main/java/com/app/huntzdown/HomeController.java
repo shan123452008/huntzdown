@@ -307,9 +307,6 @@ public class HomeController {
 		model.addAttribute("restroDetails", restroDetails.toString());
 
 		ModelAndView mv = new ModelAndView();
-
-		
-		
 		mv.setViewName("blogComment");
 		return mv;
 		
@@ -535,7 +532,7 @@ public class HomeController {
 	 
 	 
 	 @RequestMapping(value = "/newsFacts",method = RequestMethod.GET)
-     public String detailsBike(HttpServletRequest req,HttpServletResponse response, ModelMap model) throws IOException, SQLException{
+     public ModelAndView detailsBike(HttpServletRequest req,HttpServletResponse response, ModelMap model) throws IOException, SQLException{
 		HttpSession session = req.getSession();
 		
 		
@@ -628,8 +625,9 @@ public class HomeController {
 		model.addAttribute("keywords", keywords.toString());
 		model.addAttribute("restroDetails", restroDetails.toString());
 
-		return "bikeRating";
-	 
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("bikeRating");
+		return mv;
 }
 	 
 	 @RequestMapping(value = "/writeConfession", method = RequestMethod.GET)
