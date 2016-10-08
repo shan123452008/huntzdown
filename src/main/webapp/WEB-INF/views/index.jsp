@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
+    	<meta name="msvalidate.01" content="2FC042E4EA47DDF65A0D2AC57DA23C48" />
         <meta property="og:type" name="og:type" content="website" />
 		<meta property="og:title" name="og:title" content="HuntzDown" />
 		<meta property="og:url" name="og:url" content="http://www.huntzdown.com"/>
