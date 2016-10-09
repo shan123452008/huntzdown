@@ -10,7 +10,7 @@ a {
 }
 header,
 footer {
-    background: #34CABC;
+    background: #f2635d;
 }
 /* Selection colours (easy to forget) */
 :selection {
@@ -51,7 +51,7 @@ body {
 }
 #nav > li.current-menu-item > a,
 #nav > li.current_page_item > a {
-  border-top: 3px solid #34CABC;
+  border-top: 3px solid #f2635d;
 }
 #nav .sfHover ul {
   background: #f8f5f2;
