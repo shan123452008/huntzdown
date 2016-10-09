@@ -105,8 +105,8 @@
                         
                      
                 <!-- Begin BidVertiser code -->
-					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
-			<!-- End BidVertiser code -->
+<!-- 					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
+ -->			<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
@@ -136,8 +136,8 @@
                         </ol>
                         
                         <!-- Begin BidVertiser code -->
-						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
-				<!-- End BidVertiser code -->
+<!-- 						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
+ -->				<!-- End BidVertiser code -->
                     </div>
                     
                     
@@ -146,8 +146,8 @@
                         <h4 class="heading">News Gallery</h4>
                         
                        	    <!-- Begin BidVertiser code -->
-						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
-							<!-- End BidVertiser code -->
+<!-- 						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
+ -->							<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
