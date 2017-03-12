@@ -418,53 +418,18 @@ System.out.println("inside product list..");
 	}
 
 	@Override
-	public void addBlog(AddBlog addBlog, String path, InputStream inputStream) throws ClassNotFoundException {
+	public void addBlog(AddBlog addBlog) throws ClassNotFoundException {
 		
-		 ResourceBundle bundle = ResourceBundle.getBundle("jdbc");  
-         String driverClassName=bundle.getString("jdbc.driverClassName");
-         String dbURL=bundle.getString("jdbc.databaseurl");
-         String dbUser= bundle.getString("jdbc.username");
-         String dbPass= bundle.getString("jdbc.password");
-
-		    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		System.out.println("DAO addMovie");
+		   DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
 		   Calendar cal = Calendar.getInstance();
-		   Connection conn = null; // connection to the database
-	        String message = null;  // message will be sent back to client
-	         
-	        try {
-	            // connects to the database
-	        	Class.forName("com.mysql.jdbc.Driver");  
-	            conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
 	 
-	            // constructs SQL statement
-	            String sql = "INSERT INTO huntzdown.blog(blog_name,path,comments,date) VALUES(?,?,?,?)";
-	            PreparedStatement statement = conn.prepareStatement(sql);
-	            statement.setString(1, addBlog.getBlogname());
-	                statement.setString(2, "hi");
-	            statement.setString(3, addBlog.getComment());
-	            statement.setString(4, dateFormat.format(cal.getTime()));
-	          
-	            // sends the statement to the database server
-	            int row = statement.executeUpdate();
-	            if (row > 0) {
-	                message = "File uploaded and saved into database";
-	            }
-	        } catch (SQLException ex) {
-	            message = "ERROR: " + ex.getMessage();
-	            ex.printStackTrace();
-	        } finally {
-	            if (conn != null) {
-	                // closes the database connection
-	                try {
-	                    conn.close();
-	                } catch (SQLException ex) {
-	                    ex.printStackTrace();
-	                }
-	            }
-	           
-	        }	 
 	
+	
+	String sql = "INSERT INTO user_data.blog(blog_name,path,comments,date,stars,category,isVideo,keywords,tag) VALUES(?,?,?,?,?,?,?,?,?)";
+	jdbcTemplate.update(sql, new Object[] { addBlog.getBlogname(),addBlog.getImage(),addBlog.getComment(),dateFormat.format(cal.getTime()).toString(),
+			addBlog.getStar(),addBlog.getCategory(),null,addBlog.getKeywords(),addBlog.getTag()});
 	
 		
 	}

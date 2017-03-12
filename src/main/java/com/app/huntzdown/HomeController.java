@@ -192,24 +192,25 @@ public class HomeController {
 		// return "index";
 	} // ends : agencyDash()
 
-	@RequestMapping(value = "/blog", method = RequestMethod.POST)
-	public String addBlog(@ModelAttribute("blog") AddBlog addBlog,
-			BindingResult result, SessionStatus status, ModelMap model,
-			HttpServletRequest req, HttpServletResponse res)
-			throws IOException, ServletException, ClassNotFoundException {
-		HttpSession session = req.getSession();
+	 @RequestMapping(value = "/blog", method = RequestMethod.POST)
+	    public String addBlog(@ModelAttribute("blog") AddBlog addBlog, BindingResult result, SessionStatus status, ModelMap model, HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException, ClassNotFoundException {
+	        HttpSession session = req.getSession();
+	       
+	        String path;
+	        InputStream inputStream = null;
+	        OutputStream outputStream = null;
+	        InputStream inputStream1 = null;
 
-		String path;
-		InputStream inputStream = null;
 
-		if (result.hasErrors()) {
-			return "login";
-		} else {
-			userdao.addBlog(addBlog, "dfgdf", inputStream);
-		}
+	        System.out.println("values"+addBlog.getBlogname());
 
-		return "home";
-	}
+	       
+	        System.out.println("addBlog>>>>->..." + addBlog.getComment());
+
+	        userdao.addBlog(addBlog);
+	       
+	        return "home";
+	    }
 
 	@RequestMapping(value = "/blogInfo", method = RequestMethod.GET)
 	public ModelAndView blogInfo(HttpServletRequest req,

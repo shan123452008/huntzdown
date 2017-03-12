@@ -34,7 +34,7 @@ public interface UserDao {
 
     public void addRestro(AddRestro addRestro, String path1, String path2, String path3, String path4, String path5, String path6);
 
-    public void addBlog(AddBlog addBlog, String path, InputStream inputStream) throws ClassNotFoundException;
+    public void addBlog(AddBlog addBlog) throws ClassNotFoundException;
 
     public void addComment(AddComment addComment);
 
