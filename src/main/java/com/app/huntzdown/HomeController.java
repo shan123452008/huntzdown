@@ -135,7 +135,7 @@ public class HomeController {
 					+ "</h2></a>"
 					
 					
-						+ "<table><tbody><tr><td><img src='https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwiYrprmrOPUAhWHp48KHYEuAdYQjRwIBw&url=http%3A%2F%2Fhuntzdown-mobreview.rhcloud.com%2F&psig=AFQjCNG_-lsk_ImeqaEsJbhVEm48CUvgDA&ust=1498835852461389' style='border-radius: 50%;'>"
+						+ "<table><tbody><tr><td><img src='http://unicode.org/reports/tr51/images/other/person.png' style='border-radius: 50%;'>"
 						+ "</td><td>&nbsp;&nbsp;</td>"
 						+"<td>&nbsp;&nbsp;</td>"
 						+ "</td><td colspan='2'>Posted: "+aeLatestBlog.get("date")+"</td></tr>"
