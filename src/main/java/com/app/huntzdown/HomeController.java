@@ -187,7 +187,7 @@ public class HomeController {
 					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/chapterConfession?tag="
 					+ aeTrendingBlog.get("tag")
 					+ "'><h5 style='height:59px;'>"
-					+ aeTrendingBlog.get("comments")
+					+ aeTrendingBlog.get("comments").toString().substring(0, 100)+"....."
 					+ "</h5></a>"
 					+ "&nbsp;&nbsp;</div></div>");
 		}
