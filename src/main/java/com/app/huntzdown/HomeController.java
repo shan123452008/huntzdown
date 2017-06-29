@@ -126,18 +126,34 @@ public class HomeController {
 	
 			
 			restroDetails
-			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
+			.append("<div style=\"float: left; width: 630px; margin-bottom: 10px; padding: 0px 10px 0px 0px;border-bottom: 1px solid #aaa;\">\n"
 					+ "<div><a href='/blogInfo?tag="
-					+ aeLatestBlog.get("tag")
-					+ "'><img src='"
+					+ ""
+					+ "'>"
+					+ "<h2>"
+					+ ""
+					+ "</h2></a>"
+					
+					
+						+ "<table><tbody><tr><td><img src='http://graph.facebook.com/10203397594959584/picture' style='border-radius: 50%;'>"
+						+ "</td><td>&nbsp;&nbsp;</td>"
+						+"<td>&nbsp;&nbsp;</td>"
+						+ "</td><td colspan='2'>Posted: 8 Jun 2016</td></tr>"
+						
+						+ "</tbody></table>"
+						+ "<img src='"
 					+ aeLatestBlog.get("path")
-					+ "' title='' alt='alt' width=\"200px\" height=\"214px\"></a><a href='/blogInfo?tag="
-					+ aeLatestBlog.get("tag")
-					+ "'><h5 style='height:59px;'>"
-					+ aeLatestBlog.get("blog_name")
-					+ "</h5></a>"
-					+ "&nbsp;&nbsp;</div></div>");
+					+ "' title='' alt='alt' width=\"630px\" height=\"310px\">"
+					
+					+ "</a><a href='/blogInfo?tag="
+					+ ""
+					+ "'>"
+					+ "<div><h5>"+aeLatestBlog.get("blog_name")+"</h5></div>"
+					+ "&nbsp;&nbsp;</div><div>&nbsp;</div></div>");
+			
+			
 		}
+		
 
 		Iterator<Map<String, Object>> itrFactsNews = getNewsFacts.iterator();
 		while (itrFactsNews.hasNext()) {

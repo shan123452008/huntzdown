@@ -65,33 +65,7 @@
         <div id="main">
             <div class="wrapper cf">
 
-			<aside id="firstbar" class="firstSidePage"
-				style="display: inline; float: left; width: 318px;">
-
-
-
-				<h4 class="heading">LATEST REVIEWS</h4>
-
-				<ol class="commentlist">
-
-
-					<li class="comment even thread-even depth-1" id="li-comment-1">
-
-						<div id="comment-1" class="comment-body cf">
-
-							${getTrendingBlog}</div>
-
-					</li>
-
-
-
-
-				</ol>
-
-
-
-			</aside>
-
+			
 
 			<div id="posts-list" class="cf"
 				style="border-right: 1px solid; border-right-color: rgba(128, 128, 128, 0.47);">        	
@@ -267,7 +241,7 @@
                 <aside id="sidebar" class="asidePage">
                 
                 
-                 <h4  style="width: 239px;">Hot Mobiles in Market</h4>
+                 <h4  style="width: 239px;">Confessions</h4>
  					<ul style="list-style: none;"> 
 
                         <li class="block" style="overflow-y: scroll;overflow-x: auto;width:239px;height:272px;">
@@ -280,17 +254,7 @@
                      
                     </ul>
                    
- 				<h4 style="width: 239px;">Latest Blogs</h4>
-                    <ul style="list-style: none;"> 
-
-                        <li class="block" style="overflow-y: scroll;overflow-x: hidden;width:239px;height:272px;">
-                            <ul type="disc" style="/* width:239px; */height:272px;padding-left: 3px;">
-  								                         
-                              ${latestBlog}
-                            </ul>
-                        </li>
-
-                    </ul>
+ 				
 
 				<div style="margin-top: 10px;">&nbsp;</div>
 
