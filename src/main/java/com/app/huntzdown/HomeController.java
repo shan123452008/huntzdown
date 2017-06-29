@@ -180,14 +180,14 @@ public class HomeController {
 			aeTrendingBlog = itrTrendingBlog.next();
 			trendingBlog
 			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
-					+ "<div><a href='/chapterConfession?tagid="
-					+ aeLatestBlog.get("tag")
+					+ "<div><a href='/chapterConfession?tag="
+					+ aeTrendingBlog.get("tag")
 					+ "'><img src='"
-					+ aeLatestBlog.get("path")
-					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/chapterConfession?tagid="
-					+ aeLatestBlog.get("tag")
+					+ aeTrendingBlog.get("path")
+					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/chapterConfession?tag="
+					+ aeTrendingBlog.get("tag")
 					+ "'><h5 style='height:59px;'>"
-					+ aeLatestBlog.get("blog_name")
+					+ aeTrendingBlog.get("comments")
 					+ "</h5></a>"
 					+ "&nbsp;&nbsp;</div></div>");
 		}
