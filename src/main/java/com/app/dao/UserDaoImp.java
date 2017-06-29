@@ -726,7 +726,7 @@ System.out.println("inside product list..");
 
     @Override
     public List<Map<String, Object>> getTrendingBlog() {
-        String query = "select * from huntzdown.blog where stars>=3 and isVideo IS NULL order by id DESC LIMIT 9";
+        String query = "select * from huntzdown.confession order by id desc LIMIT 15";
         List<Map<String, Object>> getTreandBlog = jdbcTemplate.queryForList(query);	
 	return getTreandBlog;    
     }

@@ -65,22 +65,49 @@
         <div id="main">
             <div class="wrapper cf">
 
+			<aside id="firstbar" class="firstSidePage"
+				style="display: inline; float: left; width: 318px;">
 
-               <div id="posts-list" class="cf"
+
+
+				<h4 class="heading">LATEST REVIEWS</h4>
+
+				<ol class="commentlist">
+
+
+					<li class="comment even thread-even depth-1" id="li-comment-1">
+
+						<div id="comment-1" class="comment-body cf">
+
+							${getTrendingBlog}</div>
+
+					</li>
+
+
+
+
+				</ol>
+
+
+
+			</aside>
+
+
+			<div id="posts-list" class="cf"
 				style="border-right: 1px solid; border-right-color: rgba(128, 128, 128, 0.47);">        	
 
 
                     <!-- Standard -->
                     <!-- slider -->
-                    <div class="project-slider">
+                   <%--  <div class="project-slider">
                         <div class="flexslider">
                             <ul class="slides">
                                 <%
 									 Class.forName("com.mysql.jdbc.Driver");
-									 Connection con = DriverManager.getConnection("jdbc:mysql://127.7.201.130:3306/huntzdown","admin1ucVL7Z", "xRWsL2hKVAXT");
+									 Connection con = DriverManager.getConnection("jdbc:mysql://localhost/user_data","root", "kaidara");
 									Statement st = con.createStatement();
 									
-									ResultSet i = st.executeQuery("select * from huntzdown.blog where isVideo IS NULL order by id desc limit 5");
+									ResultSet i = st.executeQuery("select * from user_data.blog1 where isVideo IS NULL order by id desc limit 5");
 								
 									%>
 									
@@ -95,18 +122,13 @@
                                
                             </ul>
                         </div>
-                    </div>
+                    </div> --%>
                     <!-- ENDS slider -->
                     <!-- ENDS  Standard -->
 
                     <!--Latest Blogs-->
-                    <div id="comments-wrap">
-                        <h4 class="heading">BLOGS</h4>
-                        
-                     
-                <!-- Begin BidVertiser code -->
- 					<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
- 			<!-- End BidVertiser code -->
+                 <div id="comments-wrap">
+                       <!--  <h4 class="heading">LATEST REVIEWS</h4> -->
 
                         <ol class="commentlist">
 
@@ -115,31 +137,17 @@
 
                                 <div id="comment-1" class="comment-body cf">
 
-                                    ${restroDetails} 
-                                    <div>&nbsp;</div>
-								<div
-									style="float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px; background-color: floralwhite;">
-									<div>
-										<a href="/blog?category=ALL"
-											style="color: #34CABC; font-size: 18px; font-family: cursive;">More
-											Blogs</a>
-									</div>
-								</div>
-								<div>&nbsp;</div>
-								<div>&nbsp;</div>
-							</div>
+                                    ${restroDetails}            
+
+                                </div>
 
                             </li>
                             
 
 
+
                         </ol>
-                        
-                        <!-- Begin BidVertiser code -->
-						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
- 				<!-- End BidVertiser code -->
                     </div>
-                    
                     
                      <!--News Gallery-->
                     <div id="comments-wrap">
@@ -257,6 +265,32 @@
                 </div>
                 <!-- sidebar -->
                 <aside id="sidebar" class="asidePage">
+                
+                
+                 <h4  style="width: 239px;">Hot Mobiles in Market</h4>
+ 					<ul style="list-style: none;"> 
+
+                        <li class="block" style="overflow-y: scroll;overflow-x: auto;width:239px;height:272px;">
+                            <ul type="disc" style="/* width:239px; */height:272px;padding-left: 3px;">
+  								    
+  								    ${getTrendingBlog}                     
+							
+					</ul>
+                        </li>
+                     
+                    </ul>
+                   
+ 				<h4 style="width: 239px;">Latest Blogs</h4>
+                    <ul style="list-style: none;"> 
+
+                        <li class="block" style="overflow-y: scroll;overflow-x: hidden;width:239px;height:272px;">
+                            <ul type="disc" style="/* width:239px; */height:272px;padding-left: 3px;">
+  								                         
+                              ${latestBlog}
+                            </ul>
+                        </li>
+
+                    </ul>
 
 				<div style="margin-top: 10px;">&nbsp;</div>
 

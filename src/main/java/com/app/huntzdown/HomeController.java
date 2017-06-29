@@ -123,12 +123,7 @@ public class HomeController {
 		Iterator<Map<String, Object>> itrLatestBlog = getLatestBlog.iterator();
 		while (itrLatestBlog.hasNext()) {
 			aeLatestBlog = itrLatestBlog.next();
-			latestBlog
-					.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?tag="
-							+ aeLatestBlog.get("tag")
-							+ "'>"
-							+ aeLatestBlog.get("blog_name")
-							+ "</a></font></li>");
+	
 			
 			restroDetails
 			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
@@ -168,11 +163,17 @@ public class HomeController {
 		while (itrTrendingBlog.hasNext()) {
 			aeTrendingBlog = itrTrendingBlog.next();
 			trendingBlog
-					.append("<li><font size='4'><img src='resources/images/rightfinger.png' style='width: 15px; height: 15px;'/><a href='/blogInfo?tag="
-							+ aeTrendingBlog.get("tag")
-							+ "'>"
-							+ aeTrendingBlog.get("blog_name")
-							+ "</a></font></li>");
+			.append("<div style=\"float: left; width: 200px; margin-bottom: 10px; padding: 0px 10px 0px 0px;background-color: floralwhite;\">\n"
+					+ "<div><a href='/chapterConfession?tagid="
+					+ aeLatestBlog.get("tag")
+					+ "'><img src='"
+					+ aeLatestBlog.get("path")
+					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/chapterConfession?tagid="
+					+ aeLatestBlog.get("tag")
+					+ "'><h5 style='height:59px;'>"
+					+ aeLatestBlog.get("blog_name")
+					+ "</h5></a>"
+					+ "&nbsp;&nbsp;</div></div>");
 		}
 
 		model.addAttribute("latestBlog", latestBlog.toString());
