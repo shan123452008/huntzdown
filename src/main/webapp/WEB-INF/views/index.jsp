@@ -127,10 +127,6 @@
                     <div id="comments-wrap">
                         <h4 class="heading">News Gallery</h4>
                         
-                       	    <!-- Begin BidVertiser code -->
- 						<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT>
- 						<!-- End BidVertiser code -->
-
                         <ol class="commentlist">
 
 
@@ -148,18 +144,11 @@
 
                         </ol>
                         
-                        <!-- Begin BidVertiser code -->
-						 <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT> 
-						<!-- End BidVertiser code --> 
                     </div>                    
                     
                       <!--Latest Reviews-->
                     <div id="comments-wrap">
                         <h4 class="heading">Videos</h4>
-                        
-                        <!-- Begin BidVertiser code -->
-					 	<SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT> 
-						<!-- End BidVertiser code -->
 
                         <ol class="commentlist">
 
@@ -177,9 +166,7 @@
 
 
                         </ol>
-                        <!-- Begin BidVertiser code -->
-						 <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1785726" TYPE="text/javascript"></SCRIPT> 
-				<!-- End BidVertiser code -->
+                       
                     </div>
 
 
@@ -300,9 +287,7 @@
 <div>&nbsp;</div>
 
 
-				<!-- Begin BidVertiser code -->
-				 <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786045" TYPE="text/javascript"></SCRIPT> 
-				<!-- End BidVertiser code --> 
+				
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
 				
@@ -321,9 +306,6 @@ iframe[id^='twitter-widget-']{ width:100% !important;min-width: 239px !important
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
 
-				<!-- Begin BidVertiser code -->
-				 <SCRIPT SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=717879&bid=1786046" TYPE="text/javascript"></SCRIPT> 
-				<!-- End BidVertiser code --> 
 				
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
