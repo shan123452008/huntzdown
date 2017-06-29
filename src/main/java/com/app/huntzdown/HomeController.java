@@ -135,7 +135,7 @@ public class HomeController {
 					+ "</h2></a>"
 					
 					
-						+ "<table><tbody><tr><td><img src='http://unicode.org/reports/tr51/images/other/person.png' style='border-radius: 50%;'>"
+						+ "<table><tbody><tr><td><img src='http://graph.facebook.com/947087722035298/picture' style='border-radius: 50%;'>"
 						+ "</td><td>&nbsp;&nbsp;</td>"
 						+"<td>&nbsp;&nbsp;</td>"
 						+ "</td><td colspan='2'>Posted: "+aeLatestBlog.get("date")+"</td></tr>"
