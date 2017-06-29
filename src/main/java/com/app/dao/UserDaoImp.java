@@ -427,7 +427,7 @@ System.out.println("inside product list..");
 	 
 	
 	
-	String sql = "INSERT INTO user_data.blog(blog_name,path,comments,date,stars,category,isVideo,keywords,tag) VALUES(?,?,?,?,?,?,?,?,?)";
+	String sql = "INSERT INTO huntzdown.blog(blog_name,path,comments,date,stars,category,isVideo,keywords,tag) VALUES(?,?,?,?,?,?,?,?,?)";
 	jdbcTemplate.update(sql, new Object[] { addBlog.getBlogname(),addBlog.getImage(),addBlog.getComment(),dateFormat.format(cal.getTime()).toString(),
 			addBlog.getStar(),addBlog.getCategory(),null,addBlog.getKeywords(),addBlog.getTag()});
 	
