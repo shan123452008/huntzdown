@@ -141,8 +141,7 @@ public class HomeController {
 						+ "</td><td colspan='2'>Posted: "+aeLatestBlog.get("date")+"</td></tr>"
 						
 						+ "</tbody></table>"
-						+"<a href='/blogInfo?tag="+aeLatestBlog.get("tag")+">"
-						+ "<img src='"
+						+ "<a href='/blogInfo?tag="+aeLatestBlog.get("tag")+"'><img src='"
 					+ aeLatestBlog.get("path")
 					+ "' title='' alt='alt' width=\"630px\" height=\"310px\">"
 					
