@@ -138,7 +138,7 @@ public class HomeController {
 						+ "<table><tbody><tr><td><img src='http://graph.facebook.com/947087722035298/picture' style='border-radius: 50%;'>"
 						+ "</td><td>&nbsp;&nbsp;</td>"
 						+"<td>&nbsp;&nbsp;</td>"
-						+ "</td><td colspan='2'>Posted: "+aeLatestBlog.get("date")+"</td></tr>"
+						+ "</td><td style='vertical-align: middle;'>Posted: "+aeLatestBlog.get("date")+"</td></tr>"
 						
 						+ "</tbody></table>"
 						+ "<a href='/blogInfo?tag="+aeLatestBlog.get("tag")+"'><img src='"
