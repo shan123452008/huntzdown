@@ -187,7 +187,7 @@ public class HomeController {
 					+ "' title='' alt='alt' width=\"200px\" height=\"114px\"></a><a href='/chapterConfession?tag="
 					+ aeTrendingBlog.get("tag")
 					+ "'><h5 style='height:59px;'>"
-					+ aeTrendingBlog.get("comments").toString().substring(0, 100)+"....."
+					+ aeTrendingBlog.get("comments").toString().substring(0, 70)+"....."
 					+ "</h5></a>"
 					+ "&nbsp;&nbsp;</div></div>");
 		}
@@ -704,17 +704,17 @@ public class HomeController {
 					aeDataMap = itr.next();
 					imagePath=aeDataMap.get("path").toString();
 					details.append("<img src='" + aeDataMap.get("path")
-							+ "' alt='"+aeDataMap.get("title")+"' class='blogImage'/>");
+							+ "' alt='"+aeDataMap.get("conf_name")+"' class='blogImage'/>");
 					detailsDiv	
 							.append("<p><strong>Client </strong>"
-									+ aeDataMap.get("title")
+									+ aeDataMap.get("conf_name")
 									+ "</p><p><strong>Date </strong>"
 									+ aeDataMap.get("date")
 									+ "</p><p><a href='#' class='launch'>Launch Project</a></p>");
 					detailsDivText.append("<p>" + aeDataMap.get("comments") + "</p>");
 					System.out.println("check this" + aeDataMap.get("comments"));
 					haeding.append("<p>" + aeDataMap.get("title") + "</p>");
-					titlePage.append(aeDataMap.get("title"));
+					titlePage.append(aeDataMap.get("conf_name"));
 					keywords.append(aeDataMap.get("keywords"));
 
 					userId.append(tag);
