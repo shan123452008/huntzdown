@@ -127,7 +127,7 @@ public class HomeController {
 			
 			restroDetails
 			.append("<div style=\"float: left; width: 630px; margin-bottom: 10px; padding: 0px 10px 0px 0px;border-bottom: 1px solid #aaa;\">\n"
-					+ "<div><a href='/blogInfo?tag="
+					+ "<div><a href='/blogInfo?tag="+aeLatestBlog.get("tag")+""
 					+ ""
 					+ "'>"
 					+ "<h2>"
@@ -141,11 +141,12 @@ public class HomeController {
 						+ "</td><td colspan='2'>Posted: "+aeLatestBlog.get("date")+"</td></tr>"
 						
 						+ "</tbody></table>"
+						+"<a href='/blogInfo?tag="+aeLatestBlog.get("tag")+">"
 						+ "<img src='"
 					+ aeLatestBlog.get("path")
 					+ "' title='' alt='alt' width=\"630px\" height=\"310px\">"
 					
-					+ "</a><a href='/blogInfo?tag="
+					+ "</a><a href='/blogInfo?tag="+aeLatestBlog.get("tag")+""
 					+ ""
 					+ "'>"
 					+ "<div><h5>"+aeLatestBlog.get("blog_name")+"</h5></div>"
