@@ -95,8 +95,10 @@
         var nicInstance = nicEditors.findEditor('comment1');
          var notes = nicInstance.getContent();
          alert(notes);
+
+         var data = $('#blogForm').find('.nicEdit-main').text();
         
-         document.getElementById('comment').value = notes;
+         document.getElementById('comment').value = data;
 
          
          submitVal();
@@ -117,7 +119,7 @@
            var image=document.getElementById("image").value;
 
            
-           document.getElementById("blogForm").submit()
+           document.getElementById("blogForm").submit();
                      
             
         }
