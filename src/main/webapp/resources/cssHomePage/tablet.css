@@ -26,6 +26,17 @@
 }
 
 
+.homeImages {
+	height: 310px; 
+	width:430px;
+}
+
+
+.homeText{
+ width:430px;
+}
+
+
 .blogImageFacts {
 	height: 945px; 
 	width:945px;

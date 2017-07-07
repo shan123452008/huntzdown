@@ -143,12 +143,12 @@ public class HomeController {
 						+ "</tbody></table>"
 						+ "<a href='/blogInfo?tag="+aeLatestBlog.get("tag")+"'><img src='"
 					+ aeLatestBlog.get("path")
-					+ "' title='' alt='alt' width=\"630px\" height=\"310px\">"
+					+ "' title='' alt='"+aeLatestBlog.get("blog_name")+"' class='homeImages'>"
 					
 					+ "</a><a href='/blogInfo?tag="+aeLatestBlog.get("tag")+""
 					+ ""
 					+ "'>"
-					+ "<div><h5>"+aeLatestBlog.get("blog_name")+"</h5></div>"
+					+ "<div><h5 class='homeText'>"+aeLatestBlog.get("blog_name")+"</h5></div>"
 					+ "&nbsp;&nbsp;</div><div>&nbsp;</div></div>");
 			
 			
