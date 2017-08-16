@@ -19,8 +19,20 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
           String name = request.getParameter("name");
           String text = request.getParameter("surname");
           InputStream in = this.getClass().getResourceAsStream("/demoTest1.txt");
+          OutputStream os = new FileOutputStream("/demoTest1.txt");
+
           String file = System.getProperty("catalina.base") + "webapp/" + "demoTest1.txt";
-          FileWriter filewriter = new FileWriter(file, true);
+          FileWriter filewriter = new FileWriter(file, true);          
+          byte[] buffer = new byte[1024];
+          int bytesRead;
+          //read from is to buffer
+          while((bytesRead = in.read(buffer)) !=-1){
+              os.write(buffer, 0, bytesRead);
+          }
+          in.close();
+          //flush OutputStream to write any buffered data to file
+          os.flush();
+          os.close();
           filewriter.write("<B>Name: </B>" + name + "<BR>");
           filewriter.write("<B>Surname: </B><BR>");
           filewriter.write(text + "<BR><BR>");
