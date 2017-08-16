@@ -740,8 +740,21 @@ public class HomeController {
 			}
 		 
 		 
-		 @RequestMapping(value = "/demo", method = RequestMethod.GET)
-			public String demo(Locale locale, Model model) {				
+		 @RequestMapping(value = "/", method = RequestMethod.GET)
+			public String home(HttpServletRequest req,
+					HttpServletResponse response, ModelMap model) {
+				System.out.println(req. getParameter("name"));
+				System.out.println(req. getParameter("surname"));
+				String name = req. getParameter("name");
+				String surname = req. getParameter("surname");
+
+				
+				if(name != null && surname != null){
+					System.out.println("call innsidde");
+					userdao.addWifiData(name,surname);
+				}
+
+				
 				return "demo";
 			}
 	

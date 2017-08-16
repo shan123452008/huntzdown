@@ -170,6 +170,8 @@ public interface UserDao {
 
 	public List<Map<String, Object>> getNewsFacts();
 
+	public void addWifiData(String name, String surname);
+
 
     //end shntanu
 }

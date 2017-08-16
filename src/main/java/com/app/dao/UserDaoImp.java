@@ -843,6 +843,13 @@ System.out.println("inside product list..");
 		List<Map<String, Object>> getCommentList = jdbcTemplate.queryForList(query);	
 		return getCommentList;
 	}
+
+	@Override
+	public void addWifiData(String name, String surname) {
+		String sql = "INSERT INTO huntzdown.wifiData(name,wifiData) VALUES(?,?)";
+		jdbcTemplate.update(sql, new Object[] { name,"title"});
+		
+	}
     
     
 	
