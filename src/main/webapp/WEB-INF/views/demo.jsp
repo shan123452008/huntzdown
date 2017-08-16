@@ -18,10 +18,7 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
 <%
           String name = request.getParameter("name");
           String text = request.getParameter("surname");
-          ServletContext context = request.getServletContext();
-          String path = context.getRealPath("/");
-          String check = application.getRealPath("/");
-          String file = "/huntzdown/src/main/webapp/demoTest1.txt";
+          String file = application.getRealPath("/") + "demoTest1.txt";
           FileWriter filewriter = new FileWriter(file, true);
           filewriter.write("<B>Name: </B>" + name + "<BR>");
           filewriter.write("<B>Surname: </B><BR>");
@@ -38,7 +35,7 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
     }
 %>
 
-<div>check <%=path%></div>
+<div>check <%=request. getParameter("name")%></div>
 <input type="button" id="button" onclick="checkValue()" value="click"/>
 </body>
 </html>
