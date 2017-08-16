@@ -741,8 +741,7 @@ public class HomeController {
 		 
 		 
 		 @RequestMapping(value = "/demo", method = RequestMethod.GET)
-			public String demo(Locale locale, Model model) {
-				
+			public String demo(Locale locale, Model model) {				
 				return "demo";
 			}
 	

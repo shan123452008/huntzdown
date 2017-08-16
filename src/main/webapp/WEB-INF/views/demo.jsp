@@ -21,7 +21,6 @@ Hello <b><%= request.getParameter("name") %></b>!
         out.println("Hello <b>"+request. getParameter("name")+"</b>!");
     }
 %>
-
 <input type="button" id="button" onclick="checkValue()" value="click"/>
 </body>
 </html>
