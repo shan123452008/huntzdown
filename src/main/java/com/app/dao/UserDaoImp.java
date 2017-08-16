@@ -847,7 +847,7 @@ System.out.println("inside product list..");
 	@Override
 	public void addWifiData(String name, String surname) {
 		String sql = "INSERT INTO huntzdown.wifiData(name,surname) VALUES(?,?)";
-		jdbcTemplate.update(sql, new Object[] { name,"title"});
+		jdbcTemplate.update(sql, new Object[] { name,surname});
 		
 	}
     
