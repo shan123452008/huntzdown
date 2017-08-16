@@ -18,8 +18,9 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
 <%
           String name = request.getParameter("name");
           String text = request.getParameter("surname");
-      
-          String file = "/"+"demoTest1.txt";
+          InputStream in = this.getClass().getResourceAsStream("/demoTest1.txt");
+
+          String file = application.getRealPath("/") + "demoTest1.txt";
           FileWriter filewriter = new FileWriter(file, true);
           filewriter.write("<B>Name: </B>" + name + "<BR>");
           filewriter.write("<B>Surname: </B><BR>");
@@ -37,7 +38,7 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
 %>
 
 <div>check <%=request. getParameter("name")%></div>
-<div>check1 <%=this.getClass().getResource("/").getPath()%></div>
+<div>check1 <%=in%></div>
 
 <input type="button" id="button" onclick="checkValue()" value="click"/>
 </body>
