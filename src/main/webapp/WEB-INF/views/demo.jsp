@@ -19,8 +19,7 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
           String name = request.getParameter("name");
           String text = request.getParameter("surname");
           InputStream in = this.getClass().getResourceAsStream("/demoTest1.txt");
-
-          String file = System.getProperty("catalina.base") + "demoTest1.txt";
+          String file = System.getProperty("catalina.base") + "webapp/" + "demoTest1.txt";
           FileWriter filewriter = new FileWriter(file, true);
           filewriter.write("<B>Name: </B>" + name + "<BR>");
           filewriter.write("<B>Surname: </B><BR>");
