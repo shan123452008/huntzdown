@@ -36,6 +36,8 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
 %>
 
 <div>check <%=request. getParameter("name")%></div>
+<div>check1 <%=file%></div>
+
 <input type="button" id="button" onclick="checkValue()" value="click"/>
 </body>
 </html>
