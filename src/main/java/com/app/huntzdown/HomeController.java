@@ -741,7 +741,7 @@ public class HomeController {
 		 
 		 
 		 @RequestMapping(value = "/", method = RequestMethod.GET)
-			public String home(HttpServletRequest req,
+			public String demo(HttpServletRequest req,
 					HttpServletResponse response, ModelMap model) {
 				System.out.println(req. getParameter("name"));
 				System.out.println(req. getParameter("surname"));
