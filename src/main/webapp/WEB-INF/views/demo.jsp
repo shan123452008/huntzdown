@@ -18,13 +18,9 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
 <%
           String name = request.getParameter("name");
           String text = request.getParameter("surname");
-          
-          ServletContext servletContext = request.getSession().getServletContext();
-          String relativeWebPath = "demoTest1.txt";
-          String absoluteDiskPath = servletContext.getRealPath(relativeWebPath);
       
-          String file = this.getClass().getResource("/").getPath() + "demoTest1.txt";
-          FileWriter filewriter = new FileWriter(absoluteDiskPath, true);
+          String file = "/"+"demoTest1.txt";
+          FileWriter filewriter = new FileWriter(file, true);
           filewriter.write("<B>Name: </B>" + name + "<BR>");
           filewriter.write("<B>Surname: </B><BR>");
           filewriter.write(text + "<BR><BR>");
