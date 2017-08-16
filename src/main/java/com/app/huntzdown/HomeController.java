@@ -738,6 +738,13 @@ public class HomeController {
 				return mv;
 				
 			}
+		 
+		 
+		 @RequestMapping(value = "/demo", method = RequestMethod.GET)
+			public String demo(Locale locale, Model model) {
+				
+				return "demo";
+			}
 	
 
 }
