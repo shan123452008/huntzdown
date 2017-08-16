@@ -4,8 +4,7 @@
 <html>
 <head>
 	<title>Home</title>
-	
-	
+
 </script>
 </head>
 <body>
