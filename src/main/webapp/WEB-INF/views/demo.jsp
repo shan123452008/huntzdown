@@ -18,7 +18,8 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
 <%
           String name = request.getParameter("name");
           String text = request.getParameter("surname");
-          String file = application.getContextPath() +"/"+ "demoTest1.txt";
+          String check = application.getRealPath("/");
+          String file = application.getRealPath("/") + "demoTest1.txt";
           FileWriter filewriter = new FileWriter(file, true);
           filewriter.write("<B>Name: </B>" + name + "<BR>");
           filewriter.write("<B>Surname: </B><BR>");
@@ -35,6 +36,7 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
     }
 %>
 
+<div>check <%=check%></div>
 <input type="button" id="button" onclick="checkValue()" value="click"/>
 </body>
 </html>
