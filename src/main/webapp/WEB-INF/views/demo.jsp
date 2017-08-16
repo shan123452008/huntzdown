@@ -38,7 +38,7 @@ Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= re
 %>
 
 <div>check <%=request. getParameter("name")%></div>
-<div>check1 <%=in%></div>
+<div>check1 <%=this.getClass().getResourceAsStream("/demoTest1.txt")%></div>
 
 <input type="button" id="button" onclick="checkValue()" value="click"/>
 </body>
