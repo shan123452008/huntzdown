@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<%@ page import="java.io.*" %>
 <html>
 <head>
 	<title>Home</title>
@@ -9,10 +10,23 @@
 </head>
 <body>
 <h1>
-Hello <b><%= request.getParameter("name") %></b>!
+Hello first name -><b><%= request.getParameter("name") %>   surname -></b><%= request.getParameter("surname") %></b>
 </h1>
 
-<P>  The time on the server is  </P>
+<P>  The time on the server is ${serverTime}. </P>
+
+
+<%
+          String name = request.getParameter("name");
+          String text = request.getParameter("surname");
+          String file = application.getRealPath("/") + "demoTest.txt";
+          FileWriter filewriter = new FileWriter(file, true);
+          filewriter.write("<B>Name: </B>" + name + "<BR>");
+          filewriter.write("<B>Surname: </B><BR>");
+          filewriter.write(text + "<BR><BR>");
+          filewriter.close();
+        %>
+
 
 <%
     if (request.getParameter("name") == null) {
@@ -21,6 +35,7 @@ Hello <b><%= request.getParameter("name") %></b>!
         out.println("Hello <b>"+request. getParameter("name")+"</b>!");
     }
 %>
+
 <input type="button" id="button" onclick="checkValue()" value="click"/>
 </body>
 </html>
