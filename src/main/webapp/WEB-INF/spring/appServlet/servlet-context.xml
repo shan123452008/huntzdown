@@ -36,9 +36,9 @@
     <beans:bean id="dataSource"
     class="org.springframework.jdbc.datasource.DriverManagerDataSource"
     p:driverClassName="com.mysql.jdbc.Driver"
-    p:url="jdbc:mysql://127.7.201.130:3306/huntzdown" 
-    p:username="admin1ucVL7Z"
-    p:password="xRWsL2hKVAXT" />
+    p:url="jdbc:mysql://huntzdown.cd6lsobdyuhl.us-west-2.rds.amazonaws.com:3306/huntzdown" 
+    p:username="huntzdown"
+    p:password="Shanu!2345" />
         
     <beans:bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
